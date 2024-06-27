@@ -1,0 +1,11 @@
+Name: 'Program:Analog_Handling'
+Type: FolderType
+Children:
+- Name: HMI_I_Loadcell_Motor_Speed
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Analog_Handling.HMI_I_Loadcell_Motor_Speed"

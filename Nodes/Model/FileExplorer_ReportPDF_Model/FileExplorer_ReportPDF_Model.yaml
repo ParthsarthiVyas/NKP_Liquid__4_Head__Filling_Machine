@@ -1,0 +1,4 @@
+Name: FileExplorer_ReportPDF_Model
+Type: FolderType
+Children:
+- File: PDFViewerZoomMode/PDFViewerZoomMode.yaml

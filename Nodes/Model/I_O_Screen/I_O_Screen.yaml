@@ -1,0 +1,8 @@
+Name: I_O_Screen
+Type: FolderType
+Children:
+- File: Station_1/Station_1.yaml
+- Name: Status_selection
+  Id: g=cda30a3e2907a9ad74eaec1a38e001e2
+  Type: BaseDataVariableType
+  DataType: Boolean

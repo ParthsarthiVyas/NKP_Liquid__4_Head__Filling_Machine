@@ -1,0 +1,11 @@
+Name: Alarm_report
+Type: FolderType
+Children:
+- Name: From_Date
+  Type: BaseDataVariableType
+  DataType: DateString
+  Value: "0"
+- Name: To_Date
+  Type: BaseDataVariableType
+  DataType: DateString
+  Value: "0"

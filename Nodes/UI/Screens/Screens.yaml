@@ -1,0 +1,22 @@
+Name: Screens
+Type: ScreensCategoryFolder
+Children:
+- File: Welcome/Welcome.yaml
+- File: Main_Menu/Main_Menu.yaml
+- File: Automode/Automode.yaml
+- File: ManualMode/ManualMode.yaml
+- File: MachineMode/MachineMode.yaml
+- File: Alarms_History/Alarms_History.yaml
+- File: Calibration/Calibration.yaml
+- File: I_O_Screen_Station_1/I_O_Screen_Station_1.yaml
+- File: Recipe/Recipe.yaml
+- File: Data_Setup/Data_Setup.yaml
+- File: AuditSigningWorkflows/AuditSigningWorkflows.yaml
+- File: Popup_Screens/Popup_Screens.yaml
+- File: Batch/Batch.yaml
+- File: Camera_setting/Camera_setting.yaml
+- File: Priming_mode/Priming_mode.yaml
+- File: Packml/Packml.yaml
+- File: Drive_Status/Drive_Status.yaml
+- File: All_Servo/All_Servo.yaml
+- File: Reportview/Reportview.yaml

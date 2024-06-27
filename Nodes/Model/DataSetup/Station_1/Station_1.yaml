@@ -1,0 +1,7 @@
+Name: Station_1
+Type: FolderType
+Children:
+- File: TimerSetting/TimerSetting.yaml
+- File: Rejection_Setup/Rejection_Setup.yaml
+- File: PressureSetup/PressureSetup.yaml
+- File: Height_Setup/Height_Setup.yaml

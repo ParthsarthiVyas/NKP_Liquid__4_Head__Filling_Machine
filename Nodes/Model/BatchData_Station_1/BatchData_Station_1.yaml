@@ -1,0 +1,796 @@
+Name: BatchData_Station_1
+Id: g=3b3e67496c7f0f4e163c6b0bcde6404c
+Type: FolderType
+Children:
+- Name: BatchRunning
+  Id: g=46f7b10e155782194d0ef289e254df50
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: BatchNumber
+  Id: g=2b0c7c0bd0fa3ae93389aee7015685f2
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+  Children:
+  - Class: Reference
+    Target: g=f4af47ab9f8a16071e2dc8c53ae4b336
+- Name: ProductName
+  Id: g=559511dcf90f7f8177cd8f97e5580cf0
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: BatchStartTime_1
+  Id: g=ff2c762e8a1edcd4dba99a5b9a495fb7
+  Type: BaseDataVariableType
+  DataType: DateString
+- Name: BatchStopTime_1
+  Id: g=392aee670c9a04679bad1bd83bdf3c04
+  Type: BaseDataVariableType
+  DataType: DateString
+- Name: TotalCounts
+  Id: g=1afbc12199c07b9d719313c4b0ce4611
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=32411c0b918d223cf19b773357eb3413
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Total_Product"
+    Children:
+    - Name: Mode
+      Id: g=ffd0d2ea796420b0c72bd4e9b44a2faa
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: RejectCounts
+  Id: g=69f9f3a6bfa93c649a98b9154d68a932
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=3c096c56622255341fa3dfbbee7f3e25
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Total_Rejected_Product"
+    Children:
+    - Name: Mode
+      Id: g=bf089fa793b98d949e412f6ca0918ce4
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: GoodCounts
+  Id: g=c8a074effff5daae211871ea68b45e54
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=ed113dc817be95f8d030e655b4a4032c
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Total_Good_Product"
+    Children:
+    - Name: Mode
+      Id: g=7fbcbeaf12f9706c3f9c9cd5e376da15
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: %rejection
+  Id: g=f7a76809e58d5b33f51d0f8a33cda17b
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=08db34dacc22fdc8534b4db2239db73e
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/PrintTags/F8&:13                     %OFREJECTION"
+    Children:
+    - Name: Mode
+      Id: g=9384fab593fd83a1fa2f51de66c2fe0f
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: CompanyName
+  Id: g=51cc542efab31265c2dd4b2dffe13923
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: EquipmentName
+  Id: g=339cb690cf4b9877180bbc5406027b2d
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Equipmentid
+  Id: g=3e2c55c2663ed992fd9ad923e229ff38
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Sampled_product
+  Id: g=ba71d81a1d93b246b4b8bf7256569501
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Id: g=6673ddd75b361cf80cb9bb31e8941851
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Total_Sample_Product"
+    Children:
+    - Name: Mode
+      Id: g=769b159d65a3dea2f43ba46b5fe9d3b2
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Batch_size
+  Id: g=64fa6bc77391b7b3e54e4fdc6516aa58
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=5c3ffb35600366eed63e6d510af193e6
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/PrintTags/L19&:10          BATCHSIZE"
+    Children:
+    - Name: Mode
+      Id: g=ef8a11dfbb8fc83d065cfce09b302668
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+  - Name: ns=0;EURange
+    Id: g=40f4934591d43a959a7a13a3e4e834cc
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=52bca5057e695db2bf8bfea638098953
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Id: g=62954dad360022145ac22282b46531f9
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 9999999.0
+    - Name: Constrain
+      Id: g=091f4739af28d0f97db012c9473a51ff
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+- Name: Product_size
+  Id: g=cf639e28d8a0cc0c513b05dd93bcb087
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: ns=0;EURange
+    Id: g=7747ef816af74a4ec2740578b225080a
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=648187aef6a1a468622b3540bb61486a
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Id: g=a39c4222842834145c92ec619b74bf95
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 100.0
+    - Name: Constrain
+      Id: g=abc85f346c18f495ea3fdc26c1767b34
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+- Name: Operatorname
+  Id: g=228bd347cdc3a298bfec9e4281f1b83b
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Recipename
+  Id: g=f73b88b55ff0bcf9e5a9da842514a0d2
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+  Children:
+  - Name: DynamicLink
+    Id: g=c7868e89e0ac2667c3a4498497259ee3
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/Recipe/Recipe_Name_T1"
+    Children:
+    - Name: Mode
+      Id: g=5df2e546eedc34b0b7428be2d6d912bc
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Batch_Start_Stop
+  Id: g=7fdb7e882ec68618ea149fbb46550331
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Id: g=cb16035ece69bb6d71914919df76e5d8
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/Batch_start_stop"
+    Children:
+    - Name: Mode
+      Id: g=30e515effd6a2167992793fdf782faf7
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Duration_Hour
+  Id: g=b9a71a4d90ffcfa66f817594c7e8fd42
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Id: g=374ea04cf82fb5858c37dd697fa17dfb
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/AOI_BatchRun_TT1/Out_ValConv_Hrs"
+    Children:
+    - Name: Mode
+      Id: g=848d389d2c51923818f6b3133add5708
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Duration_Minute
+  Id: g=dec3729d008b4dd7695c24b507d441fc
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Id: g=002761c7855c85df7da62e32c7781016
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/AOI_BatchRun_TT1/Out_ValConv_Min"
+    Children:
+    - Name: Mode
+      Id: g=1bd3a91441744e0e8cf61ff056af96e6
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Duration_Second
+  Id: g=387e37ea76f3adf7a389c7a6504e911a
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Id: g=af1e4a35809991dc1f1156af0c6e4885
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/AOI_BatchRun_TT1/Out_ValConv_Sec"
+    Children:
+    - Name: Mode
+      Id: g=667af248b04fd0948c45f92eff77ebde
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Reset_Batch
+  Id: g=813ea55bb6ca60525a9da72ee6cbd6d2
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Id: g=a5735a9684fe87d9f1887b64d751df6a
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/Reset_batch"
+    Children:
+    - Name: Mode
+      Id: g=7bb0d586aaafd64098ca67f4ab5647ad
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Batchyeild
+  Id: g=3a2bcc819853e591d78159f8fdbaa06a
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=a5f6c6a223e2915ea998284cd7f9ae73
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/Batch_yeild"
+    Children:
+    - Name: Mode
+      Id: g=2f0027e6f6e6171adc438aafe6f81604
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Machine_Speed
+  Id: g=f6ef84a799988a30e966cd2217fcd80f
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Id: g=a3402c160e26625e5a48c9935137ae0a
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_MachineSpeed_CMD"
+    Children:
+    - Name: Mode
+      Id: g=6052350e66176d546c590b01a805462e
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Inffed_turn_table
+  Id: g=4182bc39b1994d4f984a687d159fa54c
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=a2b521e3d7a1d18adce54cafde4d57a8
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM12_Infeed_Turn_Table/HMI_I_Speed_Percentage"
+    Children:
+    - Name: Mode
+      Id: g=3da3e6337f584f2c3e52b645333ed5db
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Rubber_Stopper
+  Id: g=56ade4ebdabefd1410f5bb85de571830
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=6595c6924945bf5512716ce7dd1a8546
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM11_Rubber_Stopper/HMI_I_Speed_Percentage"
+    Children:
+    - Name: Mode
+      Id: g=f18841b1529c44ae8b0b6c96876ab439
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Infeed_Conveyor
+  Id: g=ef9fad9fe2b98df049b81463f1292426
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=b2fc4554cfb5ab71566d76a52ed81f2f
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM13_Infeed_Conveyor/HMI_I_Speed_Percentage"
+    Children:
+    - Name: Mode
+      Id: g=6953e2d4a1051dcbf75aea3fd4b23bff
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Outfeed_Conveyor
+  Id: g=fdae692903c507866d153fc1981adc77
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=b0f34ae4ad11e2ef9070a4e5a57a6881
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM15_Outfeed_Conveyor/HMI_I_Speed_Percentage"
+    Children:
+    - Name: Mode
+      Id: g=4ed3129eb1bcc241d4981050d42e7592
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Fix_Conveyor
+  Id: g=7792fe4b97e3a56640a4606914813001
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=0d5aa7c511056e984b54bfb2c3d9c113
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM18_Fix_Conveyor/HMI_I_Speed_Percentage"
+    Children:
+    - Name: Mode
+      Id: g=8df9584f7e27164e1039c3f4f88aab79
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Star_wheel_holding_time
+  Id: g=4b12b398c298419d83088c842fbbf8f1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Id: g=3dcc716cd7ecba7f831909c776d7b95f
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Wrk_AlmOFF_DT/11/PRE"
+    Children:
+    - Name: Mode
+      Id: g=268fe4cd2110c2bae6bcb0984ce33a26
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Fill_servo_up_speed
+  Id: g=0fe25bff7b216a919e755650433280a3
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=490dd9b30e34d86b7bc34bd408d51d9b
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_All_Head_Fill_Spd"
+    Children:
+    - Name: Mode
+      Id: g=39893c5c48fbc857fa14cebc262b2dbc
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Fill_servo_down_speed
+  Id: g=cd4a3565fee7e486b5c1d99f42a43923
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=36bb4effbc0600c656e4e784f4ecab00
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_All_Head_Suck_Spd"
+    Children:
+    - Name: Mode
+      Id: g=e4fe6ecd66aabd3e6719479ea12ef475
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: 60_servo_forword
+  Id: g=da0dc6fc2dcd52c6f413a1b5735ac08d
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=6d0d439f0eb9990da35662354498a397
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_60deg_Fill_Speed"
+    Children:
+    - Name: Mode
+      Id: g=60ec60ad1f2ba1ce4397622db2ac33f4
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: 60_servo_reverse
+  Id: g=93474c0e54c1c11773604291f7b813bd
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=accf1c594b45203ddeadd834b0ed749b
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_60deg_Suck_Speed"
+    Children:
+    - Name: Mode
+      Id: g=23e6036d875c95eeac6904432b75b66c
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Second_speed_for_min_acc_at_infeed
+  Id: g=0267a6d78daef38c534273b000d7987e
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Id: g=408e63b3e73eec1965dbca3c56d41874
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_Second_Speed"
+    Children:
+    - Name: Mode
+      Id: g=7ce82ca6b41a5a1c5492cf6562544b37
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Infeed_conveyor_speed_in_hold
+  Id: g=2ddbb6b95cc44005e9d759005a3a4f87
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=a0a263bf2cbbc6b2efdfd30d55abe8b4
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_Infeed_Conv_Hold_Speed_Per"
+    Children:
+    - Name: Mode
+      Id: g=521414590eaf48a193c9c53a3113cd8a
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Outfeed_conveyor_speed_in_hold
+  Id: g=f06432e61e2f060a3df0f2fde628d90e
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=135c17295b28a7243fb14bafdb04d0ec
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_Smpl_Speed_Percentage"
+    Children:
+    - Name: Mode
+      Id: g=82f99ba7528cc6f50b2f8bdff1638ffd
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Number_of_doses
+  Id: g=5e3e447b99e56506eeaa6f3ff309abf2
+  Type: BaseDataVariableType
+  DataType: Int16
+  Children:
+  - Name: DynamicLink
+    Id: g=7a4f9458a308464cbb34a6c687d41505
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_DOSE_SELECTION"
+    Children:
+    - Name: Mode
+      Id: g=4e7737c5a394255eccbd9dd9c20141f6
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Auto_cycle_delay
+  Id: g=69de6c6e517832dc4c85b2f8c07f83f7
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Id: g=6d92d10e9ec91b94050a5326f17866c6
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Auto_Sequence/Auto_Cycle_Fill_Start_Delay/PRE"
+    Children:
+    - Name: Mode
+      Id: g=5db5b734e3594e677a44e71cd9441b92
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Fill_servo_1_fill_position
+  Id: g=0919e5026654712708302e1ab9849eeb
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=30e5ae84770ef1f07a740fc9b20a8512
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_Pos_Head1"
+    Children:
+    - Name: Mode
+      Id: g=e4b77ac7c41000902b5dee24b03cc772
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Fill_servo_2_fill_position
+  Id: g=81419477a82b22dbe445874f4160b4c3
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=83df6d516e4908512a707bfb45cfffe8
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_Pos_Head2"
+    Children:
+    - Name: Mode
+      Id: g=9e935e798df72f02913b99812d6dd0c7
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Fill_servo_3_fill_position
+  Id: g=811cff74d92caa6f62db3d963124e849
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=1bd0a7dbd3a01f6b074f292f353ce004
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_Pos_Head3"
+    Children:
+    - Name: Mode
+      Id: g=4fe7ba361f42986bc8cb6fa3a557353b
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Fill_servo_4_fill_position
+  Id: g=30bb99c531d33109461c558cb5c6b4b4
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=c4c7789d49380bcee8670078e5deb5d7
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_Pos_Head4"
+    Children:
+    - Name: Mode
+      Id: g=375899c6966024ae9ae7af8c9709a526
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Air_pressure_set_low_value
+  Id: g=8cb2badc219978bd837305253a6502ab
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=bd434298b313b95230117d3e1abc7878
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Scp_AInp00/Par_AlarmLimitLow"
+    Children:
+    - Name: Mode
+      Id: g=b79ce4c87e41a6639022dac90f5419e4
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Air_pressure_set_high_value
+  Id: g=c50e834598ad536ac3fc9ff30cadc307
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=6f9a439c49abfa18912c739f1b24c5c8
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Scp_AInp00/Par_AlarmLimitHigh"
+    Children:
+    - Name: Mode
+      Id: g=d684b216b67aa1d323295b3383c7a76c
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: rubber_stopper_vac_pre_set_low_value
+  Id: g=43d63a9b15cdb097ce2fe03313f1edb7
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=a8b89651f8e2a4a1e71367e7fe515138
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Scp_AInp01/Par_AlarmLimitLow"
+    Children:
+    - Name: Mode
+      Id: g=884890e5587a802afa956ccad3a4cbc4
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: N2_pressure_set_low_value
+  Id: g=a4f8e78eef5de41aa5b12058a72b0872
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=e668f4ef2b7a77908ca258abec644400
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Scp_AInp02/Par_AlarmLimitLow"
+    Children:
+    - Name: Mode
+      Id: g=53b75241f6c73cdaa9ed273d3d2c406d
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: N2_pressure_set_high_value
+  Id: g=0e1a301184f561f988db1a29209f8597
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=99c8ebbc45192d6bcb734dedd347b646
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Scp_AInp02/Par_AlarmLimitHigh"
+    Children:
+    - Name: Mode
+      Id: g=25f0b6f23a9efc55f56eae0702da713c
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Rejection_station_vac_pre_set_low_vallue
+  Id: g=582b4e9136ecf62142511413bbdac193
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=0dd0445397ca09573b790e7e93b3de64
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Scp_AInp03/Par_AlarmLimitLow"
+    Children:
+    - Name: Mode
+      Id: g=d272eb0f824583e7123fab3387d05a80
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Buffer_tank_weight_cell_set_low_value
+  Id: g=43b9c8ab4a9e4b21a7b21b42d41d0ae2
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=a0e9197a66960b1f650b2694fe70de7e
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Scp_AInp08/Par_AlarmLimitLow"
+    Children:
+    - Name: Mode
+      Id: g=7a6f66bdd0482de16d9a5d27089ff699
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: product_temp_set_low_value
+  Id: g=63c1583eb6178a7f3649f8e88178934f
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=fbbf54beaae882c3c8359d7240f90fec
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Scp_AInp09/Par_AlarmLimitLow"
+    Children:
+    - Name: Mode
+      Id: g=ce2513e7d910eddbc8943fea76a66add
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: product_temp_set_high_value
+  Id: g=f971000f0b2d5dcef90f2c5342476248
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=33ea2a1b392003b623e382d25d9869f5
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Scp_AInp09/Par_AlarmLimitHigh"
+    Children:
+    - Name: Mode
+      Id: g=e70ee02bb221d92fb3f43693456b3d70
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Batch_start_stop_plc
+  Id: g=1ced59873cccdc63354b15bfc02e824c
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Id: g=d69e9b2972477bd5253ffe427c03b820
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_Batch_Start"
+    Children:
+    - Name: Mode
+      Id: g=078e15ae23363e8392273d40f9537edc
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: BatchNumberChanged
+  Id: g=f4af47ab9f8a16071e2dc8c53ae4b336
+  Type: VariableChangedEventDispatcher
+  Children:
+  - Name: VariableNodePath
+    Id: g=10c9a05a0bb395422bda0da74aa78f03
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../BatchNumber"

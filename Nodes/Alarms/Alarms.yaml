@@ -1,0 +1,259 @@
+Name: Alarms
+Id: g=3293e7cd8de0bb06cc725e017a984470
+Type: AlarmsCategoryFolder
+Children:
+- File: Alarm/Alarm.yaml
+- Name: Watchdog_Fault_Between_Station_1_&_Station_2
+  Id: g=461b20e9e87bcd6fda13cd7c535c4d40
+  Type: Alarm_new_type
+  Children:
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=f32dec27d046bedce8c1492a59a3c32f
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=97b74a77fa637f75e88ea09173f6ca1c
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=89fa7023a446da921cd32705f750b2c7
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Alarms/Fill_Servo_2_Up_Limit_Switch_Pressed"
+      Children:
+      - Name: Mode
+        Id: g=42a5e8c6ed3a0673fff86d309b5f2087
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=82003d91731d9fc1eb7e945aaf951863
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Date_Time
+    Id: g=4bbbbdec1a009827f9e247a80415243c
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Id: g=2dba96c3e80ae57884c0290110c93dbe
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../NetLogic/mm_dd_yyyy_clock1/datetime"
+      Children:
+      - Name: Mode
+        Id: g=e8796a5e8716b078d491fdd24ab3b407
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Message
+    Id: g=11ea7f6d663e1fa04e5135fd0c119d3e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Watchdog Fault Between Station-1 & Station-2"}
+  - Class: Reference
+    Target: ns=25;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=135
+    Direction: Forward
+- Name: Power_failure_station1
+  Id: g=6381d7f097008ce7602bbb9b6664285a
+  Type: Alarm_new_type
+  Children:
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=dfaadd2f94b677df97f057bde5b106fc
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=7048f03ae2f9961eeadaaba6396a2f80
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=1f814fdd255c4c9521481f27fc40ff06
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Alarms/Power_failure_station1"
+      Children:
+      - Name: Mode
+        Id: g=26fd93ba1b57b072bd15eb7d2a2f9220
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=38f8cd2c0d21a9bb59ffc9139b13bc29
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Date_Time
+    Id: g=a8863d8c2dc5b209066fe546481e97c3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Id: g=e6d02bb04f61cd9cc4deba0388e09cce
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../NetLogic/mm_dd_yyyy_clock1/datetime"
+      Children:
+      - Name: Mode
+        Id: g=e4ebef7c3d4c2f7f49671453c507dd2d
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Message
+    Id: g=eaa641b130326889e908fc6bc44be543
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Power Failure At Station-1"}
+  - Class: Reference
+    Target: ns=25;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=135
+    Direction: Forward
+- Name: Alarm_new_type
+  Id: g=8e3fd76069560360d8ab603c58c04640
+  Supertype: OffNormalAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=3a8170d3260474bfff20e2d8860c5d19
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=f0373bdb4f830d53e45a84448d5989cf
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: LastEvent
+    Id: g=3c90dff6ef20d1c1d42705de00ebd3e8
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=ccb7d8a56c274bc2aa89b93c01e4b1fe
+  - Name: Date_Time
+    Id: g=172223e6b7b2136ae6ea33a878b580e2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Class: Reference
+    Target: ns=25;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=135
+    Direction: Forward
+- Name: Storagefull
+  Id: g=f7ff6eaacefc72112752aa7199c4a57c
+  Type: Alarm_new_type
+  Children:
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=ee1eb294df5421a0ea4eb931cd0896da
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=eee5ed335617d82f716b589f3726e08c
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=e9966e9215280bb54814d9ca3d5d72f6
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Storage_popup"
+      Children:
+      - Name: Mode
+        Id: g=6ccb2402229587bda29d5c52551b8624
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=93716b2fe4c6d8b9d180d610f56cb962
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Date_Time
+    Id: g=25906769fb35e1783ee6ae18430639eb
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Id: g=9d7be5a2c5fa115f58fcea7567007c55
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../NetLogic/mm_dd_yyyy_clock1/datetime"
+      Children:
+      - Name: Mode
+        Id: g=42e9188b97f7f23c6245504b9967bc2a
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Class: Reference
+    Target: ns=25;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=135
+    Direction: Forward
+  - Name: Message
+    Id: g=a1241f51c8289311a6d2c2ce47349b49
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Storage Full, Please Take Backup And Clear Storage"}

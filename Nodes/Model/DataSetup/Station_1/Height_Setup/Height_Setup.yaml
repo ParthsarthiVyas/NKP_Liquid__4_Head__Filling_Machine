@@ -1,0 +1,72 @@
+Name: Height_Setup
+Type: FolderType
+Children:
+- Name: Actual_position
+  Id: g=0f80d0ce86859bb0f34188655d0de996
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/DataSetup/Station_1/Height_Setup/Actual_position"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Set_height
+  Id: g=f8c93ddb5b80c8231671499bd98badc2
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/DataSetup/Station_1/Height_Setup/Set_height"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 140.0
+- Name: Homing
+  Id: g=de465ccf067e006ae56ef15cc3ed8f03
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/DataSetup/Station_1/Height_Setup/Homing"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Start
+  Id: g=f519fe83a2a09f4c152684afdf8cf8d9
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/DataSetup/Station_1/Height_Setup/Start"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

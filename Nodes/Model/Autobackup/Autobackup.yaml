@@ -1,0 +1,342 @@
+Name: Autobackup
+Id: g=e31fe4bef320ae494f05a8e9a5865f09
+Type: FolderType
+Children:
+- Name: Autobackuppath
+  Id: g=e31eb54be717730f9c8fe2a8fbfa3756
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "D:/"
+- Name: Automaticbackupdays
+  Id: g=559e93c67e6ee345ec76d69d21e8d378
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 10
+- Name: Autobackuppathbatch
+  Id: g=d1a54b1e70b8011118a6548317d8fe94
+  Type: BaseDataVariableType
+  DataType: String
+  Children:
+  - Name: StringFormatter1
+    Id: g=66c90c657d3f1007d1f10e769855797b
+    Type: StringFormatter
+    Children:
+    - Name: Format
+      Id: g=dfef03a82b8e76e1a34365197819b42e
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ReferenceType: HasParameter
+      Value: {"LocaleId":"en-US","Text":"BatchDB_{0}_{1}_{2}_{3}_{4}_{5}.bak"}
+    - Name: ns=3;Source0
+      Id: g=cdf3d7ef3dff97c820a071fa0bd48c13
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=346c72ac4c8b0e265ea67dc886c45af3
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/day"
+    - Name: ns=3;Source1
+      Id: g=10b9a5a921097fd9c3a19125ee4d7ada
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=2d692860224b1f937d1db7adbbf4bbed
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/month"
+    - Name: ns=3;Source2
+      Id: g=168ed114dcf24556aec9d115af76c95f
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=5a5ab653e8c5aa7b6003ed1edeb02071
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/yy"
+    - Name: ns=3;Source3
+      Id: g=c8e790b2a33c3db19dabd76e7ae4e077
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=6d9a36871bc6bf8e39028f69fa2b3449
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/hour"
+    - Name: ns=3;Source4
+      Id: g=7b3c86e05a817b7447f77c2ee87e10d8
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=ea615f3f52bdcd3c01bf9547e483db89
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/minute"
+    - Name: ns=3;Source5
+      Id: g=5daff7caad8ff01671236fbce38c8b0a
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=0a0eee49b53374dd4437bd08484eee2c
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/second"
+- Name: AutobackuppathAudit
+  Id: g=b65a2c162e52ac928ac9991030d0048b
+  Type: BaseDataVariableType
+  DataType: String
+  Children:
+  - Name: StringFormatter1
+    Id: g=170649f2e11a2dfa30e053f8ab1abdce
+    Type: StringFormatter
+    Children:
+    - Name: Format
+      Id: g=56fa3976968324d5b29453192664c86d
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ReferenceType: HasParameter
+      Value: {"LocaleId":"en-US","Text":"AuditDB_{0}_{1}_{2}_{3}_{4}_{5}.bak"}
+    - Name: ns=3;Source0
+      Id: g=f05d5a42255146f6d65690aa26f08458
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=c6cae11e9280ff4e39af470b03a0b15d
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/day"
+    - Name: ns=3;Source1
+      Id: g=01b994c6919377e2e71ec2525c80430f
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=89c2a14b3892d41cdb6fc9809cf6b7da
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/month"
+    - Name: ns=3;Source2
+      Id: g=738ab73b8041e872ab0ecbf9e38a677a
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=b5977a6dd5e234fab5214e1d3fc29b3d
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/yy"
+    - Name: ns=3;Source3
+      Id: g=5c7183b36fa081cd5af6d686a6eebdae
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=b86d9f2974d4142e6b8b2b3059d94dac
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/hour"
+    - Name: ns=3;Source4
+      Id: g=03388e73a85807e02cc61c45b68caa67
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=3a514a0efb932e1403cf36d9dcfa05be
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/minute"
+    - Name: ns=3;Source5
+      Id: g=ba87e3920be45b251b08cc55f317a695
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=c6c677399ae40390afc152b5f61ecafc
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/second"
+- Name: AutobackuppathAlarm
+  Id: g=961da10afd5868b11b05e7e79ce33cba
+  Type: BaseDataVariableType
+  DataType: String
+  Children:
+  - Name: StringFormatter1
+    Id: g=fe36f41d1fe277b76d5244640e408cd7
+    Type: StringFormatter
+    Children:
+    - Name: Format
+      Id: g=d386368de46501820096d0384ceb7106
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ReferenceType: HasParameter
+      Value: {"LocaleId":"en-US","Text":"AlarmDB_{0}_{1}_{2}_{3}_{4}_{5}.bak"}
+    - Name: ns=3;Source0
+      Id: g=75ad3675da598c37d7898a3e6975fa7f
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=7c37d9b3ae47f781e513d28c263c4c48
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/day"
+    - Name: ns=3;Source1
+      Id: g=71f6ef8ce400238fc0ba8a4933a7fb85
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=c1ae25f8288587e64d29fee1f99ae52e
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/month"
+    - Name: ns=3;Source2
+      Id: g=ae9f50ee69ca92830e8bc48776853628
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=b7a75fea972f4f3cf8086a4b1c0f12b0
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/yy"
+    - Name: ns=3;Source3
+      Id: g=a6fdbab128a3fe20d2508479c2840b80
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=dabec4658406d0ce2262f3c23be49285
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/hour"
+    - Name: ns=3;Source4
+      Id: g=2d664561e53be40c9c38dc13790870d7
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=77a4d5f0954b8c53f0b02445c7d63f4f
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/minute"
+    - Name: ns=3;Source5
+      Id: g=d708541b38fecb9f17d935372603692f
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=54fc3b1ebfe3dbe67011823b37ce7c36
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/second"
+- Name: AutobackuppathRecipe
+  Id: g=b9684603487dd8f0b3b99e858316aeb6
+  Type: BaseDataVariableType
+  DataType: String
+  Children:
+  - Name: StringFormatter1
+    Id: g=ea4d6b3818d2538d5add82ec011c75f9
+    Type: StringFormatter
+    Children:
+    - Name: Format
+      Id: g=4f6683ceea5b4ea75dcc3411e877d28e
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ReferenceType: HasParameter
+      Value: {"LocaleId":"en-US","Text":"RecipeDB_{0}_{1}_{2}_{3}_{4}_{5}.bak"}
+    - Name: ns=3;Source0
+      Id: g=62844f8c81c8fdb6df0187f394bc5ab2
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=7fe759e47321406a152df5700d355e63
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/day"
+    - Name: ns=3;Source1
+      Id: g=32bfe269a2f54736a7539c15c714d843
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=68e5239b5b87a4207cd13263c9096e43
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/month"
+    - Name: ns=3;Source2
+      Id: g=3b6e8beca48b78a1c43468a032e0ffe2
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=62fbea1a5fdc8ebca28b541b0be598b8
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/yy"
+    - Name: ns=3;Source3
+      Id: g=cdf75f77c6d1fc1021dbe706c09c6df0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=03babf1c99cd8bcee1f2114905b78649
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/hour"
+    - Name: ns=3;Source4
+      Id: g=f0caac2f60aad9ab2af6d5469c72128e
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=f943e06e5c2d44657c7a31cf6549d84f
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/minute"
+    - Name: ns=3;Source5
+      Id: g=9193ddcb2df13d6049d1601c49a6f631
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=4edf77a262e8bb4b00ac0d26902b33cf
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../NetLogic/mm_dd_yyyy_clock1/second"
+- Name: Autobackupdate
+  Id: g=dd1701519b11ea5c24117e391a96a91d
+  Type: BaseDataVariableType
+  DataType: DateTime

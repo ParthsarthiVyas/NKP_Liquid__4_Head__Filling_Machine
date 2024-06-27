@@ -1,0 +1,15 @@
+Name: Backup
+Type: FolderType
+Children:
+- Name: Alarm_history_backup
+  Type: BaseDataVariableType
+  DataType: ResourceUri
+  Value: "file:///storage/usb1/Alarm_log_databackup.Bak"
+- Name: Data_logger_backup
+  Type: BaseDataVariableType
+  DataType: ResourceUri
+  Value: "file:///storage/usb1/Event_log_backup.Bak"
+- Name: Recipe
+  Type: BaseDataVariableType
+  DataType: ResourceUri
+  Value: "file:///storage/usb1/recipe_databackup.Bak"

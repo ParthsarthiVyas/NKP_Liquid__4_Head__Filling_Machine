@@ -1,0 +1,43 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: mm_dd_yyyy_clock1
+  Type: NetLogic
+  Children:
+  - Name: datetime
+    Type: BaseDataVariableType
+    DataType: DateString
+    Value: "Jan 1, 1601, 12:00:00 AM"
+  - Name: date
+    Type: BaseDataVariableType
+    DataType: DateString
+    Value: "0"
+  - Name: time
+    Type: BaseDataVariableType
+    DataType: TimeString
+    Value: "0"
+  - Name: day
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: month
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: year
+    Type: BaseDataVariableType
+    DataType: Int16
+  - Name: hour
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: minute
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: second
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: yy
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Date2
+    Type: BaseDataVariableType
+    DataType: DateString
+    Value: "Jan 1, 1601, 12:00:00 AM"

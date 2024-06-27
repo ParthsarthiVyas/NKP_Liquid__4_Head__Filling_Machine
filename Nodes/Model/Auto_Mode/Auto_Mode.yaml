@@ -1,0 +1,17 @@
+Name: Auto_Mode
+Type: FolderType
+Children:
+- File: Station_1/Station_1.yaml
+- Name: Automodeselect
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/Auto_Mode/Automodeselect"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

@@ -1,0 +1,37 @@
+Name: Tags
+Type: FolderType
+Children:
+- File: Controller_Tags/Controller_Tags.yaml
+- File: Program_Analog_Handling/Program_Analog_Handling.yaml
+- File: Program_Auto_Sequence/Program_Auto_Sequence.yaml
+- File: Program_Deg_60_Servo_1/Program_Deg_60_Servo_1.yaml
+- File: Program_Deg_60_Servo_2/Program_Deg_60_Servo_2.yaml
+- File: Program_EM01_Head_1/Program_EM01_Head_1.yaml
+- File: Program_EM02_Head_2/Program_EM02_Head_2.yaml
+- File: Program_EM03_Head_3/Program_EM03_Head_3.yaml
+- File: Program_EM04_Head_4/Program_EM04_Head_4.yaml
+- File: Program_EM05_Head_5/Program_EM05_Head_5.yaml
+- File: Program_EM06_Head_6/Program_EM06_Head_6.yaml
+- File: Program_EM07_Head_7/Program_EM07_Head_7.yaml
+- File: Program_EM08_Head_8/Program_EM08_Head_8.yaml
+- File: Program_EM09_60deg_1/Program_EM09_60deg_1.yaml
+- File: Program_EM10_60deg_2/Program_EM10_60deg_2.yaml
+- File: Program_EM11_Rubber_Stopper/Program_EM11_Rubber_Stopper.yaml
+- File: Program_EM12_Infeed_Turn_Table/Program_EM12_Infeed_Turn_Table.yaml
+- File: Program_EM13_Infeed_Conveyor/Program_EM13_Infeed_Conveyor.yaml
+- File: Program_EM14_Nozzle/Program_EM14_Nozzle.yaml
+- File: Program_EM15_Outfeed_Conveyor/Program_EM15_Outfeed_Conveyor.yaml
+- File: Program_EM16_Rubber_Stopper_Hgt_UpDn/Program_EM16_Rubber_Stopper_Hgt_UpDn.yaml
+- File: Program_EM17_Vibrator_Hgt_UpDn/Program_EM17_Vibrator_Hgt_UpDn.yaml
+- File: Program_EM18_Fix_Conveyor/Program_EM18_Fix_Conveyor.yaml
+- File: Program_Fast_Alarm/Program_Fast_Alarm.yaml
+- File: Program_Head_1/Program_Head_1.yaml
+- File: Program_Head_2/Program_Head_2.yaml
+- File: Program_Head_3/Program_Head_3.yaml
+- File: Program_Head_4/Program_Head_4.yaml
+- File: Program_Head_5/Program_Head_5.yaml
+- File: Program_Head_6/Program_Head_6.yaml
+- File: Program_Head_7/Program_Head_7.yaml
+- File: Program_Head_8/Program_Head_8.yaml
+- File: Program_Point_ASC/Program_Point_ASC.yaml
+- File: Program_UN01_ExampleMachine/Program_UN01_ExampleMachine.yaml

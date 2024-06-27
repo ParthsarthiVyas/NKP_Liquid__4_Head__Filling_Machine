@@ -1,0 +1,63 @@
+Name: UserObjects
+Type: FolderType
+Children:
+- Name: UserGroups
+  Type: BaseObjectType
+  Children:
+  - Name: UserGroupName
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Value: ["0","0","0","0","0"]
+  - Name: UserGroupCounts
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 5
+- Name: PasswordPolicy
+  Type: BaseObjectType
+  Children:
+  - Name: UppercaseCharacter
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: LowercaseCharacter
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: SpecialCharacter
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: NumericCharacter
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: InvalidLoginAttemptLimit
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 3
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Retain_Variable/InvalidLoginAttempt"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: PasswordExpiryAlertDays
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 50
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Retain_Variable/PasswordExpiryDays"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2

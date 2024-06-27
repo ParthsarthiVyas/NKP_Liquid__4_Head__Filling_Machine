@@ -1,0 +1,1706 @@
+Name: 'Program:UN01_ExampleMachine'
+Type: FolderType
+Children:
+- Name: A1
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.A1"
+- Name: Act_Print_Label_Cons_Rej_Cntr
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Act_Print_Label_Cons_Rej_Cntr"
+- Name: Act_TE_Label_Cons_Rej_Cntr
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Act_TE_Label_Cons_Rej_Cntr"
+- Name: Act_TE_Label_Cons_Rej_Cntr1
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Act_TE_Label_Cons_Rej_Cntr1"
+- Name: Cfg_DisableStates
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [32]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Cfg_DisableStates"
+- Name: Cfg_ModeNames
+  Type: RAEtherNetIPTag
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [32]
+  Value: ["","Manual Mode","","Auto MOde","","","","","","","","","","","","","","","","","","","","","","","","","","","",""]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Cfg_ModeNames"
+- Name: Cfg_ModeTransitions
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [32]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Cfg_ModeTransitions"
+- Name: HMI_I_MODE
+  Type: RAEtherNetIPTag
+  DataType: SByte
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.HMI_I_MODE"
+- Name: HMI_O_MachineSafetyFault
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.HMI_O_MachineSafetyFault"
+- Name: HMI_O_MajorFaultMessage
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.HMI_O_MajorFaultMessage"
+- Name: HMI_O_Message
+  Type: RAEtherNetIPTag
+  DataType: String
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.HMI_O_Message"
+- Name: HMI_O_MinorFaultMessage
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.HMI_O_MinorFaultMessage"
+- Name: HMI_O_ModeCurrentName
+  Type: RAEtherNetIPTag
+  DataType: String
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.HMI_O_ModeCurrentName"
+- Name: HMI_O_StateCurrentName
+  Type: RAEtherNetIPTag
+  DataType: String
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.HMI_O_StateCurrentName"
+- Name: Inp_BatchCountSetpoint
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_BatchCountSetpoint"
+- Name: Inp_DownstreamMaterialInterlock
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_DownstreamMaterialInterlock"
+- Name: Inp_ESTOPButton1
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_ESTOPButton1"
+- Name: Inp_ESTOPButton2
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_ESTOPButton2"
+- Name: Inp_ESTOPButton3
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_ESTOPButton3"
+- Name: Inp_GuardDoor1
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_GuardDoor1"
+- Name: Inp_GuardDoor2
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_GuardDoor2"
+- Name: Inp_GuardDoor3
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_GuardDoor3"
+- Name: Inp_Hardwired_Clear
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_Hardwired_Clear"
+- Name: Inp_Hardwired_Hold
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_Hardwired_Hold"
+- Name: Inp_Hardwired_Reset
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_Hardwired_Reset"
+- Name: Inp_Hardwired_Start
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_Hardwired_Start"
+- Name: Inp_Hardwired_Stop
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_Hardwired_Stop"
+- Name: Inp_Hardwired_UnHold
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_Hardwired_UnHold"
+- Name: Inp_LightCurtain1
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_LightCurtain1"
+- Name: Inp_LightCurtain2
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_LightCurtain2"
+- Name: Inp_LightCurtain3
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_LightCurtain3"
+- Name: Inp_LowLubrication
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_LowLubrication"
+- Name: Inp_LowMagazine
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_LowMagazine"
+- Name: Inp_MachineJam_Infeed
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_MachineJam_Infeed"
+- Name: Inp_MachineJam_Outfeed
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_MachineJam_Outfeed"
+- Name: Inp_NetworksOK
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_NetworksOK"
+- Name: Inp_UpstreamMaterialInterlock
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Inp_UpstreamMaterialInterlock"
+- Name: MG_ShutDown_1
+  Type: MOTION_INSTRUCTION
+  DataType: MOTION_INSTRUCTION
+  Children:
+  - Name: FLAGS
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.MG_ShutDown_1.FLAGS"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.MG_ShutDown_1.EN"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.MG_ShutDown_1.DN"
+  - Name: ER
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.MG_ShutDown_1.ER"
+  - Name: PC
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.MG_ShutDown_1.PC"
+  - Name: IP
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.MG_ShutDown_1.IP"
+  - Name: AC
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.MG_ShutDown_1.AC"
+  - Name: ACCEL
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.MG_ShutDown_1.ACCEL"
+  - Name: DECEL
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.MG_ShutDown_1.DECEL"
+  - Name: TrackingMaster
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.MG_ShutDown_1.TrackingMaster"
+  - Name: CalculatedDataAvailable
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.MG_ShutDown_1.CalculatedDataAvailable"
+  - Name: ERR
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.MG_ShutDown_1.ERR"
+  - Name: STATUS
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.MG_ShutDown_1.STATUS"
+  - Name: STATE
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.MG_ShutDown_1.STATE"
+  - Name: SEGMENT
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.MG_ShutDown_1.SEGMENT"
+  - Name: EXERR
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.MG_ShutDown_1.EXERR"
+- Name: OutputOFF
+  Type: TIMER
+  DataType: TIMER
+  ValueRank: OneDimension
+  ArrayDimensions: [8]
+  Children:
+  - Name: 0
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[0].PRE"
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[0].ACC"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[0].EN"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[0].TT"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[0].DN"
+  - Name: 1
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[1].PRE"
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[1].ACC"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[1].EN"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[1].TT"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[1].DN"
+  - Name: 2
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[2].PRE"
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[2].ACC"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[2].EN"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[2].TT"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[2].DN"
+  - Name: 3
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[3].PRE"
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[3].ACC"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[3].EN"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[3].TT"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[3].DN"
+  - Name: 4
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[4].PRE"
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[4].ACC"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[4].EN"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[4].TT"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[4].DN"
+  - Name: 5
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[5].PRE"
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[5].ACC"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[5].EN"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[5].TT"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[5].DN"
+  - Name: 6
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[6].PRE"
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[6].ACC"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[6].EN"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[6].TT"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[6].DN"
+  - Name: 7
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[7].PRE"
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[7].ACC"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[7].EN"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[7].TT"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.OutputOFF[7].DN"
+- Name: Prev_Mode_Selected
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Prev_Mode_Selected"
+- Name: Set_Snsr_Error_Ctr
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [5]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Set_Snsr_Error_Ctr"
+- Name: Shutdown_MAS_L
+  Type: MOTION_INSTRUCTION
+  DataType: MOTION_INSTRUCTION
+  Children:
+  - Name: FLAGS
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_L.FLAGS"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_L.EN"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_L.DN"
+  - Name: ER
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_L.ER"
+  - Name: PC
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_L.PC"
+  - Name: IP
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_L.IP"
+  - Name: AC
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_L.AC"
+  - Name: ACCEL
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_L.ACCEL"
+  - Name: DECEL
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_L.DECEL"
+  - Name: TrackingMaster
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_L.TrackingMaster"
+  - Name: CalculatedDataAvailable
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_L.CalculatedDataAvailable"
+  - Name: ERR
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_L.ERR"
+  - Name: STATUS
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_L.STATUS"
+  - Name: STATE
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_L.STATE"
+  - Name: SEGMENT
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_L.SEGMENT"
+  - Name: EXERR
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_L.EXERR"
+- Name: Shutdown_MAS_R
+  Type: MOTION_INSTRUCTION
+  DataType: MOTION_INSTRUCTION
+  Children:
+  - Name: FLAGS
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_R.FLAGS"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_R.EN"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_R.DN"
+  - Name: ER
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_R.ER"
+  - Name: PC
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_R.PC"
+  - Name: IP
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_R.IP"
+  - Name: AC
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_R.AC"
+  - Name: ACCEL
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_R.ACCEL"
+  - Name: DECEL
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_R.DECEL"
+  - Name: TrackingMaster
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_R.TrackingMaster"
+  - Name: CalculatedDataAvailable
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_R.CalculatedDataAvailable"
+  - Name: ERR
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_R.ERR"
+  - Name: STATUS
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_R.STATUS"
+  - Name: STATE
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_R.STATE"
+  - Name: SEGMENT
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_R.SEGMENT"
+  - Name: EXERR
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Shutdown_MAS_R.EXERR"
+- Name: Sts_GoodProducts
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Sts_GoodProducts"
+- Name: Sts_MSG_MachineFault
+  Type: RAEtherNetIPTag
+  DataType: String
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Sts_MSG_MachineFault"
+- Name: Sts_MSG_MachineHealthy
+  Type: RAEtherNetIPTag
+  DataType: String
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Sts_MSG_MachineHealthy"
+- Name: SwitchMode_All
+  Type: PackML_QuickModeChange_AOI_1
+  DataType: PackML_QuickModeChange_AOI_1
+  Children:
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.EnableOut"
+  - Name: Out_ResetCmd
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.Out_ResetCmd"
+  - Name: Out_StartCmd
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.Out_StartCmd"
+  - Name: Out_StopCmd
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.Out_StopCmd"
+  - Name: Sts_ER
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.Sts_ER"
+  - Name: Sts_DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.Sts_DN"
+- Name: T_Snsr_Off_DT
+  Type: TIMER
+  DataType: TIMER
+  ValueRank: OneDimension
+  ArrayDimensions: [6]
+  Children:
+  - Name: 0
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[0].PRE"
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[0].ACC"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[0].EN"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[0].TT"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[0].DN"
+  - Name: 1
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[1].PRE"
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[1].ACC"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[1].EN"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[1].TT"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[1].DN"
+  - Name: 2
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[2].PRE"
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[2].ACC"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[2].EN"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[2].TT"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[2].DN"
+  - Name: 3
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[3].PRE"
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[3].ACC"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[3].EN"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[3].TT"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[3].DN"
+  - Name: 4
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[4].PRE"
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[4].ACC"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[4].EN"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[4].TT"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[4].DN"
+  - Name: 5
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[5].PRE"
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[5].ACC"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[5].EN"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[5].TT"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.T_Snsr_Off_DT[5].DN"
+- Name: Upper_Lim
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Upper_Lim"
+- Name: Wrk_AbortRequest
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_AbortRequest"
+- Name: Wrk_ClearRequest
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_ClearRequest"
+- Name: Wrk_Compare_All_EM_Enabled
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_Compare_All_EM_Enabled"
+- Name: Wrk_CompleteRequest
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_CompleteRequest"
+- Name: Wrk_Cons_Gap_Detect_Error_Ctr1
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_Cons_Gap_Detect_Error_Ctr1"
+- Name: Wrk_Cons_Gap_Detect_Error_Ctr2
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_Cons_Gap_Detect_Error_Ctr2"
+- Name: Wrk_Gap_Sgnl_Chk_Degree_HL
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_Gap_Sgnl_Chk_Degree_HL"
+- Name: Wrk_Gap_Sgnl_Chk_Degree_LL
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_Gap_Sgnl_Chk_Degree_LL"
+- Name: Wrk_HoldRequest
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_HoldRequest"
+- Name: Wrk_ResetRequest
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_ResetRequest"
+- Name: Wrk_Snsr_Error_Ctr
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [5]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_Snsr_Error_Ctr"
+- Name: Wrk_Snsr_On_Latched
+  Type: RAEtherNetIPTag
+  DataType: Int16
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_Snsr_On_Latched"
+- Name: Wrk_StartRequest
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_StartRequest"
+- Name: Wrk_StartWarningExpired
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_StartWarningExpired"
+- Name: Wrk_StartWarning_TON
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Wrk_StartWarning_TON.PRE"
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Wrk_StartWarning_TON.ACC"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Wrk_StartWarning_TON.EN"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Wrk_StartWarning_TON.TT"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Wrk_StartWarning_TON.DN"
+- Name: Wrk_StopRequest
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_StopRequest"
+- Name: Wrk_SuspendRequest
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_SuspendRequest"
+- Name: Wrk_Track_Rst
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Wrk_Track_Rst.PRE"
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Wrk_Track_Rst.ACC"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Wrk_Track_Rst.EN"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Wrk_Track_Rst.TT"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.Wrk_Track_Rst.DN"
+- Name: Wrk_UN01_AllSafetyOK
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_UN01_AllSafetyOK"
+- Name: Wrk_UN01_EstopOK
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_UN01_EstopOK"
+- Name: Wrk_UN01_GuardsOK
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_UN01_GuardsOK"
+- Name: Wrk_UN01_LightCurtainsOK
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_UN01_LightCurtainsOK"
+- Name: Wrk_UN01_NetworkCommunicationOK
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_UN01_NetworkCommunicationOK"
+- Name: Wrk_UnHoldRequest
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:UN01_ExampleMachine.Wrk_UnHoldRequest"

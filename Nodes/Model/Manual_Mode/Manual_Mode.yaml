@@ -1,0 +1,201 @@
+Name: Manual_Mode
+Type: FolderType
+Children:
+- File: Station1/Station1.yaml
+- Name: Manualmodeselect
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/Manual_Mode/Manualmodeselect"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Manual_select
+  Id: g=a7bdef6e40e62a035089f239781a3e1c
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Object1
+  Id: g=294e73925dd45ffb6603e06ed7ad8b0b
+  Type: BaseObjectType
+  Children:
+  - Name: 'EM 11 - Rubber Stopper'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "11"
+  - Name: 'EM12 - Infeed Turn Table'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "12"
+  - Name: 'EM13 - Infeed Conveyor'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "13"
+  - Name: 'EM15 - Outfeed Conveyor'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "15"
+  - Name: 'EM18 - Fix Conveyor'
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "={0}"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: KeyValueConverter1
+        Type: ValueMapConverter
+        Children:
+        - Name: Source
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../Variable4"
+        - Name: ns=3;Pairs
+          Type: BaseObjectType
+          Children:
+          - Name: Pair
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Variable1"
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: Int32
+              Value: 1
+          - Name: Pair1
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Variable2"
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: Int32
+              Value: 2
+          - Name: Pair2
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Variable3"
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: Int32
+              Value: 3
+          - Name: Pair3
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Variable4"
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: Int32
+              Value: 4
+          - Name: Pair4
+            Type: ValueMapPair
+            Children:
+            - Name: Key
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Variable5"
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: Int32
+              Value: 5
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: KeyValueConverter1
+    Type: ValueMapConverter
+    Children:
+    - Name: Source
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Variable1"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: ns=3;Pairs
+      Type: BaseObjectType
+      Children:
+      - Name: Pair
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Manual Mode"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Int32
+          Value: 1
+      - Name: Pair1
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Auto Mode"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Int32
+          Value: 3
+    - Name: Mode
+      Type: PropertyType
+      DataType: DynamicLinkMode
+      ReferenceType: HasComponent
+      Value: 2
+- Name: Variable4
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Object2
+  Id: g=e57a3a8a0464ee9eaf3be44eebdb90b9
+  Type: BaseObjectType
+  Children:
+  - Name: Manual Mode
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1"
+  - Name: Auto Mode
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "3"

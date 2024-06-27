@@ -1,0 +1,240 @@
+Name: Recipes
+Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema
+  Id: g=80efc9a9c4db930aa764783fc0d507bb
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: Recipe_Name_T1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Syringe_ID
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: 'Set_Volume '
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Required_Stroke
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Product_Density
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Machine_Speed
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Vial_Size (ml)
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Infeed_Turn_Table
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Infeed_Conveyor
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Fix_Conveyor
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Auto_Cycle_Delay_Time
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Rubber_Stopper_Motor
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Outfeed_Conveyor
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Fill_Servo_Up_Speed
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Fill_Servo_Down_Speed
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: 60_Deg_Forward_Speed
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: 60_Deg_Reverse_Speed
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Fill_Head_Servo_1
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Fill_Head_Servo_2
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Fill_Head_Servo_3
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Fill_Head_Servo_4
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Fallen_Vial_Alarm_Delay
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Rejection_Valve_1_Off_Delay
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Rejection_Valve_2_Off_Delay
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Number_Of_Doses
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Second_Speed_for_Min._Acc._At_Infeed_T.T.
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Infeed_Conveyor_Speed_In_Hold_Condition
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Outfeed_Conveyor_Speed_In_Sampling_Mode
+      Type: BaseDataVariableType
+      DataType: Float
+  - Class: Reference
+    Target: ns=23;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=60
+    Direction: Forward
+  - Name: TableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Recipe"
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Recipe/Recipe_tags"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Recipe"
+  - Name: EditModel
+    Id: g=5fc9ccb40d8bd9d9ca139f918a003746
+    Type: BaseObjectType
+    Children:
+    - Name: Recipe_Name_T1
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Syringe_ID
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: 'Set_Volume '
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Required_Stroke
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Product_Density
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Machine_Speed
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Vial_Size (ml)
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Infeed_Turn_Table
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Infeed_Conveyor
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Fix_Conveyor
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Auto_Cycle_Delay_Time
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Rubber_Stopper_Motor
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Outfeed_Conveyor
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Fill_Servo_Up_Speed
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Fill_Servo_Down_Speed
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: 60_Deg_Forward_Speed
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: 60_Deg_Reverse_Speed
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Fill_Head_Servo_1
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Fill_Head_Servo_2
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Fill_Head_Servo_3
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Fill_Head_Servo_4
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Fallen_Vial_Alarm_Delay
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Rejection_Valve_1_Off_Delay
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Rejection_Valve_2_Off_Delay
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Number_Of_Doses
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Second_Speed_for_Min._Acc._At_Infeed_T.T.
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Infeed_Conveyor_Speed_In_Hold_Condition
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Outfeed_Conveyor_Speed_In_Sampling_Mode
+      Type: BaseDataVariableType
+      DataType: Float
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/DataStores/Recipe_DB"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"

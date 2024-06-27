@@ -1,0 +1,511 @@
+Name: 'Program:Head_2'
+Type: FolderType
+Children:
+- Name: Filling_Accel_Rate_Head
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Head_2.Filling_Accel_Rate_Head"
+- Name: Filling_Decel_Rate_Head
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Head_2.Filling_Decel_Rate_Head"
+- Name: Filling_MAM_Head
+  Type: raC_Opr_K5100_MAM
+  DataType: raC_Opr_K5100_MAM
+  Children:
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Filling_MAM_Head.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Filling_MAM_Head.EnableOut"
+  - Name: Sts_EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Filling_MAM_Head.Sts_EN"
+  - Name: Sts_DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Filling_MAM_Head.Sts_DN"
+  - Name: Sts_ER
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Filling_MAM_Head.Sts_ER"
+  - Name: Sts_IP
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Filling_MAM_Head.Sts_IP"
+  - Name: Sts_PC
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Filling_MAM_Head.Sts_PC"
+  - Name: Sts_ERR
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Filling_MAM_Head.Sts_ERR"
+  - Name: Set_PositionReference
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Filling_MAM_Head.Set_PositionReference"
+  - Name: Set_SpeedReference
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Filling_MAM_Head.Set_SpeedReference"
+  - Name: Set_AccelReference
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Filling_MAM_Head.Set_AccelReference"
+  - Name: Set_DecelReference
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Filling_MAM_Head.Set_DecelReference"
+  - Name: Set_MoveType
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Filling_MAM_Head.Set_MoveType"
+  - Name: Set_PositionCommandOverride
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Filling_MAM_Head.Set_PositionCommandOverride"
+  - Name: Set_PositionCommandOverlap
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Filling_MAM_Head.Set_PositionCommandOverlap"
+  - Name: Set_CapturedPositionSelect
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Filling_MAM_Head.Set_CapturedPositionSelect"
+- Name: Filling_Pos_Head
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Head_2.Filling_Pos_Head"
+- Name: Filling_Spd_Head
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Head_2.Filling_Spd_Head"
+- Name: HMI_I_Suck_Back_Pos_Head
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Head_2.HMI_I_Suck_Back_Pos_Head"
+- Name: HMI_I_Suck_Pos_Head
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Head_2.HMI_I_Suck_Pos_Head"
+- Name: Suck_Accel_Rate_Head
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Head_2.Suck_Accel_Rate_Head"
+- Name: Suck_Back_Accel_Rate_Head
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Head_2.Suck_Back_Accel_Rate_Head"
+- Name: Suck_Back_Decel_Rate_Head
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Head_2.Suck_Back_Decel_Rate_Head"
+- Name: Suck_Back_MAM_Head
+  Type: raC_Opr_K5100_MAM
+  DataType: raC_Opr_K5100_MAM
+  Children:
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_Back_MAM_Head.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_Back_MAM_Head.EnableOut"
+  - Name: Sts_EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_Back_MAM_Head.Sts_EN"
+  - Name: Sts_DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_Back_MAM_Head.Sts_DN"
+  - Name: Sts_ER
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_Back_MAM_Head.Sts_ER"
+  - Name: Sts_IP
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_Back_MAM_Head.Sts_IP"
+  - Name: Sts_PC
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_Back_MAM_Head.Sts_PC"
+  - Name: Sts_ERR
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_Back_MAM_Head.Sts_ERR"
+  - Name: Set_PositionReference
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_Back_MAM_Head.Set_PositionReference"
+  - Name: Set_SpeedReference
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_Back_MAM_Head.Set_SpeedReference"
+  - Name: Set_AccelReference
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_Back_MAM_Head.Set_AccelReference"
+  - Name: Set_DecelReference
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_Back_MAM_Head.Set_DecelReference"
+  - Name: Set_MoveType
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_Back_MAM_Head.Set_MoveType"
+  - Name: Set_PositionCommandOverride
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_Back_MAM_Head.Set_PositionCommandOverride"
+  - Name: Set_PositionCommandOverlap
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_Back_MAM_Head.Set_PositionCommandOverlap"
+  - Name: Set_CapturedPositionSelect
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_Back_MAM_Head.Set_CapturedPositionSelect"
+- Name: Suck_Back_Pos_Head
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Head_2.Suck_Back_Pos_Head"
+- Name: Suck_Back_Spd_Head
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Head_2.Suck_Back_Spd_Head"
+- Name: Suck_Decel_Rate_Head
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Head_2.Suck_Decel_Rate_Head"
+- Name: Suck_MAM_Head
+  Type: raC_Opr_K5100_MAM
+  DataType: raC_Opr_K5100_MAM
+  Children:
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_MAM_Head.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_MAM_Head.EnableOut"
+  - Name: Sts_EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_MAM_Head.Sts_EN"
+  - Name: Sts_DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_MAM_Head.Sts_DN"
+  - Name: Sts_ER
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_MAM_Head.Sts_ER"
+  - Name: Sts_IP
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_MAM_Head.Sts_IP"
+  - Name: Sts_PC
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_MAM_Head.Sts_PC"
+  - Name: Sts_ERR
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_MAM_Head.Sts_ERR"
+  - Name: Set_PositionReference
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_MAM_Head.Set_PositionReference"
+  - Name: Set_SpeedReference
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_MAM_Head.Set_SpeedReference"
+  - Name: Set_AccelReference
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_MAM_Head.Set_AccelReference"
+  - Name: Set_DecelReference
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_MAM_Head.Set_DecelReference"
+  - Name: Set_MoveType
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_MAM_Head.Set_MoveType"
+  - Name: Set_PositionCommandOverride
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_MAM_Head.Set_PositionCommandOverride"
+  - Name: Set_PositionCommandOverlap
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_MAM_Head.Set_PositionCommandOverlap"
+  - Name: Set_CapturedPositionSelect
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_2.Suck_MAM_Head.Set_CapturedPositionSelect"
+- Name: Suck_Pos_Head
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Head_2.Suck_Pos_Head"
+- Name: Suck_Spd_Head
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Head_2.Suck_Spd_Head"

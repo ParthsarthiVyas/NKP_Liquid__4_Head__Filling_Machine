@@ -1,0 +1,107 @@
+Name: DriveStatus
+Type: FolderType
+Children:
+- Name: ClearFaultMainMotorDrive
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/I_O_Screen/Station_1/DriveStatus/ClearFaultMainMotorDrive"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: ClearFaultConveyorMotorDrive
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/I_O_Screen/Station_1/DriveStatus/ClearFaultConveyorMotorDrive"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: ClearFaultSpinningMotor1Drive
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/I_O_Screen/Station_1/DriveStatus/ClearFaultSpinningMotor1Drive"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: ClearFaultSpinningMotor2Drive
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/I_O_Screen/Station_1/DriveStatus/ClearFaultSpinningMotor2Drive"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: MainMotorFault
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/I_O_Screen/Station_1/DriveStatus/MainMotorFault"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: ConveyorMotorFault
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/I_O_Screen/Station_1/DriveStatus/ConveyorMotorFault"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: SpinningMotor1Fault
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/I_O_Screen/Station_1/DriveStatus/SpinningMotor1Fault"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: SpinningMotor2Fault
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/I_O_Screen/Station_1/DriveStatus/SpinningMotor2Fault"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

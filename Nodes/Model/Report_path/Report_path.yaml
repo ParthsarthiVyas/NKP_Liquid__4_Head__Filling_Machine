@@ -1,0 +1,43 @@
+Name: Report_path
+Id: g=655d2433a8a8e584f7f414f07234020e
+Type: FolderType
+Children:
+- Name: Batch_Summery_path
+  Id: g=2c0e8fe4156de645d67b40a2fe80303e
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "/storage/usb1/Batch_summary_report.pdf"
+- Name: Set_Parameter
+  Id: g=57813b938b2178649363c02bc6911ff8
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Log_Alarm_event
+  Id: g=9223a60f9b91d977d02929e41a210223
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "/storage/usb1/Batch_log_report.pdf"
+- Name: Batch_Summery_path1
+  Id: g=c7250131a9c4cb2077aa6514c8891663
+  Type: BaseDataVariableType
+  DataType: ResourceUri
+- Name: Log_Alarm_report
+  Id: g=6eadbfcb634d16839b771835ec4b6188
+  Type: BaseDataVariableType
+  DataType: ResourceUri
+- Name: Set_parameter_1
+  Id: g=4355231aa2124042c9257891a5f907f6
+  Type: BaseDataVariableType
+  DataType: ResourceUri
+- Name: Set_parameter_2
+  Id: g=9a1c1747efd82ef6bb28f61593ac62dc
+  Type: BaseDataVariableType
+  DataType: ResourceUri
+- Name: Moving_Path
+  Id: g=47d2e7666f75d4b57c0a043e23dbe89f
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Alarm_report
+  Id: g=5632c54b8186db940249e4c77e9595b6
+  Type: BaseDataVariableType
+  DataType: ResourceUri

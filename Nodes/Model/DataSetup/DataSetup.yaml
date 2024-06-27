@@ -1,0 +1,4 @@
+Name: DataSetup
+Type: FolderType
+Children:
+- File: Station_1/Station_1.yaml

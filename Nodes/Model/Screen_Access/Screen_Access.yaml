@@ -1,0 +1,423 @@
+Name: Screen_Access
+Id: g=dddff5dd6b54176b8e0b7adf5744ba8b
+Type: FolderType
+Children:
+- Name: Operator
+  Id: g=d919a2d7cb00eb1855f8e950cb7c2edd
+  Type: BaseObjectType
+  Children:
+  - Name: Auto_Screen
+    Id: g=d2b8ae77956cdf3ac73e56b951b56882
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Manual_Screen
+    Id: g=834313fe253de79113c27ad07cd628b9
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Machine_mode
+    Id: g=2b35824dfe3cc79412ea040a97748b94
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Primimg_mode
+    Id: g=1a7e6e09dc000be14cb07eb0e3318a23
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: I_O
+    Id: g=952579f425266a0b2e97b65d22516afe
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Batch
+    Id: g=e0b009a30d51954775fb1d863c7a06ac
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Reports
+    Id: g=1a1bfa479e59d270bfcb835b6b7f6a4c
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Usermanagement
+    Id: g=863432cee0028bd136f37cb9c4dceb71
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Alarm
+    Id: g=fcd337a6e263a5a5d5f0c2b3b369aefa
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Recipe
+    Id: g=2468df29581ded15470873c06bca3634
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AuditSigning Signature
+    Id: g=19db10f03b320f1cd0c5b7e4fa26ba5f
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Id: g=d32e14f8dd9f13aa160d32aef78ec5d0
+      Type: BaseObjectType
+    - Name: Groups
+      Id: g=9258cdaccbcfcd338ec8b3d33b8ff77e
+      Type: BaseObjectType
+    - Name: WorkflowType
+      Id: g=e82b0019af129741828b9d607ede580e
+      Type: PropertyType
+      DataType: WorkflowType
+  - Name: Calibration_Setup
+    Id: g=e118b9df499f09ad182c13367b563cef
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Timer_Setup
+    Id: g=3d637032883d1a29db737e59a1b77d03
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Rejection_Setup
+    Id: g=3586a5a42f7ed5563374865401e55666
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Servo_Bypass_Setup
+    Id: g=eda0639b1f377658bef89219a6ffcbdc
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Process_Setup
+    Id: g=cd1ca4c188f1442ad70a37f490f8fa65
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Supervisor
+  Id: g=82b3fae70b66329a16ec9e91c64c1ebd
+  Type: BaseObjectType
+  Children:
+  - Name: Auto_Screen
+    Id: g=35365b4d46d81715b32601e3c6953e9b
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Manual_Screen
+    Id: g=4c6e363accf5ff6852314f93ac3b8891
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Machine_Mode
+    Id: g=c1db931ac4a2a5911077f1a12fb0c867
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Primimg_Mode
+    Id: g=13a57d4069461c7d579a146645c4983c
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: I_O
+    Id: g=033151150e0eaa29e97948d7ea13f25e
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Batch
+    Id: g=98e815ca6fdea730d0df5f091077d339
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Reports
+    Id: g=8f2101c1510b61ae4eec52f0e01fef6d
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Usermanagement
+    Id: g=ab4ba8ce2be594f606620d6bfc592d7d
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Alarm
+    Id: g=1636adc77597cc01fb76f13579072f48
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Recipe
+    Id: g=76444276356395ccc27531e19abef406
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AuditSigning Signature
+    Id: g=403f15e9ca4ad7a67411a590ee1a22ef
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Id: g=16a30d778bcbe2df3a11a380bb5bef21
+      Type: BaseObjectType
+    - Name: Groups
+      Id: g=7b0abac14c2ae9da83b073d972346fa1
+      Type: BaseObjectType
+  - Name: Calibration_Setup
+    Id: g=30fcc0904466fd136885c89e36857728
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Timer_Setup
+    Id: g=1ad631d18fbfebbdbfaa96a7ad60473e
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Rejection_Setup
+    Id: g=e4164db3347946bd832aa8448ba5c769
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Servo_Bypass_Setup
+    Id: g=b4eb6c7da7a921446c9b88e440e64b1f
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Process_Setup
+    Id: g=a3899631426aa0c9f11e40239e4b4eca
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Manager
+  Id: g=db41f1ee610d655242485562dd418d14
+  Type: BaseObjectType
+  Children:
+  - Name: Auto_Screen
+    Id: g=c1fb76f4ce51fd8533008500fbee67de
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Manual_Screen
+    Id: g=d4afab67e02cb7578262b9b9622baf5c
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Machine_Mode
+    Id: g=ada80d9dfebbc786373caf8b6802a685
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Primimg_Mode
+    Id: g=3195707bbd70f61027cd6114f823839a
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: I_O
+    Id: g=8f0bc236056eca2cc0367f9df8874773
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Batch
+    Id: g=5038ffe223f880808a93aa5bf46560e7
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Reports
+    Id: g=f830a4cf0e0d13ffbd8bd9faa4871e6d
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Usermanagement
+    Id: g=57e188db105f12f1861d5f3f5a12386f
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Alarm
+    Id: g=26fe4b865a2b0f0786cc4367348b4ff2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Recipe
+    Id: g=7f33294d2f1b818d700b8548fdf5bce3
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AuditSigning Signature
+    Id: g=b6b5ba692c71604f84df49036557f8a3
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Id: g=fd473381813f4e642a4671eb3658c8c8
+      Type: BaseObjectType
+    - Name: Groups
+      Id: g=84c3e0170b2afb2a07a5021283f30158
+      Type: BaseObjectType
+  - Name: Calibration_Setup
+    Id: g=344d3e9366c9f5ee3e8227ae706d3ed3
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Timer_Setup
+    Id: g=7d866fce7dd0eb7b001062d72b908593
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Rejection_Setup
+    Id: g=f2adea9326d8f70aa0aa8f8cda501e31
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Servo_Bypass_Setup
+    Id: g=67fc19ef694589a9614aac02fce93ca9
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Process_Setup
+    Id: g=724cd1ad87779b987eb9fe682a9c624d
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Engineer
+  Id: g=e2c7020874813108919b90d3feb8daea
+  Type: BaseObjectType
+  Children:
+  - Name: Auto_Screen
+    Id: g=41bb5c2c8968052c94ca185dd2db893e
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Manual_Screen
+    Id: g=78f141d0c6a61ff28bc65d5193c207f0
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Machine_mode
+    Id: g=93ba65e7cf3ec85f1087c6e9c78f884a
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Primimg_Mode
+    Id: g=6c62ae16cb2a2b2738376d028ccbb87b
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: I_O
+    Id: g=3e45f0b24a92a7681426d09984322155
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Batch
+    Id: g=1374b58950799dc554d3821b9862388d
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Reports
+    Id: g=dc3bff759d1be0126a36bb96417b39c5
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Usermanagement
+    Id: g=9ae79283f425f9440c57dfa2c3b944c9
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Alarm
+    Id: g=5f7be9a28c248edb39ccdbeab7f3df94
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Recipe
+    Id: g=c3f4390acd311d167e841cba01fdca72
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AuditSigning Signature
+    Id: g=b8a9d7a4ee57feff1e17630139dccabd
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Id: g=e4929853212aff0e134487832bd40478
+      Type: BaseObjectType
+    - Name: Groups
+      Id: g=ff3eb2beef541ee042124cc8b2e52031
+      Type: BaseObjectType
+  - Name: Calibration_Setup
+    Id: g=8cfb2edd6a4302a3ebe17094010da9bc
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Timer_Setup
+    Id: g=46bcbeec4ee83e5eced7eb01e1bcd372
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Rejection_Setup
+    Id: g=46d29fd67f1b3ea442aa41177a482ef3
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Servo_Bypass_Setup
+    Id: g=13d87606febf5078dc8eac14f746dcdc
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Process_Setup
+    Id: g=65dc048a85effe0e5e4fa74f89946224
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Administrator
+  Id: g=db72558ce7e52feb6bc09a8139020620
+  Type: BaseObjectType
+  Children:
+  - Name: Auto_Screen
+    Id: g=5b140142d6ee1ea257a13b5daaa5889f
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Manual_Screen
+    Id: g=0bb35d7582134453550c6c2115e3ffcb
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Machine_Mode
+    Id: g=b84fa3c78b185acae0114866dd2ca762
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Primimg_Mode
+    Id: g=eaff67a893d669925c6de279117c32fe
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: I_O
+    Id: g=8f770c9d1f40680c2af76e5e792ce2a2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Batch
+    Id: g=817e44a40eebe2f46560e7a090d1d156
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Reports
+    Id: g=6cccd761e17959dc7eae7d0905ea8875
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Usermanagement
+    Id: g=7333d0f731a086af08c6bb0fd63fe393
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Alarm
+    Id: g=db9800aad081113eb914c95c28620115
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Recipe
+    Id: g=12baaebc54d3f75305df92925c44927f
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AuditSigning Signature
+    Id: g=bdfe9264ba2221aac7f4056032e152c3
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Id: g=f9aa29c648b097da3fefcf3976004c9c
+      Type: BaseObjectType
+    - Name: Groups
+      Id: g=7d6005c35794b1268f593e3ef089f053
+      Type: BaseObjectType
+  - Name: Calibration_Setup
+    Id: g=28e58a0f9dfedd6cc07e238e33f0eba1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Timer_Setup
+    Id: g=afd794bb0226063c1063718d697dd7e8
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Rejection_Setup
+    Id: g=74c09f5f3dc8896eb8c8ed4fcf3f7436
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Servo_Bypass_Setup
+    Id: g=c1fd4d891b4a99a1972fa59c61f57e7a
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Process_Setup
+    Id: g=b6d90309d38212bf50a1f967a0c28cf3
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true

@@ -1,0 +1,19 @@
+Name: 'Program:Fast_Alarm'
+Type: FolderType
+Children:
+- Name: one_Shot
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Fast_Alarm.one_Shot"
+- Name: Wrk_Almcheck_Set_Strock
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Fast_Alarm.Wrk_Almcheck_Set_Strock"

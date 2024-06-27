@@ -1,0 +1,5 @@
+Name: Report
+Type: FolderType
+Children:
+- File: Alarm_report/Alarm_report.yaml
+- File: Batch_report/Batch_report.yaml

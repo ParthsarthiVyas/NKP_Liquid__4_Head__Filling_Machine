@@ -1,0 +1,6 @@
+Name: Station_1
+Type: FolderType
+Children:
+- File: InputStatus/InputStatus.yaml
+- File: OutputStatus/OutputStatus.yaml
+- File: DriveStatus/DriveStatus.yaml

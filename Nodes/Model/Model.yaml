@@ -1,0 +1,172 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: Auto_Mode/Auto_Mode.yaml
+- File: Manual_Mode/Manual_Mode.yaml
+- File: I_O_Screen/I_O_Screen.yaml
+- File: DataSetup/DataSetup.yaml
+- File: Retain_Variable/Retain_Variable.yaml
+- File: BatchData_Station_1/BatchData_Station_1.yaml
+- File: Recipe/Recipe.yaml
+- File: Alarms/Alarms.yaml
+- File: Report_path/Report_path.yaml
+- File: FileExplorer_ReportPDF_Model/FileExplorer_ReportPDF_Model.yaml
+- File: Backup/Backup.yaml
+- Name: AutoLogOutTrigger
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: event_log_on_off
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Batch_summary
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/Batch_summary"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Set_Parameter
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Progressive Number
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/PrintTags/L19&:20     PROGRESSIVENUMBER"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: NameOfRecipe
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Printed_BY
+  Id: g=b931c45bcca17fd54061a645956f6d88
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Event_Message
+  Id: g=83e5609bc53f6f1b915bd91d3e52a56a
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Event MessageChanged
+  Type: VariableChangedEventDispatcher
+  Children:
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../Event_Message"
+- Name: Storage_limit
+  Id: g=8d2af329a9af074288b9d369f896c7a5
+  Type: AnalogItemType
+  DataType: Int32
+  Children:
+  - Name: EURange
+    Id: g=9db667d38c934221df2bc50372c03f79
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=07492068f3b4b16ef6839eb932ae3a8d
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Id: g=90a4401743b1d042cd9ed1b9d8252eb4
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10.0
+- Name: Storage_popup
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Storage_condition
+  Id: g=5f6674c151979d9dbbe83ec5e96e7229
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Batch_count
+  Id: g=460bdcb4691af4d75c4705fd92caacd7
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: UsbDetect
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Previous_date
+  Id: g=a7e425f65813a1e51bf183e530ff9caa
+  Type: BaseDataVariableType
+  DataType: DateString
+  Value: "0"
+- Name: LockScreen
+  Id: g=1cb027e33aa610aa1ad12a33028b1398
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/Lock_bit"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Lock_password
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/Password_lock"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Hourlock
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/Hour_Lock"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- File: Screen_Access/Screen_Access.yaml
+- File: Databasepath/Databasepath.yaml
+- Name: Backupmessage
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Backupmessage1
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Backupmessage2
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Backupmessage3
+  Type: BaseDataVariableType
+  DataType: String
+- Name: RestoreDBMessage
+  Type: BaseDataVariableType
+  DataType: String
+- File: Autobackup/Autobackup.yaml
+- File: Report/Report.yaml

@@ -21,6 +21,7 @@ using FTOptix.Core;
 using System.Threading;
 using FTOptix.RAEtherNetIP;
 using FTOptix.Modbus;
+using System.IO;
 #endregion
 
 public class RuntimeNetLogic3 : BaseNetLogic
@@ -50,33 +51,34 @@ public class RuntimeNetLogic3 : BaseNetLogic
         SQLiteStore db = (SQLiteStore)Project.Current.Get<Store>("DataStores/EDB_Batch_Report");
         //Label Message2 = (Label)LogicObject.Owner.Owner.Get("Label3");
         string message1 = Project.Current.GetVariable("Model/RestoreDBMessage").Value;
-        string selectedpath1 = selectedpath;
+        ResourceUri selectedpath1 = selectedpath;
         if (selectedpath.StartsWith("file:///"))
         {
             selectedpath = selectedpath.Substring("file:///".Length);
         }
 
-            string[] parts = selectedpath.Split('_');
-            string data = parts[0];
-        string[] part1 = data.Split('/');
-        if (part1.Length > 0 && part1[1]== "BatchDB") // Trim the extracted database name
+        // Extract the last part of the path after the final '/'
+        string fileName = Path.GetFileName(selectedpath);
+
+        // Perform the restore operation only if the extracted file name matches the expected format
+        if (!string.IsNullOrEmpty(fileName) && fileName.StartsWith("BatchDB") && fileName.EndsWith(".bak"))
         {
+
             db.Restore(selectedpath1);
+
             AuditTrailLogging RecipeSavedLog = new AuditTrailLogging();
             RecipeSavedLog.LogIntoAudit("DB", "Batch DB Restore", Session.User.BrowseName, "Database Restore");
             message1 = "Database is Restoring";
         }
         else
         {
-            // Message2.Text = part1[1];
             AuditTrailLogging RecipeSavedLog = new AuditTrailLogging();
             RecipeSavedLog.LogIntoAudit("DB", "Batch DB Wrong Selection", Session.User.BrowseName, "Database Restore");
             message1 = "Selected Backup Is Not Batch Database, Please Select Proper Database.";
-            
         }
+
         Project.Current.GetVariable("Model/RestoreDBMessage").Value = message1;
         Thread.Sleep(3000);
-        //Message2.Text = "";
         Project.Current.GetVariable("Model/RestoreDBMessage").Value = "";
 
     }

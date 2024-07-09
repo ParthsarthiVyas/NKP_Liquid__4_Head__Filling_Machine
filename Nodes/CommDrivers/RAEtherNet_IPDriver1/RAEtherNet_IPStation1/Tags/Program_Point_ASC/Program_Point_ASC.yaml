@@ -9,50 +9,6 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Program:Point_ASC.Auto_Stop_Event"
-- Name: Event_Footer_Print
-  Type: TIMER
-  DataType: TIMER
-  Children:
-  - Name: PRE
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:Point_ASC.Event_Footer_Print.PRE"
-  - Name: ACC
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:Point_ASC.Event_Footer_Print.ACC"
-  - Name: EN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:Point_ASC.Event_Footer_Print.EN"
-  - Name: TT
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:Point_ASC.Event_Footer_Print.TT"
-  - Name: DN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:Point_ASC.Event_Footer_Print.DN"
 - Name: Event_Print_Trigger
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -117,22 +73,6 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Program:Point_ASC.HMI_I_Event_Report"
-- Name: ONS_BIT_1
-  Type: RAEtherNetIPTag
-  DataType: Boolean
-  Children:
-  - Name: SymbolName
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "Program:Point_ASC.ONS_BIT_1"
-- Name: Previous_String
-  Type: RAEtherNetIPTag
-  DataType: String
-  Children:
-  - Name: SymbolName
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "Program:Point_ASC.Previous_String"
 - Name: RcvRecord
   Type: RAEtherNetIPTag
   DataType: SByte
@@ -157,18 +97,18 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Program:Point_ASC.Test_Temp_Bit"
+- Name: Previous_String
+  Type: RAEtherNetIPTag
+  DataType: String
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Point_ASC.Previous_String"
 - Name: Wrk_Trig_Delay
   Type: TIMER
   DataType: TIMER
   Children:
-  - Name: PRE
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:Point_ASC.Wrk_Trig_Delay.PRE"
   - Name: ACC
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -177,22 +117,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:Point_ASC.Wrk_Trig_Delay.ACC"
-  - Name: EN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:Point_ASC.Wrk_Trig_Delay.EN"
-  - Name: TT
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:Point_ASC.Wrk_Trig_Delay.TT"
   - Name: DN
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -201,3 +125,79 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:Point_ASC.Wrk_Trig_Delay.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Point_ASC.Wrk_Trig_Delay.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Point_ASC.Wrk_Trig_Delay.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Point_ASC.Wrk_Trig_Delay.TT"
+- Name: ONS_BIT_1
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Point_ASC.ONS_BIT_1"
+- Name: Event_Footer_Print
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Point_ASC.Event_Footer_Print.ACC"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Point_ASC.Event_Footer_Print.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Point_ASC.Event_Footer_Print.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Point_ASC.Event_Footer_Print.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Point_ASC.Event_Footer_Print.TT"

@@ -5,7 +5,7 @@ Children:
 - Name: Route
   Type: BaseDataVariableType
   DataType: String
-  Value: "192.168.1.1"
+  Value: "101.101.103.2"
 - Name: StationStatusVariables
   Type: PropertyGroup
   Children:
@@ -121,3 +121,6 @@ Children:
   Children:
   - File: DataTypes/DataTypes.yaml
   - File: VariableTypes/VariableTypes.yaml
+- Name: EnableExtendedProperties
+  Type: BaseDataVariableType
+  DataType: Boolean

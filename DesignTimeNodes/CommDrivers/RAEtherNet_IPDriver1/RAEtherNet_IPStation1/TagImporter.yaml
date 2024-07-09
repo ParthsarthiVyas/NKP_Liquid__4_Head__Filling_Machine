@@ -16,3 +16,7 @@ Children:
   Type: BaseDataVariableType
   DataType: AbsoluteResourceUri
   Value: "file:///D:/Program/Project NKP/Liquid  4 Head  Filling Machine/NKLFRS-120SR/2.PLC/NKLFRS_200SR11032024.ACD"
+- Name: Mode
+  Type: BaseDataVariableType
+  DataType: FetchModes
+  Value: 1

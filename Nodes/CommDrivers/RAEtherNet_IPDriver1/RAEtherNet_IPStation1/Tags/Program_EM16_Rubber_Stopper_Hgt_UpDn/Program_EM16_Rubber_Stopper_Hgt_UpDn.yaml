@@ -13,14 +13,6 @@ Children:
   Type: TIMER
   DataType: TIMER
   Children:
-  - Name: PRE
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Comm_Fault_Sts_Timer.PRE"
   - Name: ACC
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -29,22 +21,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Comm_Fault_Sts_Timer.ACC"
-  - Name: EN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Comm_Fault_Sts_Timer.EN"
-  - Name: TT
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Comm_Fault_Sts_Timer.TT"
   - Name: DN
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -53,6 +29,30 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Comm_Fault_Sts_Timer.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Comm_Fault_Sts_Timer.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Comm_Fault_Sts_Timer.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Comm_Fault_Sts_Timer.TT"
 - Name: Comm_Status
   Type: RAEtherNetIPTag
   DataType: Int32
@@ -81,14 +81,6 @@ Children:
   Type: TIMER
   DataType: TIMER
   Children:
-  - Name: PRE
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Height_Start_Delay.PRE"
   - Name: ACC
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -97,22 +89,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Height_Start_Delay.ACC"
-  - Name: EN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Height_Start_Delay.EN"
-  - Name: TT
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Height_Start_Delay.TT"
   - Name: DN
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -121,6 +97,30 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Height_Start_Delay.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Height_Start_Delay.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Height_Start_Delay.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Height_Start_Delay.TT"
 - Name: HMI_I_Clear_Fault
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -137,31 +137,10 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.HMI_I_Over_Load"
-  - Name: ns=0;EURange
-    Type: RangeType
-    DataType: Range
-    Children:
-    - Name: Low
-      Type: BaseVariableType
-      DataType: Double
-      ReferenceType: HasProperty
-    - Name: High
-      Type: BaseVariableType
-      DataType: Double
-      ReferenceType: HasProperty
-      Value: 3.0
 - Name: Homedelay
   Type: TIMER
   DataType: TIMER
   Children:
-  - Name: PRE
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homedelay.PRE"
   - Name: ACC
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -170,22 +149,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homedelay.ACC"
-  - Name: EN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homedelay.EN"
-  - Name: TT
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homedelay.TT"
   - Name: DN
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -194,10 +157,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homedelay.DN"
-- Name: Homming_Delay
-  Type: TIMER
-  DataType: TIMER
-  Children:
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homedelay.EN"
   - Name: PRE
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -205,7 +172,19 @@ Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homming_Delay.PRE"
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homedelay.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homedelay.TT"
+- Name: Homming_Delay
+  Type: TIMER
+  DataType: TIMER
+  Children:
   - Name: ACC
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -214,22 +193,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homming_Delay.ACC"
-  - Name: EN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homming_Delay.EN"
-  - Name: TT
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homming_Delay.TT"
   - Name: DN
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -238,10 +201,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homming_Delay.DN"
-- Name: Homming_Timeout_Error
-  Type: TIMER
-  DataType: TIMER
-  Children:
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homming_Delay.EN"
   - Name: PRE
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -249,7 +216,19 @@ Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homming_Timeout_Error.PRE"
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homming_Delay.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homming_Delay.TT"
+- Name: Homming_Timeout_Error
+  Type: TIMER
+  DataType: TIMER
+  Children:
   - Name: ACC
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -258,22 +237,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homming_Timeout_Error.ACC"
-  - Name: EN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homming_Timeout_Error.EN"
-  - Name: TT
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homming_Timeout_Error.TT"
   - Name: DN
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -282,6 +245,30 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homming_Timeout_Error.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homming_Timeout_Error.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homming_Timeout_Error.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Homming_Timeout_Error.TT"
 - Name: Inp_LastStored_ActualCounts
   Type: RAEtherNetIPTag
   DataType: Int32
@@ -310,46 +297,6 @@ Children:
   Type: 'AB:PowerFlex525V_E_8A02D441:I:0'
   DataType: 'AB:PowerFlex525V_E_8A02D441:I:0'
   Children:
-  - Name: DriveStatus
-    Type: RAEtherNetIPTag
-    DataType: Int16
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.DriveStatus"
-  - Name: Ready
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.Ready"
-  - Name: Active
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.Active"
-  - Name: CommandDir
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.CommandDir"
-  - Name: ActualDir
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.ActualDir"
   - Name: Accelerating
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -358,22 +305,22 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.Accelerating"
-  - Name: Decelerating
+  - Name: Active
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.Decelerating"
-  - Name: Faulted
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.Active"
+  - Name: ActualDir
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.Faulted"
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.ActualDir"
   - Name: AtReference
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -382,6 +329,22 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.AtReference"
+  - Name: CommandDir
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.CommandDir"
+  - Name: CommandedFreq
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.CommandedFreq"
   - Name: CommFreqCnt
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -398,14 +361,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.CommLogicCnt"
-  - Name: ParmsLocked
+  - Name: Decelerating
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.ParmsLocked"
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.Decelerating"
   - Name: DigIn1Active
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -438,14 +401,22 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.DigIn4Active"
-  - Name: OutputFreq
+  - Name: DriveStatus
     Type: RAEtherNetIPTag
     DataType: Int16
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.OutputFreq"
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.DriveStatus"
+  - Name: Faulted
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.Faulted"
   - Name: OutputCurrent
     Type: RAEtherNetIPTag
     DataType: Int16
@@ -454,6 +425,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.OutputCurrent"
+  - Name: OutputFreq
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.OutputFreq"
   - Name: OutputVoltage
     Type: RAEtherNetIPTag
     DataType: Int16
@@ -462,90 +441,26 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.OutputVoltage"
-  - Name: CommandedFreq
+  - Name: ParmsLocked
     Type: RAEtherNetIPTag
-    DataType: Int16
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.CommandedFreq"
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.ParmsLocked"
+  - Name: Ready
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_I.Ready"
 - Name: Ref_PF525_O
   Type: 'AB:PowerFlex525V_E_5483BAFD:O:0'
   DataType: 'AB:PowerFlex525V_E_5483BAFD:O:0'
   Children:
-  - Name: LogicCommand
-    Type: RAEtherNetIPTag
-    DataType: Int16
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.LogicCommand"
-  - Name: Stop
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.Stop"
-  - Name: Start
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.Start"
-  - Name: Jog
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.Jog"
-  - Name: ClearFaults
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.ClearFaults"
-  - Name: Forward
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.Forward"
-  - Name: Reverse
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.Reverse"
-  - Name: ForceKeypadCtrl
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.ForceKeypadCtrl"
-  - Name: MOPIncrement
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.MOPIncrement"
   - Name: AccelRate1
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -562,6 +477,22 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.AccelRate2"
+  - Name: AccelTime1
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.AccelTime1"
+  - Name: ClearFaults
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.ClearFaults"
   - Name: DecelRate1
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -578,6 +509,38 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.DecelRate2"
+  - Name: DecelTime1
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.DecelTime1"
+  - Name: ForceKeypadCtrl
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.ForceKeypadCtrl"
+  - Name: Forward
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.Forward"
+  - Name: FreqCommand
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.FreqCommand"
   - Name: FreqSel01
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -602,6 +565,22 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.FreqSel03"
+  - Name: Jog
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.Jog"
+  - Name: LogicCommand
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.LogicCommand"
   - Name: MOPDecrement
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -610,42 +589,42 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.MOPDecrement"
-  - Name: FreqCommand
+  - Name: MOPIncrement
     Type: RAEtherNetIPTag
-    DataType: Int16
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.FreqCommand"
-  - Name: AccelTime1
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.MOPIncrement"
+  - Name: Reverse
     Type: RAEtherNetIPTag
-    DataType: Int16
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.AccelTime1"
-  - Name: DecelTime1
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.Reverse"
+  - Name: Start
     Type: RAEtherNetIPTag
-    DataType: Int16
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.DecelTime1"
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.Start"
+  - Name: Stop
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Ref_PF525_O.Stop"
 - Name: ReTrigger
   Type: TIMER
   DataType: TIMER
   Children:
-  - Name: PRE
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.ReTrigger.PRE"
   - Name: ACC
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -654,22 +633,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.ReTrigger.ACC"
-  - Name: EN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.ReTrigger.EN"
-  - Name: TT
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.ReTrigger.TT"
   - Name: DN
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -678,10 +641,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.ReTrigger.DN"
-- Name: ReTriggerInit
-  Type: TIMER
-  DataType: TIMER
-  Children:
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.ReTrigger.EN"
   - Name: PRE
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -689,7 +656,19 @@ Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.ReTriggerInit.PRE"
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.ReTrigger.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.ReTrigger.TT"
+- Name: ReTriggerInit
+  Type: TIMER
+  DataType: TIMER
+  Children:
   - Name: ACC
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -698,22 +677,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.ReTriggerInit.ACC"
-  - Name: EN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.ReTriggerInit.EN"
-  - Name: TT
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.ReTriggerInit.TT"
   - Name: DN
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -722,6 +685,30 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.ReTriggerInit.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.ReTriggerInit.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.ReTriggerInit.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.ReTriggerInit.TT"
 - Name: Turret_Homming_Timeout
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -750,238 +737,206 @@ Children:
   Type: PF525_Faceplate_AOI
   DataType: PF525_Faceplate_AOI
   Children:
-  - Name: EnableIn
+  - Name: CLEAR_Fault
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.EnableIn"
-  - Name: EnableOut
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.CLEAR_Fault"
+  - Name: Cmd_Accel1Oper
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.EnableOut"
-  - Name: Inp_NumRowsVis
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Inp_NumRowsVis"
-  - Name: Set_FaceplateAnimation
-    Type: RAEtherNetIPTag
-    DataType: Int16
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_FaceplateAnimation"
-  - Name: Sts_ProgramModeEnabled
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_Accel1Oper"
+  - Name: Cmd_Accel1Prog
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_ProgramModeEnabled"
-  - Name: Sts_OperatorModeEnabled
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_Accel1Prog"
+  - Name: Cmd_Accel2Oper
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_OperatorModeEnabled"
-  - Name: Sts_DriveStatus_Faulted
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_Accel2Oper"
+  - Name: Cmd_Accel2Prog
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_DriveStatus_Faulted"
-  - Name: Sts_DriveStatus_Active
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_Accel2Prog"
+  - Name: Cmd_Decel1Oper
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_DriveStatus_Active"
-  - Name: Sts_DriveStatus_Ready
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_Decel1Oper"
+  - Name: Cmd_Decel1Prog
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_DriveStatus_Ready"
-  - Name: Sts_DriveStatus_Alarm
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_Decel1Prog"
+  - Name: Cmd_Decel2Oper
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_DriveStatus_Alarm"
-  - Name: Sts_DriveStatus_AtSpeed
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_Decel2Oper"
+  - Name: Cmd_Decel2Prog
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_DriveStatus_AtSpeed"
-  - Name: Sts_CommFault
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_Decel2Prog"
+  - Name: Cmd_FreqSel01Oper
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_CommFault"
-  - Name: Sts_DriveStatus_ActualDir
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_FreqSel01Oper"
+  - Name: Cmd_FreqSel01Prog
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_DriveStatus_ActualDir"
-  - Name: Sts_DeviceState
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_FreqSel01Prog"
+  - Name: Cmd_FreqSel02Oper
     Type: RAEtherNetIPTag
-    DataType: Int32
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_DeviceState"
-  - Name: Sts_Value1
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_FreqSel02Oper"
+  - Name: Cmd_FreqSel02Prog
     Type: RAEtherNetIPTag
-    DataType: Float
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_Value1"
-  - Name: Sts_Value2
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_FreqSel02Prog"
+  - Name: Cmd_FreqSel03Oper
     Type: RAEtherNetIPTag
-    DataType: Float
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_Value2"
-  - Name: Sts_Value3
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_FreqSel03Oper"
+  - Name: Cmd_FreqSel03Prog
     Type: RAEtherNetIPTag
-    DataType: Float
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_Value3"
-  - Name: Sts_Value4
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_FreqSel03Prog"
+  - Name: Cmd_FwdOper
     Type: RAEtherNetIPTag
-    DataType: Float
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_Value4"
-  - Name: Set_TrendNextPenOper
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_FwdOper"
+  - Name: Cmd_FwdProg
     Type: RAEtherNetIPTag
-    DataType: Int32
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_TrendNextPenOper"
-  - Name: Set_Value1Min
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_FwdProg"
+  - Name: Cmd_JogOper
     Type: RAEtherNetIPTag
-    DataType: Int32
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_Value1Min"
-  - Name: Set_Value1Max
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_JogOper"
+  - Name: Cmd_JogProg
     Type: RAEtherNetIPTag
-    DataType: Int32
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_Value1Max"
-  - Name: Set_Value2Min
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_JogProg"
+  - Name: Cmd_LocalContrlOper
     Type: RAEtherNetIPTag
-    DataType: Int32
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_Value2Min"
-  - Name: Set_Value2Max
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_LocalContrlOper"
+  - Name: Cmd_LocalContrlProg
     Type: RAEtherNetIPTag
-    DataType: Int32
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_Value2Max"
-  - Name: Set_Value3Max
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_LocalContrlProg"
+  - Name: Cmd_MOPDecOper
     Type: RAEtherNetIPTag
-    DataType: Int32
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_Value3Max"
-  - Name: Set_Value3Min
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_MOPDecOper"
+  - Name: Cmd_MOPDecProg
     Type: RAEtherNetIPTag
-    DataType: Int32
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_Value3Min"
-  - Name: Val_TrendMax
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_MOPDecProg"
+  - Name: Cmd_MOPIncOper
     Type: RAEtherNetIPTag
-    DataType: Int32
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Val_TrendMax"
-  - Name: Val_TrendMin
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_MOPIncOper"
+  - Name: Cmd_MOPIncProg
     Type: RAEtherNetIPTag
-    DataType: Int32
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Val_TrendMin"
-  - Name: Val_SpdFdbk_Units
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Val_SpdFdbk_Units"
-  - Name: Val_Fault1Code
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Val_Fault1Code"
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_MOPIncProg"
   - Name: Cmd_OperOperReq
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -990,14 +945,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_OperOperReq"
-  - Name: Cmd_ProgOperReq
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_ProgOperReq"
   - Name: Cmd_OperProgReq
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -1006,6 +953,22 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_OperProgReq"
+  - Name: Cmd_OperToProgPermissive
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_OperToProgPermissive"
+  - Name: Cmd_ProgOperReq
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_ProgOperReq"
   - Name: Cmd_ProgProgReq
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -1014,6 +977,46 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_ProgProgReq"
+  - Name: Cmd_ProgToOperPermissive
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_ProgToOperPermissive"
+  - Name: Cmd_ResetOper
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_ResetOper"
+  - Name: Cmd_ResetProg
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_ResetProg"
+  - Name: Cmd_RevOper
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_RevOper"
+  - Name: Cmd_RevProg
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_RevProg"
   - Name: Cmd_StartOper
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -1046,358 +1049,46 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_StopProg"
-  - Name: Cmd_ResetOper
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_ResetOper"
-  - Name: Cmd_ResetProg
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_ResetProg"
-  - Name: Cmd_JogOper
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_JogOper"
-  - Name: Cmd_JogProg
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_JogProg"
-  - Name: Cmd_FwdOper
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_FwdOper"
-  - Name: Cmd_FwdProg
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_FwdProg"
-  - Name: Cmd_RevOper
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_RevOper"
-  - Name: Cmd_RevProg
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_RevProg"
-  - Name: Cmd_OperToProgPermissive
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_OperToProgPermissive"
-  - Name: Cmd_ProgToOperPermissive
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_ProgToOperPermissive"
-  - Name: Set_SpeedOper
-    Type: RAEtherNetIPTag
-    DataType: Int16
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_SpeedOper"
-  - Name: Cmd_MOPIncProg
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_MOPIncProg"
-  - Name: Cmd_MOPIncOper
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_MOPIncOper"
-  - Name: Cmd_Accel1Oper
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_Accel1Oper"
-  - Name: Cmd_Accel2Oper
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_Accel2Oper"
-  - Name: Cmd_Decel1Oper
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_Decel1Oper"
-  - Name: Cmd_Decel2Oper
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_Decel2Oper"
-  - Name: Cmd_Accel1Prog
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_Accel1Prog"
-  - Name: Cmd_Accel2Prog
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_Accel2Prog"
-  - Name: Cmd_Decel1Prog
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_Decel1Prog"
-  - Name: Cmd_Decel2Prog
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_Decel2Prog"
-  - Name: Cmd_MOPDecProg
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_MOPDecProg"
-  - Name: Cmd_MOPDecOper
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_MOPDecOper"
-  - Name: Set_AccelProg
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_AccelProg"
-  - Name: Set_DecelProg
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_DecelProg"
-  - Name: Set_CommFaultTimerPresetProg
+  - Name: Comm_Status
     Type: RAEtherNetIPTag
     DataType: Int32
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_CommFaultTimerPresetProg"
-  - Name: Cmd_LocalContrlProg
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Comm_Status"
+  - Name: Controller_trigger
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_LocalContrlProg"
-  - Name: Cmd_LocalContrlOper
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Controller_trigger"
+  - Name: EnableIn
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_LocalContrlOper"
-  - Name: Cmd_FreqSel01Prog
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.EnableIn"
+  - Name: EnableOut
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_FreqSel01Prog"
-  - Name: Cmd_FreqSel01Oper
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_FreqSel01Oper"
-  - Name: Cmd_FreqSel02Prog
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_FreqSel02Prog"
-  - Name: Cmd_FreqSel02Oper
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_FreqSel02Oper"
-  - Name: Cmd_FreqSel03Prog
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_FreqSel03Prog"
-  - Name: Cmd_FreqSel03Oper
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Cmd_FreqSel03Oper"
-  - Name: Set_SpeedProg
-    Type: RAEtherNetIPTag
-    DataType: Int16
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_SpeedProg"
-  - Name: Set_CommFaultTimerPresetOper
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_CommFaultTimerPresetOper"
-  - Name: Set_DecelOper
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.EnableOut"
+  - Name: GearRatio
     Type: RAEtherNetIPTag
     DataType: Float
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_DecelOper"
-  - Name: Set_AccelOper
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_AccelOper"
-  - Name: Inp_FaultCode
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Inp_FaultCode"
-  - Name: NotReady_Fault
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.NotReady_Fault"
-  - Name: CLEAR_Fault
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.CLEAR_Fault"
-  - Name: Module_FaultTrigger
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Module_FaultTrigger"
-  - Name: Module_FaultCode
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Module_FaultCode"
-  - Name: RESET_Fault
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.RESET_Fault"
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.GearRatio"
   - Name: Inp_Display_Val_1
     Type: RAEtherNetIPTag
     DataType: Float
@@ -1430,22 +1121,22 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Inp_Display_Val_4"
-  - Name: Comm_Status
+  - Name: Inp_FaultCode
     Type: RAEtherNetIPTag
     DataType: Int32
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Comm_Status"
-  - Name: Sts_DriveStatus_CommFault
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Inp_FaultCode"
+  - Name: Inp_NumRowsVis
     Type: RAEtherNetIPTag
-    DataType: Boolean
+    DataType: Int32
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_DriveStatus_CommFault"
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Inp_NumRowsVis"
   - Name: Inst_Error
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -1462,43 +1153,30 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.LastFaultCode"
-  - Name: SpdRef_Units
+  - Name: Module_FaultCode
     Type: RAEtherNetIPTag
-    DataType: Float
+    DataType: Int32
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.SpdRef_Units"
-    - Name: ns=0;EURange
-      Type: RangeType
-      DataType: Range
-      Children:
-      - Name: Low
-        Type: BaseVariableType
-        DataType: Double
-        ReferenceType: HasProperty
-      - Name: High
-        Type: BaseVariableType
-        DataType: Double
-        ReferenceType: HasProperty
-        Value: 50.0
-  - Name: SpdScaler60Hz
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Module_FaultCode"
+  - Name: Module_FaultTrigger
     Type: RAEtherNetIPTag
-    DataType: Float
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.SpdScaler60Hz"
-  - Name: GearRatio
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Module_FaultTrigger"
+  - Name: NotReady_Fault
     Type: RAEtherNetIPTag
-    DataType: Float
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.GearRatio"
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.NotReady_Fault"
   - Name: Out_SpdRef_Units
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -1507,30 +1185,238 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Out_SpdRef_Units"
-  - Name: Val_OutputFreq
+  - Name: RESET_Fault
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.RESET_Fault"
+  - Name: Set_AccelOper
     Type: RAEtherNetIPTag
     DataType: Float
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Val_OutputFreq"
-  - Name: Val_OutputCurrent
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_AccelOper"
+  - Name: Set_AccelProg
     Type: RAEtherNetIPTag
     DataType: Float
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Val_OutputCurrent"
-  - Name: Val_OutputVoltage
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_AccelProg"
+  - Name: Set_CommFaultTimerPresetOper
     Type: RAEtherNetIPTag
     DataType: Int32
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Val_OutputVoltage"
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_CommFaultTimerPresetOper"
+  - Name: Set_CommFaultTimerPresetProg
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_CommFaultTimerPresetProg"
+  - Name: Set_DecelOper
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_DecelOper"
+  - Name: Set_DecelProg
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_DecelProg"
+  - Name: Set_FaceplateAnimation
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_FaceplateAnimation"
+  - Name: Set_SpeedOper
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_SpeedOper"
+  - Name: Set_SpeedProg
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_SpeedProg"
+  - Name: Set_TrendNextPenOper
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_TrendNextPenOper"
+  - Name: Set_Value1Max
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_Value1Max"
+  - Name: Set_Value1Min
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_Value1Min"
+  - Name: Set_Value2Max
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_Value2Max"
+  - Name: Set_Value2Min
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_Value2Min"
+  - Name: Set_Value3Max
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_Value3Max"
+  - Name: Set_Value3Min
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Set_Value3Min"
+  - Name: SpdRef_Units
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.SpdRef_Units"
+  - Name: SpdScaler60Hz
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.SpdScaler60Hz"
+  - Name: Sts_CommFault
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_CommFault"
+  - Name: Sts_DeviceState
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_DeviceState"
+  - Name: Sts_DriveStatus_Active
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_DriveStatus_Active"
+  - Name: Sts_DriveStatus_ActualDir
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_DriveStatus_ActualDir"
+  - Name: Sts_DriveStatus_Alarm
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_DriveStatus_Alarm"
+  - Name: Sts_DriveStatus_AtSpeed
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_DriveStatus_AtSpeed"
+  - Name: Sts_DriveStatus_CommFault
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_DriveStatus_CommFault"
+  - Name: Sts_DriveStatus_Faulted
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_DriveStatus_Faulted"
+  - Name: Sts_DriveStatus_Ready
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_DriveStatus_Ready"
+  - Name: Sts_OperatorModeEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_OperatorModeEnabled"
   - Name: Sts_PowerflexAlarmTrigger
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -1539,14 +1425,102 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_PowerflexAlarmTrigger"
-  - Name: Controller_trigger
+  - Name: Sts_ProgramModeEnabled
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Controller_trigger"
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_ProgramModeEnabled"
+  - Name: Sts_Value1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_Value1"
+  - Name: Sts_Value2
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_Value2"
+  - Name: Sts_Value3
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_Value3"
+  - Name: Sts_Value4
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Sts_Value4"
+  - Name: Val_Fault1Code
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Val_Fault1Code"
+  - Name: Val_OutputCurrent
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Val_OutputCurrent"
+  - Name: Val_OutputFreq
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Val_OutputFreq"
+  - Name: Val_OutputVoltage
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Val_OutputVoltage"
+  - Name: Val_SpdFdbk_Units
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Val_SpdFdbk_Units"
+  - Name: Val_TrendMax
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Val_TrendMax"
+  - Name: Val_TrendMin
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.Val_TrendMin"
 - Name: Wrk_RS_Height_Setting_Permissive
   Type: RAEtherNetIPTag
   DataType: Boolean

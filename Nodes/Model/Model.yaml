@@ -88,10 +88,67 @@ Children:
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
-      Value: 10.0
+      Value: 10000.0
 - Name: Storage_popup
   Type: BaseDataVariableType
   DataType: Boolean
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{1}>={0}"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../Storage_limit"
+        - Name: ns=3;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}/1024"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../System/System/Device/UsedStorage"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasParameter
+      Value: true
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasParameter
 - Name: Storage_condition
   Id: g=5f6674c151979d9dbbe83ec5e96e7229
   Type: BaseDataVariableType

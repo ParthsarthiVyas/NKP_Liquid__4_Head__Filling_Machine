@@ -1,7 +1,7 @@
 Name: Camera_setting
 Type: FolderType
 Children:
-- Name: Cam_Setting2
+- Name: Cam_Setting8
   Id: g=2533ca630f5828bc258e502ba5e0503b
   Supertype: Panel
   ReferenceType: HasComponent
@@ -300,7 +300,7 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"LocaleId":"en-US","Text":"Outfeed Conveyor"}
+        Value: {"LocaleId":"en-US","Text":"Fill Servo Speed"}
       - Name: TextVerticalAlignment
         Type: BaseVariableType
         DataType: TextVerticalAlignment
@@ -1516,7 +1516,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Camera_setting/Cam_Setting1"
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Camera_setting/Cam_Setting7"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -1532,7 +1532,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Camera_setting/Cam_Setting2"
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Camera_setting/Cam_Setting8"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -1548,7 +1548,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Camera_setting/Cam_Setting3"
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Camera_setting/Cam_Setting9"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -1564,7 +1564,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Camera_setting/Cam_Setting4"
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Camera_setting/Cam_Setting10"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -1580,7 +1580,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Camera_setting/Cam_Setting5"
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Camera_setting/Cam_Setting4"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -1734,7 +1734,7 @@ Children:
         - Name: Severity
           Type: PropertyType
           DataType: UInt16
-- Name: Cam_Setting1
+- Name: Cam_Setting7
   Id: g=570079f44031422f22705d93f2169769
   Supertype: Panel
   ReferenceType: HasComponent
@@ -4201,7 +4201,7 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-- Name: Cam_Setting3
+- Name: Cam_Setting9
   Id: g=e90a606f3a1cc0d9406dba5ea24cdff9
   Supertype: Panel
   ReferenceType: HasComponent
@@ -5793,7 +5793,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_Manual_Calibrate_PisHead.3"
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_Manual_Calibrate_PisHead.4"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -5868,7 +5868,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_Manual_Calibrate_PisHead.3"
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_Manual_Calibrate_PisHead.4"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Color
@@ -5981,7 +5981,7 @@ Children:
         - Name: MethodsToCall
           Type: BaseObjectType
           Children:
-          - Name: MethodContainer1
+          - Name: MethodContainer2
             Type: BaseObjectType
             Children:
             - Name: ns=3;ObjectPointer
@@ -5996,50 +5996,19 @@ Children:
             - Name: ns=3;Method
               Type: BaseDataVariableType
               DataType: String
-              Value: "Set"
+              Value: "Toggle"
             - Name: InputArguments
               Type: BaseObjectType
               Children:
               - Name: VariableToModify
                 Type: BaseDataVariableType
                 DataType: VariablePointer
-                Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Event_Message"
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: String
-                Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
-                Children:
-                - Name: KeyValueConverter1
-                  Type: ValueMapConverter
-                  Children:
-                  - Name: Source
-                    Type: BaseDataVariableType
-                    DataType: BaseDataType
-                    ReferenceType: HasSource
-                    Children:
-                    - Name: DynamicLink
-                      Type: DynamicLink
-                      DataType: NodePath
-                      Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Auto_Mode/Station_1/Stop_button"
-                  - Name: ns=3;Pairs
-                    Type: BaseObjectType
-                    Children:
-                    - Name: Pair
-                      Type: ValueMapPair
-                      Children:
-                      - Name: Key
-                        Type: BaseDataVariableType
-                        DataType: Boolean
-                        Value: true
-                      - Name: Value
-                        Type: BaseDataVariableType
-                        DataType: String
-                        Value: "Auto Machine Stop Station-1"
+                Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_Suck_Back_Enable"
               - Name: ArrayIndex
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+                Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
                 ValueRank: ScalarOrOneDimension
         - Name: EventArguments
           Type: MouseClickEvent
@@ -6807,7 +6776,7 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-- Name: Cam_Setting4
+- Name: Cam_Setting10
   Id: g=22ddfcb1cc24a2b21605abe1dd46845e
   Supertype: Panel
   ReferenceType: HasComponent
@@ -8029,7 +7998,7 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-- Name: Cam_Setting5
+- Name: Cam_Setting4
   Id: g=58c42cf2967de0c9b58706779f9e1582
   Supertype: Panel
   ReferenceType: HasComponent
@@ -8681,7 +8650,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ONS_BITS[9].2"
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_BufferTank_LowAlm_Bypass"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: LocalizedText
@@ -8715,7 +8684,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ONS_BITS[9].2"
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_BufferTank_LowAlm_Bypass"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Color
@@ -8783,27 +8752,20 @@ Children:
             - Name: ns=3;Method
               Type: BaseDataVariableType
               DataType: String
-              Value: "ToggleBit"
+              Value: "Toggle"
             - Name: InputArguments
               Type: BaseObjectType
               Children:
               - Name: VariableToModify
                 Type: BaseDataVariableType
                 DataType: VariablePointer
-                Description: {"NamespaceIndex":3,"TextId":"ToggleBitVariableToModifyDescription"}
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ONS_BITS"
+                Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_BufferTank_LowAlm_Bypass"
               - Name: ArrayIndex
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Description: {"NamespaceIndex":3,"TextId":"ToggleBitArrayIndexDescription"}
+                Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
                 ValueRank: ScalarOrOneDimension
-                Value: 9
-              - Name: BitIndex
-                Type: BaseDataVariableType
-                DataType: UInt32
-                Description: {"NamespaceIndex":3,"TextId":"ToggleBitBitIndexDescription"}
-                ValueRank: ScalarOrOneDimension
-                Value: 2
         - Name: EventArguments
           Type: MouseClickEvent
           Children:
@@ -9685,6 +9647,135 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 720.0
+    - Name: Stop_button3
+      Type: DelayedButton
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 15.0
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "Transparent"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 669.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: Delay
+        Type: BaseDataVariableType
+        DataType: Duration
+        ModellingRule: Optional
+        Value: "0:00:00:2.0000000"
+      - Name: MouseLongPressEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseLongPress"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ns=3;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Screen_loader}@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=3;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "ChangePanel"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: NewPanel
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/HIdden_Screen/H_Nevigation"
+              - Name: AliasNode
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                ValueRank: ScalarOrOneDimension
+        - Name: EventArguments
+          Type: MouseLongPress
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
   - Name: TopMargin
     Type: BaseVariableType
     DataType: Size

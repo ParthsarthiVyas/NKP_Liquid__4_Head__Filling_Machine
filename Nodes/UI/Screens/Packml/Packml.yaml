@@ -152,24 +152,11 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../SpinBox1/Value"
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_UnHolding"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             ModellingRule: None
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              ModellingRule: None
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-                ModellingRule: None
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                ModellingRule: None
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               ModellingRule: None
@@ -178,7 +165,6 @@ Children:
                 Type: BaseDataVariableType
                 DataType: UInt32
                 ModellingRule: None
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -192,7 +178,7 @@ Children:
                 Type: BaseDataVariableType
                 DataType: UInt32
                 ModellingRule: None
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -276,6 +262,11 @@ Children:
           DataType: FontWeightEnum
           ModellingRule: Optional
           Value: 700
+        - Name: Style
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "Default"
     - Name: Rectangle1
       Type: Rectangle
       Children:
@@ -319,26 +310,16 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_Held"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -349,7 +330,7 @@ Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -475,26 +456,16 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_Holding"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -505,7 +476,7 @@ Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -631,26 +602,16 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_Idle"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -661,7 +622,7 @@ Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -787,26 +748,16 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_Starting"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -817,7 +768,7 @@ Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -943,26 +894,16 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_Execute"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -973,7 +914,7 @@ Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -1099,26 +1040,16 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_Completing"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -1129,7 +1060,7 @@ Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -1255,26 +1186,16 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_Complete"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -1285,7 +1206,7 @@ Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -1411,26 +1332,16 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_Resetting"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -1441,7 +1352,7 @@ Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -1567,26 +1478,16 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_UnSuspending"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -1597,7 +1498,7 @@ Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -1723,26 +1624,16 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_Suspended"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -1753,7 +1644,7 @@ Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -1879,26 +1770,16 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_Suspending"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -1909,7 +1790,7 @@ Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -2035,26 +1916,16 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_Stopped"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -2065,7 +1936,7 @@ Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -2191,26 +2062,16 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_Stopping"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -2221,7 +2082,7 @@ Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -2347,26 +2208,16 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_Clearing"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -2377,7 +2228,7 @@ Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -2503,27 +2354,16 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../SpinBox1/Value"
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_Aborted"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -2534,7 +2374,7 @@ Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -2661,26 +2501,16 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Inp_MachineStateModel/Sts_Aborting"
           - Name: ns=3;Pairs
             Type: BaseObjectType
             Children:
-            - Name: Pair
-              Type: ValueMapPair
-              Children:
-              - Name: Key
-                Type: BaseDataVariableType
-                DataType: UInt32
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#968888"
             - Name: Pair1
               Type: ValueMapPair
               Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color
@@ -2691,7 +2521,7 @@ Children:
               - Name: Key
                 Type: BaseDataVariableType
                 DataType: UInt32
-                Value: 2
+                Value: 1
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Color

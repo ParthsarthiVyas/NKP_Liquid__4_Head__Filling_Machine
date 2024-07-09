@@ -90,7 +90,7 @@ public class LogBatchData : BaseNetLogic
         Project.Current.GetVariable("Model/Event_Message").Value = "Batch Stop, Batch NO." + Project.Current.GetVariable("Model/BatchData_Station_1/BatchNumber").Value;
 
         Project.Current.GetVariable("Model/BatchData_Station_1/BatchRunning").Value = false;
-        Project.Current.GetVariable("Model/BatchData_Station_1/Batch_start_stop_plc").Value = false;
+        Project.Current.GetVariable("Model/BatchData_Station_1/Batch_start_stop_plc").Value = true;
 
     }
 

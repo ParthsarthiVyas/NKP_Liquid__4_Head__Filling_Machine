@@ -104,14 +104,14 @@ public class CheckBatchNumber : BaseNetLogic
         Project.Current.GetVariable("Model/BatchData_Station_1/BatchStartTime_1").Value = Project.Current.GetVariable("NetLogic/mm_dd_yyyy_clock1/datetime").Value;
         // Project.Current.GetVariable("Model/BatchData_Station_1/BatchStartTime_1").Value = DateTime.Now;
         Project.Current.GetVariable("Model/BatchData_Station_1/BatchStopTime_1").Value = Project.Current.GetVariable("NetLogic/mm_dd_yyyy_clock1/datetime").Value;
-        Project.Current.GetVariable("Model/BatchData_Station_1/BatchRunning").Value = true;
+        
         Project.Current.GetVariable("Model/BatchData_Station_1/TotalCounts").Value = 0;
         Project.Current.GetVariable("Model/BatchData_Station_1/RejectCounts").Value = 0;
         Project.Current.GetVariable("Model/BatchData_Station_1/GoodCounts").Value = 0;
         Project.Current.GetVariable("Model/BatchData_Station_1/%rejection").Value = 0;
         Project.Current.GetVariable("Model/BatchData_Station_1/Sampled_product").Value = 0;
         Project.Current.GetVariable("Model/Event_Message").Value = "Batch Start, Batch NO." + Project.Current.GetVariable("Model/BatchData_Station_1/BatchNumber").Value;
-        Project.Current.GetVariable("Model/BatchData_Station_1/Batch_start_stop_plc").Value = true;
+        
 
     }
 
@@ -253,6 +253,8 @@ public class CheckBatchNumber : BaseNetLogic
 
         BatchAudit BatchStart = new BatchAudit();
         BatchStart.LogIntoAudit("Batch Start", "Batch Start, Batch No. " + batchno, Session.User.BrowseName, "BatchStart");
+        Project.Current.GetVariable("Model/BatchData_Station_1/BatchRunning").Value = true;
+        Project.Current.GetVariable("Model/BatchData_Station_1/Batch_start_stop_plc").Value = true;
     }
 
     private void DelayedAction(DelayedTask task)

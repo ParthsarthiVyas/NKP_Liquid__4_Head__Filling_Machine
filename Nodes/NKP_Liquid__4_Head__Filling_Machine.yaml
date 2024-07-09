@@ -87,6 +87,7 @@ Children:
         Value: 2
 - Name: AlarmConfiguration
   Type: PropertyGroup
+- File: NetLogic/NetLogic.yaml
 - File: UI/UI.yaml
 - File: Model/Model.yaml
 - File: Converters/Converters.yaml
@@ -97,7 +98,6 @@ Children:
 - File: Reports/Reports.yaml
 - File: 'OPC-UA/OPC-UA.yaml'
 - File: CommDrivers/CommDrivers.yaml
-- File: NetLogic/NetLogic.yaml
 - File: Security/Security.yaml
 - File: System/System.yaml
 - File: Translations/Translations.yaml

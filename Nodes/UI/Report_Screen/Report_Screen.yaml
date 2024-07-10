@@ -7451,12 +7451,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 41.0
+          Value: 51.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: -1.0
+          Value: -11.0
         - Name: Height
           Type: BaseVariableType
           DataType: Size

@@ -7569,6 +7569,19 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Torque_Lim_Head1"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 100.0
 - Name: Torque_Limit_Reached_Head1
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -7593,6 +7606,19 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Torque_Lim_Head2"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 100.0
 - Name: CLOCK_PULSE_ONOFF
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -8293,6 +8319,19 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Torque_Lim_Head3"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 100.0
 - Name: HMI_I_Recirculation_Peristalic_On
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -11491,6 +11530,19 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Torque_Lim_Head4"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 100.0
 - Name: Torque_Limit_Reached_Head4
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -13288,6 +13340,24 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Wrk_AlmOFF_DT[1].PRE"
+      - Name: ns=0;EURange
+        Type: RangeType
+        DataType: Range
+        Children:
+        - Name: Low
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+        - Name: High
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 30000.0
+        - Name: Constrain
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          Value: true
     - Name: TT
       Type: RAEtherNetIPTag
       DataType: Boolean
@@ -13376,6 +13446,24 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Wrk_AlmOFF_DT[3].PRE"
+      - Name: ns=0;EURange
+        Type: RangeType
+        DataType: Range
+        Children:
+        - Name: Low
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+        - Name: High
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 30000.0
+        - Name: Constrain
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          Value: true
     - Name: TT
       Type: RAEtherNetIPTag
       DataType: Boolean
@@ -13728,6 +13816,24 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Wrk_AlmOFF_DT[11].PRE"
+      - Name: ns=0;EURange
+        Type: RangeType
+        DataType: Range
+        Children:
+        - Name: Low
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+        - Name: High
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 500.0
+        - Name: Constrain
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          Value: true
     - Name: TT
       Type: RAEtherNetIPTag
       DataType: Boolean
@@ -14124,6 +14230,24 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Wrk_AlmOFF_DT[20].PRE"
+      - Name: ns=0;EURange
+        Type: RangeType
+        DataType: Range
+        Children:
+        - Name: Low
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+        - Name: High
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 30000.0
+        - Name: Constrain
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          Value: true
     - Name: TT
       Type: RAEtherNetIPTag
       DataType: Boolean
@@ -14564,6 +14688,19 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Wrk_AlmOFF_DT[30].PRE"
+      - Name: ns=0;EURange
+        Type: RangeType
+        DataType: Range
+        Children:
+        - Name: Low
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+        - Name: High
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 30000.0
     - Name: TT
       Type: RAEtherNetIPTag
       DataType: Boolean
@@ -17694,6 +17831,24 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Wrk_AlmON_DT[1].PRE"
+      - Name: ns=0;EURange
+        Type: RangeType
+        DataType: Range
+        Children:
+        - Name: Low
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+        - Name: High
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 30000.0
+        - Name: Constrain
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          Value: true
     - Name: TT
       Type: RAEtherNetIPTag
       DataType: Boolean
@@ -17738,6 +17893,24 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Wrk_AlmON_DT[2].PRE"
+      - Name: ns=0;EURange
+        Type: RangeType
+        DataType: Range
+        Children:
+        - Name: Low
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+        - Name: High
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 30000.0
+        - Name: Constrain
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          Value: true
     - Name: TT
       Type: RAEtherNetIPTag
       DataType: Boolean
@@ -17870,6 +18043,24 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Wrk_AlmON_DT[5].PRE"
+      - Name: ns=0;EURange
+        Type: RangeType
+        DataType: Range
+        Children:
+        - Name: Low
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+        - Name: High
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 30000.0
+        - Name: Constrain
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          Value: true
     - Name: TT
       Type: RAEtherNetIPTag
       DataType: Boolean
@@ -18530,6 +18721,24 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Wrk_AlmON_DT[20].PRE"
+      - Name: ns=0;EURange
+        Type: RangeType
+        DataType: Range
+        Children:
+        - Name: Low
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+        - Name: High
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 30000.0
+        - Name: Constrain
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          Value: true
     - Name: TT
       Type: RAEtherNetIPTag
       DataType: Boolean
@@ -18882,6 +19091,24 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Wrk_AlmON_DT[28].PRE"
+      - Name: ns=0;EURange
+        Type: RangeType
+        DataType: Range
+        Children:
+        - Name: Low
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+        - Name: High
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 30000.0
+        - Name: Constrain
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          Value: true
     - Name: TT
       Type: RAEtherNetIPTag
       DataType: Boolean
@@ -20202,6 +20429,24 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Wrk_AlmON_DT[58].PRE"
+      - Name: ns=0;EURange
+        Type: RangeType
+        DataType: Range
+        Children:
+        - Name: Low
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+        - Name: High
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 30000.0
+        - Name: Constrain
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          Value: true
     - Name: TT
       Type: RAEtherNetIPTag
       DataType: Boolean
@@ -23276,6 +23521,24 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Wrk_ChkON_DT[27].PRE"
+      - Name: ns=0;EURange
+        Type: RangeType
+        DataType: Range
+        Children:
+        - Name: Low
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+        - Name: High
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 30000.0
+        - Name: Constrain
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          Value: true
     - Name: TT
       Type: RAEtherNetIPTag
       DataType: Boolean
@@ -23320,6 +23583,24 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Wrk_ChkON_DT[28].PRE"
+      - Name: ns=0;EURange
+        Type: RangeType
+        DataType: Range
+        Children:
+        - Name: Low
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+        - Name: High
+          Type: BaseVariableType
+          DataType: Double
+          ReferenceType: HasProperty
+          Value: 30000.0
+        - Name: Constrain
+          Type: BaseVariableType
+          DataType: Boolean
+          ReferenceType: HasProperty
+          Value: true
     - Name: TT
       Type: RAEtherNetIPTag
       DataType: Boolean
@@ -24729,6 +25010,11 @@ Children:
       DataType: Double
       ReferenceType: HasProperty
       Value: 150.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_I_Select_JogAxis
   Id: g=4cb6fef1ed6a2b42e6b7066c6175be69
   Type: RAEtherNetIPTag
@@ -26498,6 +26784,19 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Torque_Lim_60Deg1"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 100.0
 - Name: Torque_Limit_Reached_60Deg1
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -28656,6 +28955,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_BufferTank_Actuator_ON_SP"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 100.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Inp_Header_8_Suck_LS
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -29743,6 +30060,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Second_Speed"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 150.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Gear_Ratio_Nozzle
   Type: RAEtherNetIPTag
   DataType: Float
@@ -29803,6 +30138,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Rubber_Stopper_On_Delay.PRE"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 30000.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: TT
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -29855,6 +30208,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Rubber_Stopper_Off_Delay.PRE"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 30000.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: TT
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -29932,6 +30303,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Linear_vibrator_On_Delay.PRE"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 30000.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: TT
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -29984,6 +30373,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Linear_vibrator_Off_Delay.PRE"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 30000.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: TT
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -30387,6 +30794,25 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Rejection_Vial_Set_Value"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 2.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 999.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Rejected_VIal_Bin_Full
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -30487,6 +30913,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp00.Par_AlarmLimitHigh"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 6.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Par_AlarmLimitLow
     Type: RAEtherNetIPTag
     DataType: Float
@@ -30495,6 +30939,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp00.Par_AlarmLimitLow"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 6.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Par_HighLimitChk_DelaymS
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -30543,6 +31005,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp00.Par_OutValScaledMax"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 6.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Par_OutValScaledMin
     Type: RAEtherNetIPTag
     DataType: Float
@@ -30551,6 +31031,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp00.Par_OutValScaledMin"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 6.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Sts_ALM_HIGH_LIMIT
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -30667,6 +31165,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp01.Par_AlarmLimitLow"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: -760.0
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Par_HighLimitChk_DelaymS
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -30715,6 +31231,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp01.Par_OutValScaledMax"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: -760.0
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Par_OutValScaledMin
     Type: RAEtherNetIPTag
     DataType: Float
@@ -30723,6 +31257,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp01.Par_OutValScaledMin"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: -760.0
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Sts_ALM_HIGH_LIMIT
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -30831,6 +31383,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp02.Par_AlarmLimitHigh"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 6.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Par_AlarmLimitLow
     Type: RAEtherNetIPTag
     DataType: Float
@@ -30839,6 +31409,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp02.Par_AlarmLimitLow"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 6.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Par_HighLimitChk_DelaymS
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -30887,6 +31475,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp02.Par_OutValScaledMax"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 6.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Par_OutValScaledMin
     Type: RAEtherNetIPTag
     DataType: Float
@@ -30895,6 +31501,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp02.Par_OutValScaledMin"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 6.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Sts_ALM_HIGH_LIMIT
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -31011,6 +31635,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp03.Par_AlarmLimitLow"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: -760.0
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Par_HighLimitChk_DelaymS
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -31059,6 +31701,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp03.Par_OutValScaledMax"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: -760.0
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Par_OutValScaledMin
     Type: RAEtherNetIPTag
     DataType: Float
@@ -31067,6 +31727,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp03.Par_OutValScaledMin"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: -760.0
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Sts_ALM_HIGH_LIMIT
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -31188,6 +31866,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Filling_Pos_60_Deg_1"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 63.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Inp43_Sensor_For_Vertical_Conv_Open
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -32002,6 +32698,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Suck_Pos_60_Deg_1"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 63.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_I_Filling_Spd_mm_sec_60_Deg_2
   Type: RAEtherNetIPTag
   DataType: Float
@@ -33440,6 +34154,25 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Consecutive_Rejection_Count"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 2.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 999.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Consecutive_Rejection_Alarm
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -33670,6 +34403,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Sampled_Vial_Counter.PRE"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 6.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: UN
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -34434,6 +35185,11 @@ Children:
       DataType: Double
       ReferenceType: HasProperty
       Value: 50.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_I_Manual_Infeed_TT_Hz
   Type: RAEtherNetIPTag
   DataType: Int32
@@ -34455,6 +35211,11 @@ Children:
       DataType: Double
       ReferenceType: HasProperty
       Value: 50.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_I_Manual_Nozzle_Hz
   Type: RAEtherNetIPTag
   DataType: Int32
@@ -34484,6 +35245,11 @@ Children:
       DataType: Double
       ReferenceType: HasProperty
       Value: 50.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Out17_Sampling_Vial_Holding_Valve
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -34513,6 +35279,11 @@ Children:
       DataType: Double
       ReferenceType: HasProperty
       Value: 2000.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_I_Speed_60deg_For_Jog
   Type: RAEtherNetIPTag
   DataType: Int32
@@ -34534,6 +35305,11 @@ Children:
       DataType: Double
       ReferenceType: HasProperty
       Value: 2000.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_I_Speed_60deg_Rev_Jog
   Type: RAEtherNetIPTag
   DataType: Int32
@@ -34555,6 +35331,11 @@ Children:
       DataType: Double
       ReferenceType: HasProperty
       Value: 2000.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_I_Speed_Head_Rev_Jog
   Type: RAEtherNetIPTag
   DataType: Int32
@@ -34576,6 +35357,11 @@ Children:
       DataType: Double
       ReferenceType: HasProperty
       Value: 2000.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_I_All_Head_Suck_Spd
   Type: RAEtherNetIPTag
   DataType: Float
@@ -34584,6 +35370,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_All_Head_Suck_Spd"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 230.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_I_All_Head_Fill_Spd
   Type: RAEtherNetIPTag
   DataType: Float
@@ -34592,6 +35396,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_All_Head_Fill_Spd"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 230.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_I_60deg_Fill_Speed
   Type: RAEtherNetIPTag
   DataType: Float
@@ -34600,6 +35422,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_60deg_Fill_Speed"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 3500.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_I_60deg_Suck_Speed
   Type: RAEtherNetIPTag
   DataType: Float
@@ -34608,6 +35448,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_60deg_Suck_Speed"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 3500.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Head_2_Msg
   Type: MESSAGE
   DataType: MESSAGE
@@ -36980,6 +37838,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Home_Speed"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: -1000.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Out18_Vaccum_Release_Valve
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -37860,6 +38736,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Wrk_Hmi_Rubber_Stopper_Height"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 110.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Filling_MAS_Head6_Home
   Type: raC_Opr_K5100_MAS
   DataType: raC_Opr_K5100_MAS
@@ -38684,6 +39578,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Dec_All_Fill_Head"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 300.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_I_Acc_All_60Deg
   Type: RAEtherNetIPTag
   DataType: Int32
@@ -38692,6 +39604,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Acc_All_60Deg"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 200.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_I_Dec_All_60Deg
   Type: RAEtherNetIPTag
   DataType: Int32
@@ -38700,6 +39630,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Dec_All_60Deg"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 300.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Priming_Head1_Servo_Homed
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -39108,6 +40056,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_All_Fill_Head_Suck_Back_Pos"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 20.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Timer_Indicator_Head1_Home
   Type: TIMER
   DataType: TIMER
@@ -41658,6 +42624,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Auto_Vibrator_Off_Delay_Time"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 60.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Max_Acc_At_Infeed_TT_On_Timer
   Type: TIMER
   DataType: TIMER
@@ -43349,6 +44333,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Speed_Clutch_Engage"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 50.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Percentage_Of_Rejection
   Type: RAEtherNetIPTag
   DataType: Float
@@ -43365,6 +44367,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Rubber_Stopper_Current_Limit"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 3.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Rubber_Stopper_Current_Limit_Exceeded
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -43558,6 +44578,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Rej_Valve1_Off_Delay.PRE"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 3000.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: TT
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -43602,6 +44640,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Rej_Valve2_Off_Delay.PRE"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 3000.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: TT
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -44938,6 +45994,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Accel_Percentage"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 100.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: c1_T
   Type: COUNTER
   DataType: COUNTER
@@ -45218,6 +46292,25 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_DOSE_SELECTION"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 1.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 2.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Machine_Lock_Timer
   Type: TIMER
   DataType: TIMER
@@ -45622,6 +46715,25 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Sampling_Pocket_No"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 11.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 20.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Sampling_Pocket_No
   Type: RAEtherNetIPTag
   DataType: Int32
@@ -45954,6 +47066,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Nozzle_Hz_Factor"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_I_Infeed_Conv_Hold_Speed_Per
   Type: RAEtherNetIPTag
   DataType: Float
@@ -45962,6 +47092,25 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Infeed_Conv_Hold_Speed_Per"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 200.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Machine_Lock_1_Password
   Type: RAEtherNetIPTag
   DataType: Int32
@@ -46214,6 +47363,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_ManCalib_Weight_Head"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 100.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_Rec_Syringe_ID_mm
   Type: RAEtherNetIPTag
   DataType: Float
@@ -46222,6 +47389,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_Rec_Syringe_ID_mm"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 120.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_REC_Set_Fill_Density
   Type: RAEtherNetIPTag
   DataType: Float
@@ -46230,6 +47415,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_REC_Set_Fill_Density"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 45.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Head1_Set_ParkPos
   Type: RAEtherNetIPTag
   DataType: Float
@@ -46302,6 +47505,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "FillVolume_OpEntry"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 100.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Required_Stroke_Piston
   Type: RAEtherNetIPTag
   DataType: Float
@@ -46310,6 +47531,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Required_Stroke_Piston"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 45.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: AInp06_Vib_Unit_Air_Velocity
   Type: RAEtherNetIPTag
   DataType: Int16
@@ -46514,6 +47753,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_BufferTank_Actuator_OFF_SP"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 100.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Buffer_Tank_Mode
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -48294,6 +49551,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Wrk_Hmi_Vibrator_Height"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 110.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: 'AENT_Point_IO:7:C'
   Type: 'AB:1734_DI8:C:0'
   DataType: 'AB:1734_DI8:C:0'
@@ -50694,6 +51969,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp08.Par_AlarmLimitLow"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 100.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Par_HighLimitChk_DelaymS
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -50742,6 +52035,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp08.Par_OutValScaledMax"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 100.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Par_OutValScaledMin
     Type: RAEtherNetIPTag
     DataType: Float
@@ -50750,6 +52061,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp08.Par_OutValScaledMin"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 100.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Sts_ALM_HIGH_LIMIT
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -50850,6 +52179,25 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp09.Par_AlarmLimitHigh"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: -20.0
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 200.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Par_AlarmLimitLow
     Type: RAEtherNetIPTag
     DataType: Float
@@ -50858,6 +52206,25 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp09.Par_AlarmLimitLow"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: -20.0
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 200.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Par_HighLimitChk_DelaymS
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -50906,6 +52273,25 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp09.Par_OutValScaledMax"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: -20.0
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 200.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Par_OutValScaledMin
     Type: RAEtherNetIPTag
     DataType: Float
@@ -50914,6 +52300,25 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Scp_AInp09.Par_OutValScaledMin"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: -20.0
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 200.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Sts_ALM_HIGH_LIMIT
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -50962,6 +52367,25 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Smpl_Speed_Percentage"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 200.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Peristalic_Feedback_Delay
   Type: TIMER
   DataType: TIMER
@@ -56110,6 +57534,11 @@ Children:
       DataType: Double
       ReferenceType: HasProperty
       Value: 50.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Wrk_Fix_Conveyor_Auto_On
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -56259,6 +57688,11 @@ Children:
       DataType: Double
       ReferenceType: HasProperty
       Value: 50.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HMI_I_Star_Wheel_CMD
   Type: RAEtherNetIPTag
   DataType: Float
@@ -56267,6 +57701,25 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Star_Wheel_CMD"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 200.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Drive_Ratio
   Type: RAEtherNetIPTag
   DataType: Float
@@ -56343,6 +57796,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "HMI_I_Lyo_Conveyor_Count_Set"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 500.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Star_Wheel_Slow_Speed_Count
   Type: RAEtherNetIPTag
   DataType: Int32

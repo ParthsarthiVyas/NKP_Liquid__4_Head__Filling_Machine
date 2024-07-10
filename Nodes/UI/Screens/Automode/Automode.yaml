@@ -3717,7 +3717,7 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Camera_setting/Cam_screen"
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Cam_setting/Cam_screen"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId

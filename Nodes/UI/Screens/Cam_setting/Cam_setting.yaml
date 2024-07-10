@@ -1,4 +1,4 @@
-Name: Camera_setting
+Name: Cam_setting
 Type: FolderType
 Children:
 - Name: Cam_Setting8
@@ -1516,7 +1516,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Camera_setting/Cam_Setting7"
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Cam_setting/Cam_Setting7"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -1532,7 +1532,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Camera_setting/Cam_Setting8"
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Cam_setting/Cam_Setting8"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -1548,7 +1548,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Camera_setting/Cam_Setting9"
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Cam_setting/Cam_Setting9"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -1564,7 +1564,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Camera_setting/Cam_Setting10"
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Cam_setting/Cam_Setting10"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -1580,7 +1580,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Camera_setting/Cam_Setting4"
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Cam_setting/Cam_Setting4"
           Children:
           - Name: Kind
             Type: PropertyType

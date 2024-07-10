@@ -50,21 +50,6 @@ Children:
     Id: g=2468df29581ded15470873c06bca3634
     Type: BaseDataVariableType
     DataType: Boolean
-  - Name: AuditSigning Signature
-    Id: g=19db10f03b320f1cd0c5b7e4fa26ba5f
-    Type: AuditInfo
-    ReferenceType: NonHierarchicalOwning
-    Children:
-    - Name: Users
-      Id: g=d32e14f8dd9f13aa160d32aef78ec5d0
-      Type: BaseObjectType
-    - Name: Groups
-      Id: g=9258cdaccbcfcd338ec8b3d33b8ff77e
-      Type: BaseObjectType
-    - Name: WorkflowType
-      Id: g=e82b0019af129741828b9d607ede580e
-      Type: PropertyType
-      DataType: WorkflowType
   - Name: Calibration_Setup
     Id: g=e118b9df499f09ad182c13367b563cef
     Type: BaseDataVariableType

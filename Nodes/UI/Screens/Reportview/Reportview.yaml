@@ -2784,12 +2784,12 @@ Children:
     - Name: Model
       Type: NodePointer
       DataType: NodeId
-      Value: {"IdType":2,"Id":"a02bacfc128ebc056c5729016557303f","Namespace":36}
+      Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/FileExplorer_ReportPDF_Model/PDFViewerZoomMode"
       Children:
       - Name: ItemKind
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":2,"Id":"ffefaebe26d5d8a1e3ab6b2c6871502e","Namespace":36}
+        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/FileExplorer_ReportPDF_Model/PDFViewerZoomMode/Custom level"
       - Name: Kind
         Type: PropertyType
         DataType: NodeId
@@ -2803,7 +2803,7 @@ Children:
       - Name: Kind
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":2,"Id":"ffefaebe26d5d8a1e3ab6b2c6871502e","Namespace":36}
+        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/FileExplorer_ReportPDF_Model/PDFViewerZoomMode/Custom level"
     - Name: UISelectedItem
       Type: BaseDataVariableType
       DataType: NodeId
@@ -2827,27 +2827,21 @@ Children:
       - Name: Kind
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":2,"Id":"ffefaebe26d5d8a1e3ab6b2c6871502e","Namespace":36}
+        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/FileExplorer_ReportPDF_Model/PDFViewerZoomMode/Custom level"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 690.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 4.0
+      Value: 3.0
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
-      Value: 1
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 630.0
+      Value: 2
 - Name: Alarm_Report
   Id: g=2618382b6ebd9bbae01ab0710a093ed7
   Supertype: Panel
@@ -3824,12 +3818,12 @@ Children:
     - Name: Model
       Type: NodePointer
       DataType: NodeId
-      Value: {"IdType":2,"Id":"a02bacfc128ebc056c5729016557303f","Namespace":36}
+      Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/FileExplorer_ReportPDF_Model/PDFViewerZoomMode"
       Children:
       - Name: ItemKind
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":2,"Id":"ffefaebe26d5d8a1e3ab6b2c6871502e","Namespace":36}
+        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/FileExplorer_ReportPDF_Model/PDFViewerZoomMode/Custom level"
       - Name: Kind
         Type: PropertyType
         DataType: NodeId
@@ -3843,7 +3837,7 @@ Children:
       - Name: Kind
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":2,"Id":"ffefaebe26d5d8a1e3ab6b2c6871502e","Namespace":36}
+        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/FileExplorer_ReportPDF_Model/PDFViewerZoomMode/Custom level"
     - Name: UISelectedItem
       Type: BaseDataVariableType
       DataType: NodeId
@@ -3867,12 +3861,11 @@ Children:
       - Name: Kind
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":2,"Id":"ffefaebe26d5d8a1e3ab6b2c6871502e","Namespace":36}
+        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/FileExplorer_ReportPDF_Model/PDFViewerZoomMode/Custom level"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 690.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -3882,12 +3875,11 @@ Children:
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
-      Value: 1
+      Value: 2
     - Name: RightMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 586.0
 - Name: Panel1
   Id: g=9e12061cc9454ebd2448f376b65508ba
   Supertype: Panel

@@ -57,7 +57,7 @@ Children:
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
-      Value: 300.0
+      Value: 30000.0
     - Name: Constrain
       Type: BaseVariableType
       DataType: Boolean
@@ -88,7 +88,7 @@ Children:
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
-      Value: 300.0
+      Value: 30000.0
     - Name: Constrain
       Type: BaseVariableType
       DataType: Boolean

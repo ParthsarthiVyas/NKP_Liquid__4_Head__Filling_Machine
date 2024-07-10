@@ -14,7 +14,7 @@ Children:
 - File: AuditSigningWorkflows/AuditSigningWorkflows.yaml
 - File: Popup_Screens/Popup_Screens.yaml
 - File: Batch/Batch.yaml
-- File: Camera_setting/Camera_setting.yaml
+- File: Cam_setting/Cam_setting.yaml
 - File: Priming_mode/Priming_mode.yaml
 - File: Packml/Packml.yaml
 - File: Drive_Status/Drive_Status.yaml

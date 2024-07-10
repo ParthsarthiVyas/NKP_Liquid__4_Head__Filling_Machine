@@ -83,14 +83,14 @@ public class LogBatchData : BaseNetLogic
         // string[] columns = new string[14] { "LocalTimeStamp", "BatchNumber", "BatchStartTime", "BatchStopTime", "ProductName", "Username", "TotalCounts", "RejectCounts", "GoodCounts", "BatchSize", "Recipename", "Companyname", "EquipmentName", "EquipmentId" };
         //myTable.Insert(columns, rawValues);
 
-
+        //Project.Current.GetVariable("Model/BatchData_Station_1/Batch_start_stop_plc").Value = true;
 
         BatchAudit BatchStart = new BatchAudit();
         BatchStart.LogIntoAudit("Batch Stop", "Batch Stop, Batch No. " + batchno, Session.User.BrowseName, "BatchStop");
         Project.Current.GetVariable("Model/Event_Message").Value = "Batch Stop, Batch NO." + Project.Current.GetVariable("Model/BatchData_Station_1/BatchNumber").Value;
 
         Project.Current.GetVariable("Model/BatchData_Station_1/BatchRunning").Value = false;
-        Project.Current.GetVariable("Model/BatchData_Station_1/Batch_start_stop_plc").Value = true;
+        //Project.Current.GetVariable("Model/BatchData_Station_1/Batch_start_stop_plc").Value = false;
 
     }
 

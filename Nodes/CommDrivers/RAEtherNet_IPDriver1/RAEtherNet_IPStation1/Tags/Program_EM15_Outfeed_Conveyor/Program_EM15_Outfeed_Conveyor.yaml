@@ -405,6 +405,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Program:EM15_Outfeed_Conveyor.HMI_I_Speed_Percentage"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 200.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: HZ_Factor
   Type: RAEtherNetIPTag
   DataType: Int16
@@ -965,6 +983,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM15_Outfeed_Conveyor.Wrk_PF525Object.Set_AccelProg"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 100.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Set_CommFaultTimerPresetOper
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -997,6 +1033,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM15_Outfeed_Conveyor.Wrk_PF525Object.Set_DecelProg"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 100.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Set_FaceplateAnimation
     Type: RAEtherNetIPTag
     DataType: Int16

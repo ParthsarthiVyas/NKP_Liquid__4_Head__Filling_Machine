@@ -13656,7 +13656,6 @@ Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"0"}
           Children:
           - Name: StringFormatter1
             Type: StringFormatter
@@ -13672,10 +13671,24 @@ Children:
               DataType: BaseDataType
               ReferenceType: HasSource
               Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM16_Rubber_Stopper_Hgt_UpDn/Wrk_PF525Object/Val_OutputCurrent"
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Expression
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "{0}/10"
+                - Name: ns=3;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM16_Rubber_Stopper_Hgt_UpDn/Wrk_PF525Object/Val_OutputCurrent"
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
@@ -13940,14 +13953,34 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/EM16_Rubber_Stopper_Hgt_UpDn&:I/Decelerating"
+        - Name: StringFormatter1
+          Type: StringFormatter
           Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"","Text":"{0:n2}"}
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM16_Rubber_Stopper_Hgt_UpDn/Wrk_PF525Object/Set_DecelProg"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
           - Name: Mode
-            Type: BaseVariableType
+            Type: PropertyType
             DataType: DynamicLinkMode
+            ReferenceType: HasComponent
             ModellingRule: Optional
             Value: 2
       - Name: Width
@@ -14666,14 +14699,34 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/EM16_Rubber_Stopper_Hgt_UpDn&:I/Accelerating"
+        - Name: StringFormatter1
+          Type: StringFormatter
           Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"","Text":"{0:n2}"}
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM16_Rubber_Stopper_Hgt_UpDn/Wrk_PF525Object/Set_AccelProg"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
           - Name: Mode
-            Type: BaseVariableType
+            Type: PropertyType
             DataType: DynamicLinkMode
+            ReferenceType: HasComponent
             ModellingRule: Optional
             Value: 2
       - Name: Width
@@ -17178,7 +17231,6 @@ Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"0"}
           Children:
           - Name: StringFormatter1
             Type: StringFormatter
@@ -17194,10 +17246,24 @@ Children:
               DataType: BaseDataType
               ReferenceType: HasSource
               Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM17_Vibrator_Hgt_UpDn/Wrk_PF525Object/Val_OutputCurrent"
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Expression
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "{0}/10"
+                - Name: ns=3;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM17_Vibrator_Hgt_UpDn/Wrk_PF525Object/Val_OutputCurrent"
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
@@ -17462,14 +17528,34 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/EM17_Vibrator_Hgt_UpDn&:I/Decelerating"
+        - Name: StringFormatter1
+          Type: StringFormatter
           Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"","Text":"{0:n2}"}
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM17_Vibrator_Hgt_UpDn/Wrk_PF525Object/Set_DecelProg"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
           - Name: Mode
-            Type: BaseVariableType
+            Type: PropertyType
             DataType: DynamicLinkMode
+            ReferenceType: HasComponent
             ModellingRule: Optional
             Value: 2
       - Name: Width
@@ -18360,14 +18446,34 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/EM17_Vibrator_Hgt_UpDn&:I/Accelerating"
+        - Name: StringFormatter1
+          Type: StringFormatter
           Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"","Text":"{0:n2}"}
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM17_Vibrator_Hgt_UpDn/Wrk_PF525Object/Set_AccelProg"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
           - Name: Mode
-            Type: BaseVariableType
+            Type: PropertyType
             DataType: DynamicLinkMode
+            ReferenceType: HasComponent
             ModellingRule: Optional
             Value: 2
       - Name: Width
@@ -19263,6 +19369,16 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         Value: {"LocaleId":"en-US","Text":"Output Voltage (Volt)"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 458.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 270.0
     - Name: 'Spinning Motor-2 (Hz)8'
       Type: Label
       Children:
@@ -19270,6 +19386,16 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         Value: {"LocaleId":"en-US","Text":"Output Current (Amp)"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 458.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 229.0
     - Name: Button1
       Type: Button
       Children:
@@ -19578,6 +19704,7 @@ Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":""}
           Children:
           - Name: StringFormatter1
             Type: StringFormatter
@@ -19586,17 +19713,30 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ReferenceType: HasParameter
-              ModellingRule: Optional
               Value: {"LocaleId":"","Text":"{0:n2}"}
             - Name: ns=3;Source0
               Type: BaseDataVariableType
               DataType: BaseDataType
               ReferenceType: HasSource
               Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM13_Infeed_Conveyor/Wrk_PF525Object/Val_OutputCurrent"
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Expression
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "{0}/10"
+                - Name: ns=3;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM13_Infeed_Conveyor/Wrk_PF525Object/Val_OutputCurrent"
     - Name: Rectangle3
       Type: Rectangle
       Children:
@@ -20401,6 +20541,16 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         Value: {"LocaleId":"en-US","Text":"Output Voltage (Volt)"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 458.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 270.0
     - Name: 'Spinning Motor-2 (Hz)8'
       Type: Label
       Children:
@@ -20408,6 +20558,16 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         Value: {"LocaleId":"en-US","Text":"Output Current (Amp)"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 458.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 229.0
     - Name: Button1
       Type: Button
       Children:
@@ -20736,7 +20896,7 @@ Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"0"}
+          Value: {"LocaleId":"en-US","Text":""}
           Children:
           - Name: StringFormatter1
             Type: StringFormatter
@@ -20752,10 +20912,24 @@ Children:
               DataType: BaseDataType
               ReferenceType: HasSource
               Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM12_Infeed_Turn_Table/Wrk_PF525Object/Val_OutputCurrent"
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Expression
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "{0}/10"
+                - Name: ns=3;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM12_Infeed_Turn_Table/Wrk_PF525Object/Val_OutputCurrent"
     - Name: Rectangle3
       Type: Rectangle
       Children:
@@ -21897,7 +22071,6 @@ Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"0"}
           Children:
           - Name: StringFormatter1
             Type: StringFormatter
@@ -21913,10 +22086,24 @@ Children:
               DataType: BaseDataType
               ReferenceType: HasSource
               Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM14_Nozzle/Wrk_PF525Object/Val_OutputCurrent"
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Expression
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "{0}/10"
+                - Name: ns=3;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM14_Nozzle/Wrk_PF525Object/Val_OutputCurrent"
     - Name: Rectangle3
       Type: Rectangle
       Children:
@@ -23046,7 +23233,6 @@ Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"0"}
           Children:
           - Name: StringFormatter1
             Type: StringFormatter
@@ -23062,10 +23248,24 @@ Children:
               DataType: BaseDataType
               ReferenceType: HasSource
               Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM15_Outfeed_Conveyor/Wrk_PF525Object/Val_OutputCurrent"
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Expression
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "{0}/10"
+                - Name: ns=3;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM15_Outfeed_Conveyor/Wrk_PF525Object/Val_OutputCurrent"
     - Name: Rectangle3
       Type: Rectangle
       Children:
@@ -24205,7 +24405,6 @@ Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"0"}
           Children:
           - Name: StringFormatter1
             Type: StringFormatter
@@ -24221,10 +24420,24 @@ Children:
               DataType: BaseDataType
               ReferenceType: HasSource
               Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM11_Rubber_Stopper/Wrk_PF525Object/Val_OutputCurrent"
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Expression
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "{0}/10"
+                - Name: ns=3;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM11_Rubber_Stopper/Wrk_PF525Object/Val_OutputCurrent"
     - Name: Rectangle3
       Type: Rectangle
       Children:
@@ -25364,10 +25577,24 @@ Children:
               DataType: BaseDataType
               ReferenceType: HasSource
               Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM18_Fix_Conveyor/Wrk_PF525Object/Val_OutputCurrent"
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Expression
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "{0}/10"
+                - Name: ns=3;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM18_Fix_Conveyor/Wrk_PF525Object/Val_OutputCurrent"
     - Name: Rectangle3
       Type: Rectangle
       Children:

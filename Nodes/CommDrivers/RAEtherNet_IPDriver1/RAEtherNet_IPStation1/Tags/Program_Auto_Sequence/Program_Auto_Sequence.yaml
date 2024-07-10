@@ -37,6 +37,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:Auto_Sequence.Auto_Cycle_Fill_Start_Delay.PRE"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 500.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: TT
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -169,6 +187,24 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Program:Auto_Sequence.Out_EncoderCount_Multiplier"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 99999.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: Outfeed_Conv_Actual_Position
   Type: RAEtherNetIPTag
   DataType: Float

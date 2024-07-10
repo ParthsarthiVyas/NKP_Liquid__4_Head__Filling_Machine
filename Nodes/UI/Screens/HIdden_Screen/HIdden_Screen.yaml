@@ -2052,7 +2052,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 220.0
+        Value: 233.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size

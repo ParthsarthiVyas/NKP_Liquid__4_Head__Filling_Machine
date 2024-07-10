@@ -250,11 +250,12 @@ public class CheckBatchNumber : BaseNetLogic
 
         string[] columns = new string[49] { "LocalTimeStamp", "BatchNumber", "BatchStartTime", "BatchStopTime", "ProductName", "Username", "TotalCounts", "RejectCounts", "GoodCounts", "BatchSize", "Recipename", "Companyname", "EquipmentName", "EquipmentId", "Productsize", "rejection", "Duration_Hour", "Duration_Minute", "Duration_Second", "Sampled_Product", "Machine_Speed", "Inffed_turn_table", "Rubber_Stopper", "Infeed_Conveyor", "Outfeed_Conveyor", "Fix_Conveyor", "Star_wheel_holding_time", "Fill_servo_up_speed", "Fill_servo_down_speed", "servo_forword", "servo_reverse", "Second_speed_for_min_acc_at_infeed", "Infeed_conveyor_speed_in_hold", "Outfeed_conveyor_speed_in_hold", "Number_of_doses", "Auto_cycle_delay", "Fill_servo_1_fill_position", "Fill_servo_2_fill_position", "Fill_servo_3_fill_position", "Fill_servo_4_fill_position", "Air_pressure_set_low_value", "Air_pressure_set_high_value", "rubber_stopper_vac_pre_set_low_value", "N2_pressure_set_low_value", "N2_pressure_set_high_value", "Rejection_station_vac_pre_set_low_vallue", "Buffer_tank_weight_cell_set_low_value", "product_temp_set_low_value", "product_temp_set_high_value" };
         myTable.Insert(columns, rawValues);
-
+        //Project.Current.GetVariable("Model/BatchData_Station_1/Batch_start_stop_plc").Value = true;
         BatchAudit BatchStart = new BatchAudit();
         BatchStart.LogIntoAudit("Batch Start", "Batch Start, Batch No. " + batchno, Session.User.BrowseName, "BatchStart");
         Project.Current.GetVariable("Model/BatchData_Station_1/BatchRunning").Value = true;
-        Project.Current.GetVariable("Model/BatchData_Station_1/Batch_start_stop_plc").Value = true;
+
+        //Project.Current.GetVariable("Model/BatchData_Station_1/Batch_start_stop_plc").Value = false;
     }
 
     private void DelayedAction(DelayedTask task)

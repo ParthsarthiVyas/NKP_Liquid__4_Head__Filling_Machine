@@ -452,7 +452,7 @@ Children:
           ModellingRule: Optional
           Value: 10.0
       - Name: Button1
-        Type: Button
+        Type: DelayedButton
         Children:
         - Name: Text
           Type: BaseDataVariableType
@@ -478,6 +478,30 @@ Children:
           Type: BaseDataVariableType
           DataType: Boolean
           Value: true
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/BatchData_Station_1/BatchRunning"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: true
         - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size
@@ -508,13 +532,13 @@ Children:
           DataType: HorizontalAlignment
           ModellingRule: Optional
           Value: 1
-        - Name: MouseClickEventHandler1
+        - Name: MouseLongPressEventHandler1
           Type: EventHandler
           Children:
           - Name: ListenEventType
             Type: PropertyType
             DataType: NodeId
-            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseLongPress"
           - Name: MethodsToCall
             Type: BaseObjectType
             Children:
@@ -540,12 +564,10 @@ Children:
                 - Name: VariableToModify
                   Type: BaseDataVariableType
                   DataType: VariablePointer
-                  Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
                   Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/BatchData_Station_1/Operatorname"
                 - Name: Value
                   Type: BaseDataVariableType
                   DataType: String
-                  Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
                   Children:
                   - Name: DynamicLink
                     Type: DynamicLink
@@ -554,7 +576,6 @@ Children:
                 - Name: ArrayIndex
                   Type: BaseDataVariableType
                   DataType: UInt32
-                  Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
                   ValueRank: ScalarOrOneDimension
             - Name: MethodContainer1
               Type: BaseObjectType
@@ -593,7 +614,7 @@ Children:
                     DataType: NodePath
                     Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/BatchData_Station_1/BatchNumber"
           - Name: EventArguments
-            Type: MouseClickEvent
+            Type: MouseLongPress
             Children:
             - Name: EventId
               Type: PropertyType
@@ -619,6 +640,11 @@ Children:
             - Name: Severity
               Type: PropertyType
               DataType: UInt16
+        - Name: Delay
+          Type: BaseDataVariableType
+          DataType: Duration
+          ModellingRule: Optional
+          Value: "0:00:00:2.0000000"
       - Name: LED3
         Type: Led
         Children:
@@ -1375,7 +1401,7 @@ Children:
           ModellingRule: Optional
           Value: 640.0
       - Name: Button2
-        Type: Button
+        Type: DelayedButton
         Children:
         - Name: Text
           Type: BaseDataVariableType
@@ -1460,13 +1486,13 @@ Children:
           Children:
           - Class: Method
             Name: BatchDataLogging
-        - Name: MouseClickEventHandler1
+        - Name: MouseLongPressEventHandler1
           Type: EventHandler
           Children:
           - Name: ListenEventType
             Type: PropertyType
             DataType: NodeId
-            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseLongPress"
           - Name: MethodsToCall
             Type: BaseObjectType
             Children:
@@ -1496,7 +1522,7 @@ Children:
                 DataType: String
                 Value: "BatchDataLogging"
           - Name: EventArguments
-            Type: MouseClickEvent
+            Type: MouseLongPress
             Children:
             - Name: EventId
               Type: PropertyType
@@ -1522,6 +1548,15 @@ Children:
             - Name: Severity
               Type: PropertyType
               DataType: UInt16
+        - Name: Delay
+          Type: BaseDataVariableType
+          DataType: Duration
+          ModellingRule: Optional
+          Value: "0:00:00:2.0000000"
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
       - Name: CheckBatchNumber
         Type: NetLogic
         Children:

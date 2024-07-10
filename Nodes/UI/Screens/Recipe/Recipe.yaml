@@ -4780,6 +4780,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: Double
                   ModellingRule: Optional
+                  Value: 10.0
                 - Name: MaxValue
                   Type: BaseDataVariableType
                   DataType: Double

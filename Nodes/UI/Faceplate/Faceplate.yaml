@@ -4306,7 +4306,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 468.0
+        Value: 458.0
     - Name: 'Spinning Motor-2 (Hz)8'
       Type: Label
       Children:
@@ -4348,7 +4348,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 468.0
+        Value: 458.0
     - Name: Button1
       Type: Button
       Children:

@@ -6,6 +6,18 @@ Children:
   Id: g=46f7b10e155782194d0ef289e254df50
   Type: BaseDataVariableType
   DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Id: g=b12efa9c02713c879920c15536a5e6fb
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_BATCH_ON_STARTED"
+    Children:
+    - Name: Mode
+      Id: g=7674000e41766c01718b8f1f4b389d5f
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: BatchNumber
   Id: g=2b0c7c0bd0fa3ae93389aee7015685f2
   Type: BaseDataVariableType
@@ -84,7 +96,7 @@ Children:
     Id: g=08db34dacc22fdc8534b4db2239db73e
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/PrintTags/F8&:13                     %OFREJECTION"
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Percentage_Of_Rejection"
     Children:
     - Name: Mode
       Id: g=9384fab593fd83a1fa2f51de66c2fe0f
@@ -131,7 +143,7 @@ Children:
     Id: g=5c3ffb35600366eed63e6d510af193e6
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/PrintTags/L19&:10          BATCHSIZE"
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_Batch_Size"
     Children:
     - Name: Mode
       Id: g=ef8a11dfbb8fc83d065cfce09b302668

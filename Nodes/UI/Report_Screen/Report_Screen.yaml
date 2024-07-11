@@ -13933,7 +13933,7 @@ Children:
                         Type: BaseDataVariableType
                         DataType: LocalizedText
                         ModellingRule: Optional
-                        Value: {"LocaleId":"en-US","Text":"Engineer"}
+                        Value: {"LocaleId":"en-US","Text":"Maintenance"}
                       - Name: Width
                         Type: BaseVariableType
                         DataType: Size

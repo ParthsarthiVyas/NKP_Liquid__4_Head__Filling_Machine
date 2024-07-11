@@ -121,17 +121,6 @@ Children:
     Id: g=76444276356395ccc27531e19abef406
     Type: BaseDataVariableType
     DataType: Boolean
-  - Name: AuditSigning Signature
-    Id: g=403f15e9ca4ad7a67411a590ee1a22ef
-    Type: AuditInfo
-    ReferenceType: NonHierarchicalOwning
-    Children:
-    - Name: Users
-      Id: g=16a30d778bcbe2df3a11a380bb5bef21
-      Type: BaseObjectType
-    - Name: Groups
-      Id: g=7b0abac14c2ae9da83b073d972346fa1
-      Type: BaseObjectType
   - Name: Calibration_Setup
     Id: g=30fcc0904466fd136885c89e36857728
     Type: BaseDataVariableType
@@ -204,17 +193,6 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
-  - Name: AuditSigning Signature
-    Id: g=b6b5ba692c71604f84df49036557f8a3
-    Type: AuditInfo
-    ReferenceType: NonHierarchicalOwning
-    Children:
-    - Name: Users
-      Id: g=fd473381813f4e642a4671eb3658c8c8
-      Type: BaseObjectType
-    - Name: Groups
-      Id: g=84c3e0170b2afb2a07a5021283f30158
-      Type: BaseObjectType
   - Name: Calibration_Setup
     Id: g=344d3e9366c9f5ee3e8227ae706d3ed3
     Type: BaseDataVariableType
@@ -285,17 +263,6 @@ Children:
     Id: g=c3f4390acd311d167e841cba01fdca72
     Type: BaseDataVariableType
     DataType: Boolean
-  - Name: AuditSigning Signature
-    Id: g=b8a9d7a4ee57feff1e17630139dccabd
-    Type: AuditInfo
-    ReferenceType: NonHierarchicalOwning
-    Children:
-    - Name: Users
-      Id: g=e4929853212aff0e134487832bd40478
-      Type: BaseObjectType
-    - Name: Groups
-      Id: g=ff3eb2beef541ee042124cc8b2e52031
-      Type: BaseObjectType
   - Name: Calibration_Setup
     Id: g=8cfb2edd6a4302a3ebe17094010da9bc
     Type: BaseDataVariableType
@@ -370,17 +337,6 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
-  - Name: AuditSigning Signature
-    Id: g=bdfe9264ba2221aac7f4056032e152c3
-    Type: AuditInfo
-    ReferenceType: NonHierarchicalOwning
-    Children:
-    - Name: Users
-      Id: g=f9aa29c648b097da3fefcf3976004c9c
-      Type: BaseObjectType
-    - Name: Groups
-      Id: g=7d6005c35794b1268f593e3ef089f053
-      Type: BaseObjectType
   - Name: Calibration_Setup
     Id: g=28e58a0f9dfedd6cc07e238e33f0eba1
     Type: BaseDataVariableType

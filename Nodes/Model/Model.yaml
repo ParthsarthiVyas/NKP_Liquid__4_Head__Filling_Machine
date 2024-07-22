@@ -227,3 +227,16 @@ Children:
   DataType: String
 - File: Autobackup/Autobackup.yaml
 - File: Report/Report.yaml
+- Name: Powerfail
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_Remote_Display_Number"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

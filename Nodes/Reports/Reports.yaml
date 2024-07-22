@@ -281,11 +281,11 @@ Children:
       - Name: Path
         Type: BaseDataVariableType
         DataType: ResourceUri
-        Value: "ns=36;%PROJECTDIR%/Picture1.png"
+        Value: "ns=36;%PROJECTDIR%/th.png"
       - Name: Width
         Type: BaseDataVariableType
         DataType: Size
-        Value: 35.71875
+        Value: 22.48958396911621
         Children:
         - Name: EngineeringUnits
           Type: EUInformationType
@@ -308,7 +308,7 @@ Children:
       - Name: Height
         Type: BaseDataVariableType
         DataType: Size
-        Value: 7.4083333015441895
+        Value: 12.699999809265137
         Children:
         - Name: EngineeringUnits
           Type: EUInformationType
@@ -19800,11 +19800,11 @@ Children:
       - Name: Path
         Type: BaseDataVariableType
         DataType: ResourceUri
-        Value: "ns=36;%PROJECTDIR%/Picture1.png"
+        Value: "ns=36;%PROJECTDIR%/th.png"
       - Name: Width
         Type: BaseDataVariableType
         DataType: Size
-        Value: 35.71875
+        Value: 25.13541603088379
         Children:
         - Name: EngineeringUnits
           Type: EUInformationType
@@ -19827,7 +19827,7 @@ Children:
       - Name: Height
         Type: BaseDataVariableType
         DataType: Size
-        Value: 7.4083333015441895
+        Value: 15.875
         Children:
         - Name: EngineeringUnits
           Type: EUInformationType
@@ -27796,11 +27796,11 @@ Children:
       - Name: Path
         Type: BaseDataVariableType
         DataType: ResourceUri
-        Value: "ns=36;%PROJECTDIR%/Picture1.png"
+        Value: "ns=36;%PROJECTDIR%/th.png"
       - Name: Width
         Type: BaseDataVariableType
         DataType: Size
-        Value: 35.71875
+        Value: 30.42708396911621
         Children:
         - Name: EngineeringUnits
           Type: EUInformationType
@@ -27823,7 +27823,7 @@ Children:
       - Name: Height
         Type: BaseDataVariableType
         DataType: Size
-        Value: 7.4083333015441895
+        Value: 15.875
         Children:
         - Name: EngineeringUnits
           Type: EUInformationType
@@ -33798,11 +33798,11 @@ Children:
       - Name: Path
         Type: BaseDataVariableType
         DataType: ResourceUri
-        Value: "ns=36;%PROJECTDIR%/Picture1.png"
+        Value: "ns=36;%PROJECTDIR%/th.png"
       - Name: Width
         Type: BaseDataVariableType
         DataType: Size
-        Value: 35.71875
+        Value: 27.78125
         Children:
         - Name: EngineeringUnits
           Type: EUInformationType
@@ -33825,7 +33825,7 @@ Children:
       - Name: Height
         Type: BaseDataVariableType
         DataType: Size
-        Value: 7.4083333015441895
+        Value: 15.875
         Children:
         - Name: EngineeringUnits
           Type: EUInformationType

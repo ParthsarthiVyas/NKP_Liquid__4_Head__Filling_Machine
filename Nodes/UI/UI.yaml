@@ -673,6 +673,44 @@ Children:
         Type: PropertyType
         DataType: NodeId
         Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "{0}==96"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_Remote_Display_Number"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: NodeId
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Popup_Screens/Powerfail"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: NodeId
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Welcome/Welcome"
     - Name: CurrentPanel
       Type: NodePointer
       DataType: NodeId
@@ -904,6 +942,83 @@ Children:
           ValueRank: ScalarOrOneDimension
   - Name: RuntimeNetLogic7
     Type: NetLogic
+  - Name: RuntimeNetLogic1
+    Type: NetLogic
+    Children:
+    - Name: OnTimeout
+      Type: MethodInvocation
+      Children:
+      - Name: ObjectPointer
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/Commands/VariableCommands"
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Main_menu}@NodeId"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: Method
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChangePanel"
+      - Class: Reference
+        Target: ns=3;i=98
+        Direction: Forward
+      - Name: InputArguments
+        Type: BaseObjectType
+        Children:
+        - Name: NewPanel
+          Type: BaseDataVariableType
+          DataType: NodeId
+          Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Popup_Screens/Powerfail"
+        - Name: AliasNode
+          Type: BaseDataVariableType
+          DataType: NodeId
+          Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+          ValueRank: ScalarOrOneDimension
+  - Name: TextBox1
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Powerfail"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 190.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 500.0
 - File: Screens/Screens.yaml
 - File: SettingsWidgets/SettingsWidgets.yaml
 - File: UserObjects/UserObjects.yaml

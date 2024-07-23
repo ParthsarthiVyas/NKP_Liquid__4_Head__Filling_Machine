@@ -42261,6 +42261,7 @@ Children:
     DataType: String
     Value: "HMI_Rubber_Stopper_Off_PB_Clutch"
 - Name: HMI_I_Silent_Buzzer
+  Id: g=b1c95bc7c0b351bb82ad0084b8993f1a
   Type: RAEtherNetIPTag
   DataType: Boolean
   Children:

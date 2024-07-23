@@ -7515,3 +7515,353 @@ Children:
   - Class: Reference
     Target: ns=25;i=135
     Direction: Forward
+- Name: EMERGENCY_STOP
+  Id: g=ea692ba0320c8cc9ca375ac63a3d9b31
+  Type: Alarm_new_type
+  Children:
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=a505042720f0bd9d03c3d696fa34171b
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=a45ec67052076d581228e0ab9e662602
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=7427e15393d2aef594c6672732f50de4
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Alarms/EMERGENCY_STOP"
+      Children:
+      - Name: Mode
+        Id: g=f8fb800db7cae0d3e5b37dbc32583093
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=59b5db4fb837c06240e78a22466f7a64
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Date_Time
+    Id: g=bf38184b5f4704f3a36f206cdec08705
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Id: g=8623258b8a8f0ba773628f58f7864e91
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../NetLogic/mm_dd_yyyy_clock1/datetime"
+      Children:
+      - Name: Mode
+        Id: g=4d8445680ae0856a256bd6e278293fc4
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Message
+    Id: g=21e317a4663c6b01112dbb5228f0a114
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Emergency Stop"}
+  - Class: Reference
+    Target: ns=25;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=135
+    Direction: Forward
+- Name: 60_Degree_Servo_Not_At_Home_Position
+  Id: g=c113123c6d7f81e8375d49fd6dca58b6
+  Type: Alarm_new_type
+  Children:
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=bce8bc6095b4f34ee8cfca9a24d73481
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=133ec5ec73628b5730aa0ffd712a35d9
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=8c28280f62b82d65e827ce923f5d4ecd
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Alarms/60_degree_servo_not_in_home_position"
+      Children:
+      - Name: Mode
+        Id: g=44286f8497cd1e15ad87e8d1a687f8cd
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=fbb968060f37cf496d5a12849dd8562d
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Date_Time
+    Id: g=3de6d2e62cd9080a0a21c213f2234827
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Id: g=411e60a6905a17cea1546671af6063a9
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../NetLogic/mm_dd_yyyy_clock1/datetime"
+      Children:
+      - Name: Mode
+        Id: g=e93731a5a8132c7c87c0da079be57bf3
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Message
+    Id: g=9e40a3d6ddf967a9e0edcdbfba611a41
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"60 Degree Servo Not At Home Position"}
+  - Class: Reference
+    Target: ns=25;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=135
+    Direction: Forward
+- Name: 60_Degree_Servo_2_Not_At_Home_Position
+  Id: g=e47cdbc2915ef48f60eebf1b5add5d6b
+  Type: Alarm_new_type
+  Children:
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=f14c0e7d00b36f73a54648f1645ef067
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=8d3a7a66dd3ec78530b5e08eba27d8c8
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=a6510af19514b8fe6752ba7dd9592587
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Alarms/ 60_Degree_Servo_2_Not_At_Home_Position"
+      Children:
+      - Name: Mode
+        Id: g=59c577e5bbc675a442ef299223b3dfe4
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=4970aec39f99eca6675867f626304a43
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Date_Time
+    Id: g=050320c48e2e6fd4c16995192a9932f6
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Id: g=d7c43de933d3b888d37ebc8dcef75b70
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../NetLogic/mm_dd_yyyy_clock1/datetime"
+      Children:
+      - Name: Mode
+        Id: g=63a96ed8e043e72d0b2cf6d22bf231a7
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Message
+    Id: g=a2a8d82a8903366ee927d93592ff0f65
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":" 60 Degree Servo-2 Not At Home Position"}
+  - Class: Reference
+    Target: ns=25;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=135
+    Direction: Forward
+- Name: 60_Degree_Servo_Not_At_Forward_Position
+  Id: g=4ac06182487bcb7c830565e69daabb7b
+  Type: Alarm_new_type
+  Children:
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=635df6e57f990f018985d25be89df451
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=65eb0c4fab521657f2c4ee8eb4a8238a
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=34498889bed6a88b8d6fd17b43da6164
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Alarms/60_Degree_Servo_Not_At_Forward_Position"
+      Children:
+      - Name: Mode
+        Id: g=6e066e4f26f71f625545ccc595b0d494
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=7bc5eb6c59befd8d3df7f27f86234193
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Date_Time
+    Id: g=c45269312cb59889acc5ddcb0a1976a1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Id: g=823a1c5a79f83269bf535e05fe9fcf4d
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../NetLogic/mm_dd_yyyy_clock1/datetime"
+      Children:
+      - Name: Mode
+        Id: g=38937382c28351315d5536e3d8c055de
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Message
+    Id: g=42832b21eed6e66a064f1fd6f2b2619b
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"60 Degree Servo Not At Forward Position"}
+  - Class: Reference
+    Target: ns=25;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=135
+    Direction: Forward
+- Name: 60_Degree_Servo_2_Not_At_Forward_Position
+  Id: g=9c761008fffffe85c4e70f6f404f4460
+  Type: Alarm_new_type
+  Children:
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=7e82b84e2d129bca88171620ec8d3820
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=2cc6fe525b6467a222b9e0dba13f642a
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=b407913b49c530e55cbac203f0767c71
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Alarms/60_Degree_Servo_2_Not_At_Forward_Position"
+      Children:
+      - Name: Mode
+        Id: g=470d2d72d81d762e71879f5e77c4c95c
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=733dab80be7b711d0decdc58b1b8447b
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Date_Time
+    Id: g=0ad1f8798b48c7bfcc241b3accf4a0c8
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Id: g=06fa3a019a39e0bf51e6c43d190d4314
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../NetLogic/mm_dd_yyyy_clock1/datetime"
+      Children:
+      - Name: Mode
+        Id: g=3b5570bf9de2433246009db351cee66c
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Message
+    Id: g=a9bd1e1e8146031ce8d06830e470f58f
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"60 Degree Servo-2 Not At Forward Position"}
+  - Class: Reference
+    Target: ns=25;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=135
+    Direction: Forward

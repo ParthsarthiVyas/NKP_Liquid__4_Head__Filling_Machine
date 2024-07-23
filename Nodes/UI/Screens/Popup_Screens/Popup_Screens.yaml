@@ -6001,7 +6001,7 @@ Children:
               - Name: VariableToModify
                 Type: BaseDataVariableType
                 DataType: VariablePointer
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Alarms/Fill_Servo_3_Up_Limit_Switch_Pressed"
+                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_FaultAckClear"
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Boolean
@@ -6032,7 +6032,7 @@ Children:
               - Name: VariableToModify
                 Type: BaseDataVariableType
                 DataType: VariablePointer
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Alarms/Fill_Servo_3_Up_Limit_Switch_Pressed"
+                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_FaultAckClear"
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Boolean

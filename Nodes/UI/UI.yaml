@@ -673,44 +673,6 @@ Children:
         Type: PropertyType
         DataType: NodeId
         Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-      - Name: ConditionalConverter1
-        Type: ConditionalConverter
-        Children:
-        - Name: Condition
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ReferenceType: HasSource
-          Children:
-          - Name: ExpressionEvaluator1
-            Type: ExpressionEvaluator
-            Children:
-            - Name: Expression
-              Type: BaseDataVariableType
-              DataType: String
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: "{0}==96"
-            - Name: ns=3;Source0
-              Type: BaseDataVariableType
-              DataType: BaseDataType
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_Remote_Display_Number"
-        - Name: TrueValue
-          Type: BaseDataVariableType
-          DataType: NodeId
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Popup_Screens/Powerfail"
-        - Name: FalseValue
-          Type: BaseDataVariableType
-          DataType: NodeId
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/Welcome/Welcome"
     - Name: CurrentPanel
       Type: NodePointer
       DataType: NodeId

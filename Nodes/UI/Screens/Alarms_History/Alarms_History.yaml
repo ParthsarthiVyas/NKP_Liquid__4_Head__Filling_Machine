@@ -322,7 +322,7 @@ Children:
                 Type: BaseDataVariableType
                 DataType: VariablePointer
                 Description: {"NamespaceIndex":3,"TextId":"ToggleBitVariableToModifyDescription"}
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Alarms/Fill_Servo_3_Up_Limit_Switch_Pressed"
+                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_FaultAckClear"
               - Name: ArrayIndex
                 Type: BaseDataVariableType
                 DataType: UInt32
@@ -536,7 +536,7 @@ Children:
               - Name: VariableToModify
                 Type: BaseDataVariableType
                 DataType: VariablePointer
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Alarms/Fill_Servo_3_Up_Limit_Switch_Pressed"
+                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_FaultAckClear"
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Boolean
@@ -567,7 +567,7 @@ Children:
               - Name: VariableToModify
                 Type: BaseDataVariableType
                 DataType: VariablePointer
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Alarms/Fill_Servo_3_Up_Limit_Switch_Pressed"
+                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_FaultAckClear"
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Boolean
@@ -1281,7 +1281,7 @@ Children:
                 Type: BaseDataVariableType
                 DataType: VariablePointer
                 Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Alarms/Fill_Servo_4_Up_Limit_Switch_Pressed"
+                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_Silent_Buzzer"
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Boolean
@@ -1315,7 +1315,7 @@ Children:
                 Type: BaseDataVariableType
                 DataType: VariablePointer
                 Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Alarms/Fill_Servo_4_Up_Limit_Switch_Pressed"
+                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_Silent_Buzzer"
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Boolean
@@ -1376,148 +1376,6 @@ Children:
         DataType: Boolean
         ModellingRule: Optional
         Value: true
-    - Name: ConfirmAllButton3
-      Type: MomentaryButton
-      Children:
-      - Name: Active
-        Type: BaseDataVariableType
-        DataType: Boolean
-        AccessLevel: Read
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Auto_Mode/Automodeselect"
-          Children:
-          - Name: Mode
-            Type: BaseVariableType
-            DataType: DynamicLinkMode
-            ModellingRule: Optional
-            Value: 1
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Value: {"LocaleId":"en-US","Text":"Auto Mode"}
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#ffffff"
-      - Name: BackgroundColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#16498d"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 680.0
-      - Name: BottomMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 112.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 40.0
-      - Name: VerticalAlignment
-        Type: BaseVariableType
-        DataType: VerticalAlignment
-        ModellingRule: Optional
-        Value: 1
-      - Name: MinHoldTime
-        Type: BaseDataVariableType
-        DataType: Duration
-        ModellingRule: Optional
-        Value: "0:00:00:0.1000000"
-      - Name: MaxHoldTime
-        Type: BaseDataVariableType
-        DataType: Duration
-        ModellingRule: Optional
-        Value: "0:00:00:0.5000000"
-      - Name: MouseClickEventHandler1
-        Type: EventHandler
-        Children:
-        - Name: ListenEventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-        - Name: MethodsToCall
-          Type: BaseObjectType
-          Children:
-          - Name: MethodContainer1
-            Type: BaseObjectType
-            Children:
-            - Name: ns=3;ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "{Screen_loader}@NodeId"
-                Children:
-                - Name: Mode
-                  Type: BaseVariableType
-                  DataType: DynamicLinkMode
-                  ModellingRule: Optional
-                  Value: 2
-            - Name: ns=3;Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "ChangePanel"
-            - Name: InputArguments
-              Type: BaseObjectType
-              Children:
-              - Name: NewPanel
-                Type: BaseDataVariableType
-                DataType: NodeId
-                Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                Value: {"IdType":2,"Id":"5e444ae0db02723bef83a4d03f5f1978","Namespace":36}
-              - Name: AliasNode
-                Type: BaseDataVariableType
-                DataType: NodeId
-                Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
-                ValueRank: ScalarOrOneDimension
-        - Name: EventArguments
-          Type: MouseClickEvent
-          Children:
-          - Name: EventId
-            Type: PropertyType
-            DataType: ByteString
-          - Name: EventType
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceNode
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceName
-            Type: PropertyType
-            DataType: String
-          - Name: Time
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: ReceiveTime
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: Message
-            Type: PropertyType
-            DataType: LocalizedText
-          - Name: Severity
-            Type: PropertyType
-            DataType: UInt16
 - Name: Historical_Alarms
   Id: g=2555d8e397f983654543727ce7ccb1e3
   Supertype: Panel

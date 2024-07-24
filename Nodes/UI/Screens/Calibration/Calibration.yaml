@@ -385,7 +385,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"MInimum Value"}
+        Value: {"LocaleId":"en-US","Text":"Minimum Value"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size

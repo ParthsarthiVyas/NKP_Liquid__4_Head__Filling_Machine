@@ -1,6 +1,7 @@
 Name: Model
 Type: ModelCategoryFolder
 Children:
+- File: Alarms/Alarms.yaml
 - File: Auto_Mode/Auto_Mode.yaml
 - File: Manual_Mode/Manual_Mode.yaml
 - File: I_O_Screen/I_O_Screen.yaml
@@ -8,7 +9,6 @@ Children:
 - File: Retain_Variable/Retain_Variable.yaml
 - File: BatchData_Station_1/BatchData_Station_1.yaml
 - File: Recipe/Recipe.yaml
-- File: Alarms/Alarms.yaml
 - File: Report_path/Report_path.yaml
 - File: FileExplorer_ReportPDF_Model/FileExplorer_ReportPDF_Model.yaml
 - File: Backup/Backup.yaml
@@ -235,6 +235,68 @@ Children:
     Type: DynamicLink
     DataType: NodePath
     Value: "../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_Remote_Display_Number"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM17_Vibrator_Hgt_UpDn/Wrk_PF525Object/SpdRef_Units"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 50.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 50.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM16_Rubber_Stopper_Hgt_UpDn/Wrk_PF525Object/SpdRef_Units"
     Children:
     - Name: Mode
       Type: BaseVariableType

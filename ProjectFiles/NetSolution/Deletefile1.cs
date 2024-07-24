@@ -34,14 +34,14 @@ public class Deletefile1 : BaseNetLogic
     public override void Start()
     {
         // Insert code to be executed when the user-defined logic is started
-        Label resultLabel = (Label)LogicObject.Owner.Owner.Get("Label3");
+        Label resultLabel = (Label)LogicObject.Owner.Owner.Get("Label1");
         resultLabel.Text = "";
     }
 
     public override void Stop()
     {
         // Insert code to be executed when the user-defined logic is stopped
-        Label resultLabel = (Label)LogicObject.Owner.Owner.Get("Label3");
+        Label resultLabel = (Label)LogicObject.Owner.Owner.Get("Label1");
         resultLabel.Text = "";
     }
 
@@ -49,7 +49,7 @@ public class Deletefile1 : BaseNetLogic
     public void deletefile(string Selectedpath)
     {
         string filePath = Selectedpath;
-        Label resultLabel = (Label)LogicObject.Owner.Owner.Get("Label3");
+        Label resultLabel = (Label)LogicObject.Owner.Owner.Get("Label1");
         try
         {
             if (File.Exists(filePath))

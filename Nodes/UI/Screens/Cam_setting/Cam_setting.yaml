@@ -3616,7 +3616,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 320.0
+        Value: 488.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -3658,7 +3658,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 320.0
+        Value: 488.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -3700,7 +3700,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 320.0
+        Value: 488.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -3738,7 +3738,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 350.0
+        Value: 518.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -3872,7 +3872,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 351.0
+        Value: 519.0
       - Name: Style
         Type: BaseDataVariableType
         DataType: String
@@ -3948,7 +3948,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 350.0
+        Value: 518.0
       - Name: RightMargin
         Type: BaseVariableType
         DataType: Size
@@ -4056,7 +4056,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 350.0
+        Value: 518.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -4094,7 +4094,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 351.0
+        Value: 519.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -7611,7 +7611,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 320.0
+        Value: 572.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -7631,7 +7631,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 120.0
+        Value: 99.0
     - Name: Vacuum Pump8
       Type: Label
       Children:
@@ -7653,7 +7653,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 320.0
+        Value: 572.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -7673,7 +7673,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 510.0
+        Value: 489.0
     - Name: Main_motor_manual_s2
       Type: TextBox
       Children:
@@ -7960,12 +7960,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 370.0
+        Value: 349.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 318.0
+        Value: 570.0
       - Name: Style
         Type: BaseDataVariableType
         DataType: String

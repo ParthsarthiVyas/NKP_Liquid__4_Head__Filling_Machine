@@ -533,7 +533,7 @@ Children:
   - Name: StartingUser
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Security/Users/Pima"
+    Value: "/Objects/Users/Anonymous"
     Children:
     - Name: Kind
       Type: PropertyType

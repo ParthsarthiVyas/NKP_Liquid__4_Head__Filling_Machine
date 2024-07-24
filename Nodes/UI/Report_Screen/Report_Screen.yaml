@@ -5462,811 +5462,6 @@ Children:
         DataType: Boolean
         ModellingRule: Optional
         Value: true
-- Name: Set_Parameter
-  Id: g=72a8aa020c124d32829d7adb03efee25
-  Supertype: Panel
-  ReferenceType: HasComponent
-  Children:
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 800.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 400.0
-  - Name: VerticalAlignment
-    Type: BaseVariableType
-    DataType: VerticalAlignment
-    ModellingRule: Optional
-    Value: 3
-  - Name: HorizontalAlignment
-    Type: BaseVariableType
-    DataType: HorizontalAlignment
-    ModellingRule: Optional
-    Value: 3
-  - Name: TopMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-  - Name: Backgroung
-    Type: Rectangle
-    Children:
-    - Name: BorderColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#000000"
-    - Name: FillColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#100782e8"
-    - Name: BorderThickness
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
-    - Name: CornerRadius
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: HitTestVisible
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-    - Name: Blink
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-    - Name: Visible
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-      Value: true
-    - Name: Enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-      Value: true
-    - Name: Opacity
-      Type: BaseVariableType
-      DataType: Float
-      ModellingRule: Optional
-      Value: 100.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: -2.0
-    - Name: BottomMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 730.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 420.0
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 3
-    - Name: VerticalAlignment
-      Type: BaseVariableType
-      DataType: VerticalAlignment
-      ModellingRule: Optional
-      Value: 3
-    - Name: Rotation
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: Rectangle1
-      Type: Rectangle
-      Children:
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#ffffff"
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#100782e8"
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 2.0
-      - Name: CornerRadius
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: HitTestVisible
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ModellingRule: Optional
-      - Name: Blink
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ModellingRule: Optional
-      - Name: MoveTarget
-        Type: NodePointer
-        DataType: NodeId
-        ModellingRule: Optional
-        Children:
-        - Name: Kind
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-        - Name: NodeClass
-          Type: PropertyType
-          DataType: NodePointerNodeClass
-          ModellingRule: Optional
-          Value: 2
-      - Name: Visible
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ModellingRule: Optional
-        Value: true
-      - Name: Enabled
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ModellingRule: Optional
-        Value: true
-      - Name: Opacity
-        Type: BaseVariableType
-        DataType: Float
-        ModellingRule: Optional
-        Value: 100.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: RightMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-      - Name: BottomMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 780.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 380.0
-      - Name: HorizontalAlignment
-        Type: BaseVariableType
-        DataType: HorizontalAlignment
-        ModellingRule: Optional
-      - Name: VerticalAlignment
-        Type: BaseVariableType
-        DataType: VerticalAlignment
-        ModellingRule: Optional
-      - Name: Rotation
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-      - Name: PDFViewer1
-        Type: PdfViewer
-        Children:
-        - Name: Path
-          Type: BaseDataVariableType
-          DataType: ResourceUri
-          Children:
-          - Name: StringFormatter1
-            Type: StringFormatter
-            Children:
-            - Name: Format
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: {"LocaleId":"en-US","Text":"/persistent/data/Rockwell_Automation/FactoryTalk_Optix/FTOptixApplication/Projects/NKP_26_03/ApplicationFiles/{0}"}
-            - Name: ns=3;Source0
-              Type: BaseDataVariableType
-              DataType: BaseDataType
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Report_path/Set_parameter_1"
-        - Name: CurrentPage
-          Type: BaseDataVariableType
-          DataType: Int32
-        - Name: Width
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 759.0
-        - Name: Height
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 359.0
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 10.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 10.0
-        - Name: ZoomMode
-          Type: BaseDataVariableType
-          DataType: PdfViewerZoomMode
-          ModellingRule: Optional
-          Value: 3
-- Name: Batch_Summary
-  Id: g=70b5ed67afc237c4730cef7dd00c4e07
-  Supertype: Panel
-  ReferenceType: HasComponent
-  Children:
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 800.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 400.0
-  - Name: VerticalAlignment
-    Type: BaseVariableType
-    DataType: VerticalAlignment
-    ModellingRule: Optional
-    Value: 3
-  - Name: HorizontalAlignment
-    Type: BaseVariableType
-    DataType: HorizontalAlignment
-    ModellingRule: Optional
-    Value: 3
-  - Name: TopMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-  - Name: Backgroung
-    Type: Rectangle
-    Children:
-    - Name: BorderColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#000000"
-    - Name: FillColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#100782e8"
-    - Name: BorderThickness
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
-    - Name: CornerRadius
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: HitTestVisible
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-    - Name: Blink
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-    - Name: Visible
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-      Value: true
-    - Name: Enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-      Value: true
-    - Name: Opacity
-      Type: BaseVariableType
-      DataType: Float
-      ModellingRule: Optional
-      Value: 100.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: -2.0
-    - Name: BottomMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 730.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 420.0
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 3
-    - Name: VerticalAlignment
-      Type: BaseVariableType
-      DataType: VerticalAlignment
-      ModellingRule: Optional
-      Value: 3
-    - Name: Rotation
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: Rectangle1
-      Type: Rectangle
-      Children:
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#ffffff"
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#100782e8"
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 2.0
-      - Name: CornerRadius
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: HitTestVisible
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ModellingRule: Optional
-      - Name: Blink
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ModellingRule: Optional
-      - Name: MoveTarget
-        Type: NodePointer
-        DataType: NodeId
-        ModellingRule: Optional
-        Children:
-        - Name: Kind
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-        - Name: NodeClass
-          Type: PropertyType
-          DataType: NodePointerNodeClass
-          ModellingRule: Optional
-          Value: 2
-      - Name: Visible
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ModellingRule: Optional
-        Value: true
-      - Name: Enabled
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ModellingRule: Optional
-        Value: true
-      - Name: Opacity
-        Type: BaseVariableType
-        DataType: Float
-        ModellingRule: Optional
-        Value: 100.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: RightMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-      - Name: BottomMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 780.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 380.0
-      - Name: HorizontalAlignment
-        Type: BaseVariableType
-        DataType: HorizontalAlignment
-        ModellingRule: Optional
-      - Name: VerticalAlignment
-        Type: BaseVariableType
-        DataType: VerticalAlignment
-        ModellingRule: Optional
-      - Name: Rotation
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-      - Name: PDFViewer1
-        Type: PdfViewer
-        Children:
-        - Name: Path
-          Type: BaseDataVariableType
-          DataType: ResourceUri
-          Children:
-          - Name: StringFormatter1
-            Type: StringFormatter
-            Children:
-            - Name: Format
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: {"LocaleId":"en-US","Text":"/persistent/data/Rockwell_Automation/FactoryTalk_Optix/FTOptixApplication/Projects/NKP_26_03/ApplicationFiles/{0}"}
-            - Name: ns=3;Source0
-              Type: BaseDataVariableType
-              DataType: BaseDataType
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Report_path/Batch_Summery_path1"
-        - Name: CurrentPage
-          Type: BaseDataVariableType
-          DataType: Int32
-        - Name: Width
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 759.0
-        - Name: Height
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 359.0
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 10.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 10.0
-        - Name: ZoomMode
-          Type: BaseDataVariableType
-          DataType: PdfViewerZoomMode
-          ModellingRule: Optional
-          Value: 3
-- Name: Batch_log_report
-  Id: g=87979544656fa621cca77302e5765cde
-  Supertype: Panel
-  ReferenceType: HasComponent
-  Children:
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 800.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 400.0
-  - Name: VerticalAlignment
-    Type: BaseVariableType
-    DataType: VerticalAlignment
-    ModellingRule: Optional
-    Value: 3
-  - Name: HorizontalAlignment
-    Type: BaseVariableType
-    DataType: HorizontalAlignment
-    ModellingRule: Optional
-    Value: 3
-  - Name: TopMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-  - Name: Backgroung
-    Type: Rectangle
-    Children:
-    - Name: BorderColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#000000"
-    - Name: FillColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#100782e8"
-    - Name: BorderThickness
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
-    - Name: CornerRadius
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: HitTestVisible
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-    - Name: Blink
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-    - Name: Visible
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-      Value: true
-    - Name: Enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-      Value: true
-    - Name: Opacity
-      Type: BaseVariableType
-      DataType: Float
-      ModellingRule: Optional
-      Value: 100.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: -2.0
-    - Name: BottomMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 730.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 420.0
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 3
-    - Name: VerticalAlignment
-      Type: BaseVariableType
-      DataType: VerticalAlignment
-      ModellingRule: Optional
-      Value: 3
-    - Name: Rotation
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-    - Name: Rectangle1
-      Type: Rectangle
-      Children:
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#ffffff"
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#100782e8"
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 2.0
-      - Name: CornerRadius
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: HitTestVisible
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ModellingRule: Optional
-      - Name: Blink
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ModellingRule: Optional
-      - Name: MoveTarget
-        Type: NodePointer
-        DataType: NodeId
-        ModellingRule: Optional
-        Children:
-        - Name: Kind
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-        - Name: NodeClass
-          Type: PropertyType
-          DataType: NodePointerNodeClass
-          ModellingRule: Optional
-          Value: 2
-      - Name: Visible
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ModellingRule: Optional
-        Value: true
-      - Name: Enabled
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ModellingRule: Optional
-        Value: true
-      - Name: Opacity
-        Type: BaseVariableType
-        DataType: Float
-        ModellingRule: Optional
-        Value: 100.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: RightMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-      - Name: BottomMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 780.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 380.0
-      - Name: HorizontalAlignment
-        Type: BaseVariableType
-        DataType: HorizontalAlignment
-        ModellingRule: Optional
-      - Name: VerticalAlignment
-        Type: BaseVariableType
-        DataType: VerticalAlignment
-        ModellingRule: Optional
-      - Name: Rotation
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-      - Name: PDFViewer1
-        Type: PdfViewer
-        Children:
-        - Name: Path
-          Type: BaseDataVariableType
-          DataType: ResourceUri
-          Value: "ns=36;%APPLICATIONDIR%/Log_Event_Report.pdf"
-          Children:
-          - Name: StringFormatter1
-            Type: StringFormatter
-            Children:
-            - Name: Format
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: {"LocaleId":"en-US","Text":"/persistent/data/Rockwell_Automation/FactoryTalk_Optix/FTOptixApplication/Projects/NKP_26_03/ApplicationFiles/{0}"}
-            - Name: ns=3;Source0
-              Type: BaseDataVariableType
-              DataType: BaseDataType
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Report_path/Log_Alarm_report"
-        - Name: CurrentPage
-          Type: BaseDataVariableType
-          DataType: Int32
-        - Name: Width
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 759.0
-        - Name: Height
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 359.0
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 10.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 10.0
-        - Name: ZoomMode
-          Type: BaseDataVariableType
-          DataType: PdfViewerZoomMode
-          ModellingRule: Optional
-          Value: 3
 - Name: _59_FileExplorer
   Id: g=6e46d3cdaa7fec476cde791f53df57eb
   Supertype: SubScreenTemplate2
@@ -11333,61 +10528,6 @@ Children:
                 Type: BaseVariableType
                 DataType: VerticalAlignment
                 ModellingRule: Optional
-            - Name: Label10
-              Type: Label
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                ModellingRule: Optional
-                Value: {"LocaleId":"en-US","Text":"Recipe"}
-              - Name: Width
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: -1.0
-              - Name: Height
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 20.0
-              - Name: TextHorizontalAlignment
-                Type: BaseVariableType
-                DataType: TextHorizontalAlignment
-                ModellingRule: Optional
-                Value: 1
-              - Name: TextVerticalAlignment
-                Type: BaseVariableType
-                DataType: TextVerticalAlignment
-                ModellingRule: Optional
-                Value: 1
-              - Name: FontSize
-                Type: BaseDataVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 15.0
-              - Name: HorizontalAlignment
-                Type: BaseVariableType
-                DataType: HorizontalAlignment
-                ModellingRule: Optional
-                Value: 3
-              - Name: RightMargin
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-              - Name: TopMargin
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 7.0
-              - Name: LeftMargin
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-              - Name: VerticalAlignment
-                Type: BaseVariableType
-                DataType: VerticalAlignment
-                ModellingRule: Optional
             - Name: Label16
               Type: Label
               Children:
@@ -12205,68 +11345,6 @@ Children:
                       DataType: Size
                       ModellingRule: Optional
                       Value: 20.0
-                  - Name: Checkbox1
-                    Type: CheckBox
-                    Children:
-                    - Name: Checked
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Operator/Recipe"
-                        Children:
-                        - Name: Mode
-                          Type: BaseVariableType
-                          DataType: DynamicLinkMode
-                          ModellingRule: Optional
-                          Value: 2
-                    - Name: LeftMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 10.0
-                    - Name: TopMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 7.0
-                    - Name: HorizontalAlignment
-                      Type: BaseVariableType
-                      DataType: HorizontalAlignment
-                      ModellingRule: Optional
-                      Value: 2
-                    - Name: VerticalAlignment
-                      Type: BaseVariableType
-                      DataType: VerticalAlignment
-                      ModellingRule: Optional
-                    - Name: BottomMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                    - Name: RightMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                    - Name: Width
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 39.0
-                    - Name: FontSize
-                      Type: BaseDataVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 15.0
-                    - Name: Height
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 20.0
-                    - Name: Text
-                      Type: BaseDataVariableType
-                      DataType: LocalizedText
                   - Name: Checkbox41
                     Type: CheckBox
                     Children:
@@ -12936,65 +12014,6 @@ Children:
                       DataType: Size
                       ModellingRule: Optional
                       Value: 20.0
-                  - Name: Checkbox16
-                    Type: CheckBox
-                    Children:
-                    - Name: Checked
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Supervisor/Recipe"
-                        Children:
-                        - Name: Mode
-                          Type: BaseVariableType
-                          DataType: DynamicLinkMode
-                          ModellingRule: Optional
-                          Value: 2
-                    - Name: LeftMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 10.0
-                    - Name: TopMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 7.0
-                    - Name: HorizontalAlignment
-                      Type: BaseVariableType
-                      DataType: HorizontalAlignment
-                      ModellingRule: Optional
-                      Value: 2
-                    - Name: VerticalAlignment
-                      Type: BaseVariableType
-                      DataType: VerticalAlignment
-                      ModellingRule: Optional
-                    - Name: BottomMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                    - Name: RightMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                    - Name: Width
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 39.0
-                    - Name: FontSize
-                      Type: BaseDataVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 15.0
-                    - Name: Height
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 20.0
                   - Name: Checkbox43
                     Type: CheckBox
                     Children:
@@ -13616,65 +12635,6 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Manager/Alarm"
-                        Children:
-                        - Name: Mode
-                          Type: BaseVariableType
-                          DataType: DynamicLinkMode
-                          ModellingRule: Optional
-                          Value: 2
-                    - Name: LeftMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 10.0
-                    - Name: TopMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 7.0
-                    - Name: HorizontalAlignment
-                      Type: BaseVariableType
-                      DataType: HorizontalAlignment
-                      ModellingRule: Optional
-                      Value: 2
-                    - Name: VerticalAlignment
-                      Type: BaseVariableType
-                      DataType: VerticalAlignment
-                      ModellingRule: Optional
-                    - Name: BottomMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                    - Name: RightMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                    - Name: Width
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 39.0
-                    - Name: FontSize
-                      Type: BaseDataVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 15.0
-                    - Name: Height
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 20.0
-                  - Name: Checkbox22
-                    Type: CheckBox
-                    Children:
-                    - Name: Checked
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Manager/Recipe"
                         Children:
                         - Name: Mode
                           Type: BaseVariableType
@@ -14392,65 +13352,6 @@ Children:
                       DataType: Size
                       ModellingRule: Optional
                       Value: 20.0
-                  - Name: Checkbox32
-                    Type: CheckBox
-                    Children:
-                    - Name: Checked
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Engineer/Recipe"
-                        Children:
-                        - Name: Mode
-                          Type: BaseVariableType
-                          DataType: DynamicLinkMode
-                          ModellingRule: Optional
-                          Value: 2
-                    - Name: LeftMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 10.0
-                    - Name: TopMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 7.0
-                    - Name: HorizontalAlignment
-                      Type: BaseVariableType
-                      DataType: HorizontalAlignment
-                      ModellingRule: Optional
-                      Value: 2
-                    - Name: VerticalAlignment
-                      Type: BaseVariableType
-                      DataType: VerticalAlignment
-                      ModellingRule: Optional
-                    - Name: BottomMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                    - Name: RightMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                    - Name: Width
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 39.0
-                    - Name: FontSize
-                      Type: BaseDataVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 15.0
-                    - Name: Height
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 20.0
                   - Name: Checkbox48
                     Type: CheckBox
                     Children:
@@ -15072,65 +13973,6 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Administrator/Alarm"
-                        Children:
-                        - Name: Mode
-                          Type: BaseVariableType
-                          DataType: DynamicLinkMode
-                          ModellingRule: Optional
-                          Value: 2
-                    - Name: LeftMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 10.0
-                    - Name: TopMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 7.0
-                    - Name: HorizontalAlignment
-                      Type: BaseVariableType
-                      DataType: HorizontalAlignment
-                      ModellingRule: Optional
-                      Value: 2
-                    - Name: VerticalAlignment
-                      Type: BaseVariableType
-                      DataType: VerticalAlignment
-                      ModellingRule: Optional
-                    - Name: BottomMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                    - Name: RightMargin
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                    - Name: Width
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 39.0
-                    - Name: FontSize
-                      Type: BaseDataVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 15.0
-                    - Name: Height
-                      Type: BaseVariableType
-                      DataType: Size
-                      ModellingRule: Optional
-                      Value: 20.0
-                  - Name: Checkbox40
-                    Type: CheckBox
-                    Children:
-                    - Name: Checked
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Administrator/Recipe"
                         Children:
                         - Name: Mode
                           Type: BaseVariableType
@@ -15903,6 +14745,186 @@ Children:
               DataType: VerticalAlignment
               ModellingRule: Optional
               Value: 3
+            - Name: Label10
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"LocaleId":"en-US","Text":"Recipe Create/save/Edit/Rename"}
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: -1.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 35.0
+              - Name: TextHorizontalAlignment
+                Type: BaseVariableType
+                DataType: TextHorizontalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: TextVerticalAlignment
+                Type: BaseVariableType
+                DataType: TextVerticalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 15.0
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 3
+              - Name: RightMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 7.0
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+              - Name: WordWrap
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+            - Name: Label1
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"LocaleId":"en-US","Text":"Recipe Delete"}
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: -1.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 35.0
+              - Name: TextHorizontalAlignment
+                Type: BaseVariableType
+                DataType: TextHorizontalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: TextVerticalAlignment
+                Type: BaseVariableType
+                DataType: TextVerticalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 15.0
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 3
+              - Name: RightMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: -3.0
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+              - Name: WordWrap
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+            - Name: Label2
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"LocaleId":"en-US","Text":"Recipe Download"}
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: -1.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 20.0
+              - Name: TextHorizontalAlignment
+                Type: BaseVariableType
+                DataType: TextHorizontalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: TextVerticalAlignment
+                Type: BaseVariableType
+                DataType: TextVerticalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 15.0
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 3
+              - Name: RightMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: -3.0
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+              - Name: WordWrap
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
         - Name: Rectangle2
           Type: Rectangle
           Children:
@@ -16490,6 +15512,192 @@ Children:
                       DataType: Size
                       ModellingRule: Optional
                       Value: 20.0
+                  - Name: Checkbox1
+                    Type: CheckBox
+                    Children:
+                    - Name: Checked
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Operator/Recipe"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 10.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 7.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: VerticalAlignment
+                      Type: BaseVariableType
+                      DataType: VerticalAlignment
+                      ModellingRule: Optional
+                    - Name: BottomMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: RightMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 39.0
+                    - Name: FontSize
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 15.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 20.0
+                    - Name: Text
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                  - Name: Checkbox2
+                    Type: CheckBox
+                    Children:
+                    - Name: Checked
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Operator/Recipe_Delete"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 10.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 17.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: VerticalAlignment
+                      Type: BaseVariableType
+                      DataType: VerticalAlignment
+                      ModellingRule: Optional
+                    - Name: BottomMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: RightMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 39.0
+                    - Name: FontSize
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 15.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 20.0
+                    - Name: Text
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                  - Name: Checkbox3
+                    Type: CheckBox
+                    Children:
+                    - Name: Checked
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Operator/Recipe_Download"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 10.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 7.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: VerticalAlignment
+                      Type: BaseVariableType
+                      DataType: VerticalAlignment
+                      ModellingRule: Optional
+                    - Name: BottomMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: RightMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 39.0
+                    - Name: FontSize
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 15.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 20.0
+                    - Name: Text
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
               - Name: Rectangle3
                 Type: Rectangle
                 Children:
@@ -16875,6 +16083,183 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Supervisor/Process_Setup"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 10.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 7.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: VerticalAlignment
+                      Type: BaseVariableType
+                      DataType: VerticalAlignment
+                      ModellingRule: Optional
+                    - Name: BottomMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: RightMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 39.0
+                    - Name: FontSize
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 15.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 20.0
+                  - Name: Checkbox16
+                    Type: CheckBox
+                    Children:
+                    - Name: Checked
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Supervisor/Recipe"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 10.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 7.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: VerticalAlignment
+                      Type: BaseVariableType
+                      DataType: VerticalAlignment
+                      ModellingRule: Optional
+                    - Name: BottomMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: RightMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 39.0
+                    - Name: FontSize
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 15.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 20.0
+                  - Name: Checkbox1
+                    Type: CheckBox
+                    Children:
+                    - Name: Checked
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Supervisor/Recipe_delete"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 10.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 17.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: VerticalAlignment
+                      Type: BaseVariableType
+                      DataType: VerticalAlignment
+                      ModellingRule: Optional
+                    - Name: BottomMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: RightMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 39.0
+                    - Name: FontSize
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 15.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 20.0
+                  - Name: Checkbox2
+                    Type: CheckBox
+                    Children:
+                    - Name: Checked
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Supervisor/Recipe_Download"
                         Children:
                         - Name: Mode
                           Type: BaseVariableType
@@ -17356,6 +16741,183 @@ Children:
                       DataType: Size
                       ModellingRule: Optional
                       Value: 20.0
+                  - Name: Checkbox22
+                    Type: CheckBox
+                    Children:
+                    - Name: Checked
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Manager/Recipe"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 10.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 7.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: VerticalAlignment
+                      Type: BaseVariableType
+                      DataType: VerticalAlignment
+                      ModellingRule: Optional
+                    - Name: BottomMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: RightMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 39.0
+                    - Name: FontSize
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 15.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 20.0
+                  - Name: Checkbox1
+                    Type: CheckBox
+                    Children:
+                    - Name: Checked
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Manager/Recipe_Delete"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 10.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 17.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: VerticalAlignment
+                      Type: BaseVariableType
+                      DataType: VerticalAlignment
+                      ModellingRule: Optional
+                    - Name: BottomMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: RightMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 39.0
+                    - Name: FontSize
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 15.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 20.0
+                  - Name: Checkbox2
+                    Type: CheckBox
+                    Children:
+                    - Name: Checked
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Manager/Recipe_Download"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 10.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 7.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: VerticalAlignment
+                      Type: BaseVariableType
+                      DataType: VerticalAlignment
+                      ModellingRule: Optional
+                    - Name: BottomMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: RightMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 39.0
+                    - Name: FontSize
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 15.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 20.0
               - Name: Rectangle6
                 Type: Rectangle
                 Children:
@@ -17448,7 +17010,7 @@ Children:
                         Type: BaseDataVariableType
                         DataType: LocalizedText
                         ModellingRule: Optional
-                        Value: {"LocaleId":"en-US","Text":"Engineer"}
+                        Value: {"LocaleId":"en-US","Text":"Maintenance"}
                       - Name: Width
                         Type: BaseVariableType
                         DataType: Size
@@ -17741,6 +17303,183 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Engineer/Process_Setup"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 10.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 7.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: VerticalAlignment
+                      Type: BaseVariableType
+                      DataType: VerticalAlignment
+                      ModellingRule: Optional
+                    - Name: BottomMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: RightMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 39.0
+                    - Name: FontSize
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 15.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 20.0
+                  - Name: Checkbox32
+                    Type: CheckBox
+                    Children:
+                    - Name: Checked
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Engineer/Recipe"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 10.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 7.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: VerticalAlignment
+                      Type: BaseVariableType
+                      DataType: VerticalAlignment
+                      ModellingRule: Optional
+                    - Name: BottomMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: RightMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 39.0
+                    - Name: FontSize
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 15.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 20.0
+                  - Name: Checkbox1
+                    Type: CheckBox
+                    Children:
+                    - Name: Checked
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Engineer/Recipe_Delete"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 10.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 17.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: VerticalAlignment
+                      Type: BaseVariableType
+                      DataType: VerticalAlignment
+                      ModellingRule: Optional
+                    - Name: BottomMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: RightMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 39.0
+                    - Name: FontSize
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 15.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 20.0
+                  - Name: Checkbox2
+                    Type: CheckBox
+                    Children:
+                    - Name: Checked
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Engineer/Recipe_Download"
                         Children:
                         - Name: Mode
                           Type: BaseVariableType
@@ -18174,6 +17913,183 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Administrator/Process_Setup"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 10.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 7.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: VerticalAlignment
+                      Type: BaseVariableType
+                      DataType: VerticalAlignment
+                      ModellingRule: Optional
+                    - Name: BottomMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: RightMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 39.0
+                    - Name: FontSize
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 15.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 20.0
+                  - Name: Checkbox40
+                    Type: CheckBox
+                    Children:
+                    - Name: Checked
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Administrator/Recipe"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 10.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 7.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: VerticalAlignment
+                      Type: BaseVariableType
+                      DataType: VerticalAlignment
+                      ModellingRule: Optional
+                    - Name: BottomMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: RightMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 39.0
+                    - Name: FontSize
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 15.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 20.0
+                  - Name: Checkbox1
+                    Type: CheckBox
+                    Children:
+                    - Name: Checked
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Administrator/Recipe_Delete"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 10.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 17.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: VerticalAlignment
+                      Type: BaseVariableType
+                      DataType: VerticalAlignment
+                      ModellingRule: Optional
+                    - Name: BottomMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: RightMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 39.0
+                    - Name: FontSize
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 15.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 20.0
+                  - Name: Checkbox2
+                    Type: CheckBox
+                    Children:
+                    - Name: Checked
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Administrator/Recipe_Download"
                         Children:
                         - Name: Mode
                           Type: BaseVariableType
@@ -22527,7 +22443,7 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"Label3"}
+          Value: {"LocaleId":"en-US","Text":"Label1"}
         - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size

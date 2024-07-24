@@ -628,22 +628,6 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-      - Name: Panel7
-        Type: NavigationPanelItem
-        Children:
-        - Name: Title
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"Input-7"}
-        - Name: Panel
-          Type: NodePointer
-          DataType: NodeId
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/UI/Screens/I_O_Screen_Station_1/Input_Status7"
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
     - Name: CurrentPanel
       Type: NodePointer
       DataType: NodeId
@@ -5930,7 +5914,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"X37 - Sensor For Low Stopper In Linear Bowl"}
+        Value: {"LocaleId":"en-US","Text":"X37 - Spare Input Provision"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -6577,7 +6561,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"X41 - Linear Vibrator Trip"}
+        Value: {"LocaleId":"en-US","Text":"X41 - Spare Input Provision"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -7058,7 +7042,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"X43 - Sensor For Vertical Conveyor Open"}
+        Value: {"LocaleId":"en-US","Text":"X43 - Spare Input Provision"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -7908,12 +7892,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 420.0
+      Value: 380.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 108.0
+      Value: 540.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -8149,12 +8133,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 420.0
+      Value: 380.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 179.0
+      Value: 611.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -8509,12 +8493,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 420.0
+      Value: 380.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 250.0
+      Value: 682.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -8629,12 +8613,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 420.0
+      Value: 380.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 318.0
+      Value: 750.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -11042,7 +11026,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Y16 - Star Wheel Motor"}
+        Value: {"LocaleId":"en-US","Text":"Y16 - Spare Output Provision"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -11642,7 +11626,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Y14 - Linear Vibrator"}
+        Value: {"LocaleId":"en-US","Text":" Y14 - Spare Output Provision"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size

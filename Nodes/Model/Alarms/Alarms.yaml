@@ -777,7 +777,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ALARMS_WORD[4].3"
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ALARMS_WORD[4].2"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -790,7 +790,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ALARMS_WORD[4].4"
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ALARMS_WORD[4].3"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -803,7 +803,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ALARMS_WORD[4].5"
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ALARMS_WORD[4].4"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -816,7 +816,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ALARMS_WORD[4].6"
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ALARMS_WORD[4].5"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -829,7 +829,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ALARMS_WORD[4].7"
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ALARMS_WORD[4].6"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -842,7 +842,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ALARMS_WORD[4].2"
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/ALARMS_WORD[4].7"
     Children:
     - Name: Mode
       Type: BaseVariableType

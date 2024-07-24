@@ -70,6 +70,14 @@ Children:
     Id: g=cd1ca4c188f1442ad70a37f490f8fa65
     Type: BaseDataVariableType
     DataType: Boolean
+  - Name: Recipe_Delete
+    Id: g=4fa24fb1abb5d4d92417ff13b950a467
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Recipe_Download
+    Id: g=d48f15d6df2d2fa6bb7892c0e9cb4c32
+    Type: BaseDataVariableType
+    DataType: Boolean
 - Name: Supervisor
   Id: g=82b3fae70b66329a16ec9e91c64c1ebd
   Type: BaseObjectType
@@ -139,6 +147,14 @@ Children:
     DataType: Boolean
   - Name: Process_Setup
     Id: g=a3899631426aa0c9f11e40239e4b4eca
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Recipe_delete
+    Id: g=1a333175d2791a601628e36391df8b1e
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Recipe_Download
+    Id: g=21414972f4f37a322d674d92b016a387
     Type: BaseDataVariableType
     DataType: Boolean
 - Name: Manager
@@ -213,6 +229,16 @@ Children:
     Id: g=724cd1ad87779b987eb9fe682a9c624d
     Type: BaseDataVariableType
     DataType: Boolean
+  - Name: Recipe_Delete
+    Id: g=9faada0ad9ca1f1b17cadf374608f604
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Recipe_Download
+    Id: g=cdcb34482d70f77dde905608bddee3d2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
 - Name: Engineer
   Id: g=e2c7020874813108919b90d3feb8daea
   Type: BaseObjectType
@@ -281,6 +307,14 @@ Children:
     DataType: Boolean
   - Name: Process_Setup
     Id: g=65dc048a85effe0e5e4fa74f89946224
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Recipe_Delete
+    Id: g=7fbf3f6bbe4e4911eca7fb49c29eb68b
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Recipe_Download
+    Id: g=ee96aeeab38b6175a9a4b856633aebee
     Type: BaseDataVariableType
     DataType: Boolean
 - Name: Administrator
@@ -359,6 +393,16 @@ Children:
     Value: true
   - Name: Process_Setup
     Id: g=b6d90309d38212bf50a1f967a0c28cf3
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Recipe_Delete
+    Id: g=a1777e83a1f3fbf3d4835d4458bb1c0f
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Recipe_Download
+    Id: g=37a86981fc157fea75b1c57ab798f003
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true

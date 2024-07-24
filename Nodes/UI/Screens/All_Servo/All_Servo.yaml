@@ -11756,141 +11756,6 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 40.0
-    - Name: Rectangle5
-      Type: Rectangle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: -468.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 298.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 130.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 32.0
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#5dc3f6e9"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#b3b3b3"
-      - Name: HorizontalAlignment
-        Type: BaseVariableType
-        DataType: HorizontalAlignment
-        ModellingRule: Optional
-        Value: 2
-      - Name: RightMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-      - Name: CornerRadius
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 5.0
-      - Name: Main Motor (Vial_Min)
-        Type: Label
-        Children:
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"0"}
-          Children:
-          - Name: StringFormatter1
-            Type: StringFormatter
-            Children:
-            - Name: Format
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: {"LocaleId":"","Text":"{0:n2}"}
-            - Name: ns=3;Source0
-              Type: BaseDataVariableType
-              DataType: BaseDataType
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM16_Rubber_Stopper_Hgt_UpDn/Wrk_PF525Object/SpdRef_Units"
-        - Name: FontSize
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 15.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-        - Name: Width
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 130.0
-        - Name: Height
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 30.0
-        - Name: TextVerticalAlignment
-          Type: BaseVariableType
-          DataType: TextVerticalAlignment
-          ModellingRule: Optional
-          Value: 1
-        - Name: TextHorizontalAlignment
-          Type: BaseVariableType
-          DataType: TextHorizontalAlignment
-          ModellingRule: Optional
-          Value: 1
-        - Name: TextColor
-          Type: BaseDataVariableType
-          DataType: Color
-          ModellingRule: Optional
-          Value: "#000000"
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-        - Name: HorizontalAlignment
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-          ModellingRule: Optional
-          Value: 3
-        - Name: VerticalAlignment
-          Type: BaseVariableType
-          DataType: VerticalAlignment
-          ModellingRule: Optional
-          Value: 3
-        - Name: WordWrap
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ModellingRule: Optional
-        - Name: FontWeight
-          Type: BaseDataVariableType
-          DataType: FontWeightEnum
-          ModellingRule: Optional
-          Value: 700
     - Name: Rectangle6
       Type: Rectangle
       Children:
@@ -14375,7 +14240,7 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"LocaleId":"en-US","Text":"Forword"}
+        Value: {"LocaleId":"en-US","Text":"Forward"}
       - Name: TextVerticalAlignment
         Type: BaseVariableType
         DataType: TextVerticalAlignment
@@ -15079,6 +14944,70 @@ Children:
           DataType: FontWeightEnum
           ModellingRule: Optional
           Value: 700
+    - Name: Main_motor_manual_s5
+      Type: TextBox
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Variable3"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 130.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -466.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 300.0
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "InputBoxStyle1"
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 32.0
+      - Name: ReadOnly
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: ContentType
+        Type: BaseVariableType
+        DataType: InputTypeEnum
+        ModellingRule: Optional
   - Name: TopMargin
     Type: BaseVariableType
     DataType: Size
@@ -15331,141 +15260,6 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 40.0
-    - Name: Rectangle5
-      Type: Rectangle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: -468.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 298.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 130.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 32.0
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#5dc3f6e9"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#b3b3b3"
-      - Name: HorizontalAlignment
-        Type: BaseVariableType
-        DataType: HorizontalAlignment
-        ModellingRule: Optional
-        Value: 2
-      - Name: RightMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-      - Name: CornerRadius
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 5.0
-      - Name: Main Motor (Vial_Min)
-        Type: Label
-        Children:
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"0"}
-          Children:
-          - Name: StringFormatter1
-            Type: StringFormatter
-            Children:
-            - Name: Format
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              ReferenceType: HasParameter
-              ModellingRule: Optional
-              Value: {"LocaleId":"","Text":"{0:n2}"}
-            - Name: ns=3;Source0
-              Type: BaseDataVariableType
-              DataType: BaseDataType
-              ReferenceType: HasSource
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:EM17_Vibrator_Hgt_UpDn/Wrk_PF525Object/SpdRef_Units"
-        - Name: FontSize
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 15.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-        - Name: Width
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 130.0
-        - Name: Height
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 30.0
-        - Name: TextVerticalAlignment
-          Type: BaseVariableType
-          DataType: TextVerticalAlignment
-          ModellingRule: Optional
-          Value: 1
-        - Name: TextHorizontalAlignment
-          Type: BaseVariableType
-          DataType: TextHorizontalAlignment
-          ModellingRule: Optional
-          Value: 1
-        - Name: TextColor
-          Type: BaseDataVariableType
-          DataType: Color
-          ModellingRule: Optional
-          Value: "#000000"
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-        - Name: HorizontalAlignment
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-          ModellingRule: Optional
-          Value: 3
-        - Name: VerticalAlignment
-          Type: BaseVariableType
-          DataType: VerticalAlignment
-          ModellingRule: Optional
-          Value: 3
-        - Name: WordWrap
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ModellingRule: Optional
-        - Name: FontWeight
-          Type: BaseDataVariableType
-          DataType: FontWeightEnum
-          ModellingRule: Optional
-          Value: 700
     - Name: Rectangle6
       Type: Rectangle
       Children:
@@ -16265,7 +16059,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/EM17_Vibrator_Hgt_UpDn&:I/Active"
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Out13_Vibrator"
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -16302,7 +16096,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/EM17_Vibrator_Hgt_UpDn&:I/Active"
+              Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Out13_Vibrator"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: Color
@@ -17950,7 +17744,7 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"LocaleId":"en-US","Text":"Forword"}
+        Value: {"LocaleId":"en-US","Text":"Forward"}
       - Name: TextVerticalAlignment
         Type: BaseVariableType
         DataType: TextVerticalAlignment
@@ -18654,6 +18448,66 @@ Children:
           DataType: FontWeightEnum
           ModellingRule: Optional
           Value: 700
+    - Name: Main_motor_manual_s6
+      Type: TextBox
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Variable2"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 130.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -472.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 298.0
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "InputBoxStyle1"
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 32.0
+      - Name: ReadOnly
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
   - Name: TopMargin
     Type: BaseVariableType
     DataType: Size

@@ -202,7 +202,7 @@ Children:
     Id: g=65b2df1369eefc2a752da5ee5bf7424e
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Foot Switch Operated At Station-1"}
+    Value: {"LocaleId":"en-US","Text":"Maximu Accumulation At Outfeed"}
   - Class: Reference
     Target: ns=25;i=130
     Direction: Forward
@@ -272,7 +272,7 @@ Children:
     Id: g=99ef74a3502b2499a7c7535465f521ed
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":" Door Open At Station-1"}
+    Value: {"LocaleId":"en-US","Text":" Door Open"}
   - Class: Reference
     Target: ns=25;i=130
     Direction: Forward
@@ -2587,7 +2587,7 @@ Children:
     Id: g=59c504658cfb5b0c4a58d93fb6163eca
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Fill Servo-1 Down Limit Switch Pressed"}
+    Value: {"LocaleId":"en-US","Text":"Fill Servo-2 Down Limit Switch Pressed"}
   - Name: AutoConfirm
     Id: g=4f3fa5c3b6f6a7772e26a98f5937b7ad
     Type: BaseDataVariableType
@@ -2800,7 +2800,7 @@ Children:
     Id: g=45f4183800dff023cf1e86e789bd2acb
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Fill Servo-1 Down Limit Switch Pressed"}
+    Value: {"LocaleId":"en-US","Text":"Fill Servo-5 Down Limit Switch Pressed"}
   - Class: Reference
     Target: ns=25;i=130
     Direction: Forward
@@ -4197,7 +4197,7 @@ Children:
     Id: g=3119aafd1be3295d10b9fb23a9797453
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Fill Servo-3 Exceed Current Limit"}
+    Value: {"LocaleId":"en-US","Text":"Fill Servo- 3 Exceed Current Limit"}
   - Class: Reference
     Target: ns=25;i=130
     Direction: Forward
@@ -4547,7 +4547,7 @@ Children:
     Id: g=8bd35bce5de382031532de233f7d23b1
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Fill Servo-88 Exceed Current Limit"}
+    Value: {"LocaleId":"en-US","Text":"Fill Servo-8 Exceed Current Limit"}
   - Class: Reference
     Target: ns=25;i=130
     Direction: Forward
@@ -4897,7 +4897,7 @@ Children:
     Id: g=2149371f78c95682e19af12b5fcf446a
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"N2 Pressure Low"}
+    Value: {"LocaleId":"en-US","Text":"Nitrogen Pressure Low"}
   - Name: AutoConfirm
     Id: g=f57fbb1bd8897cdaa98de8411ef5b5ad
     Type: BaseDataVariableType
@@ -5674,7 +5674,7 @@ Children:
     Id: g=f647ba05aa5605eb276cbb2ab69c785f
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"N2 Pressure High"}
+    Value: {"LocaleId":"en-US","Text":"Nitrogen Pressure High"}
   - Class: Reference
     Target: ns=25;i=130
     Direction: Forward

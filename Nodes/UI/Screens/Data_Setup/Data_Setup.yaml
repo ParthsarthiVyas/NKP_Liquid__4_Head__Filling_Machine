@@ -735,6 +735,57 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "{0}||{1}"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/UN01_MachineStateModel/Sts_Execute"
+            - Name: ns=3;Source1
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/UN01_MachineStateModel/Sts_Idle"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: true
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasParameter
+          ModellingRule: Optional
   - Name: Height Setup
     Type: Button
     Children:

@@ -4065,12 +4065,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 308.0
+        Value: 268.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 225.0
+        Value: 497.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -4209,6 +4209,10 @@ Children:
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
     - Name: LED1
       Type: Led
       Children:
@@ -4466,7 +4470,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 276.0
+        Value: 226.0
       - Name: Style
         Type: BaseDataVariableType
         DataType: String
@@ -4517,12 +4521,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 23.0
+        Value: 15.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 326.0
+        Value: 565.0
       - Name: Style
         Type: BaseDataVariableType
         DataType: String
@@ -4574,7 +4578,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 274.0
+        Value: 224.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -4739,12 +4743,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 308.0
+        Value: 300.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 325.0
+        Value: 564.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -4916,7 +4920,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 228.0
+      Value: 500.0
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -4983,7 +4987,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 120.0
+      Value: 140.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -5098,12 +5102,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 130.0
+      Value: 110.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 227.0
+      Value: 499.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -5145,7 +5149,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 277.0
+      Value: 227.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -5190,7 +5194,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 278.0
+      Value: 228.0
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -5284,12 +5288,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 130.0
+      Value: 126.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 325.0
+      Value: 564.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -5334,7 +5338,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 328.0
+      Value: 567.0
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -5401,7 +5405,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 120.0
+      Value: 124.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -7808,7 +7812,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Forword"}
+        Value: {"LocaleId":"en-US","Text":"Forward"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -8406,7 +8410,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Forword"}
+        Value: {"LocaleId":"en-US","Text":"Forward"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -8931,7 +8935,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Duration
         ModellingRule: Optional
-        Value: "0:00:00:0.5000000"
+        Value: "0:00:00:5.0000000"
       - Name: Visible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -9040,7 +9044,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Duration
         ModellingRule: Optional
-        Value: "0:00:00:0.5000000"
+        Value: "0:00:00:5.0000000"
       - Name: Visible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -9149,7 +9153,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Duration
         ModellingRule: Optional
-        Value: "0:00:00:0.5000000"
+        Value: "0:00:00:5.0000000"
       - Name: Visible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -9258,7 +9262,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Duration
         ModellingRule: Optional
-        Value: "0:00:00:0.5000000"
+        Value: "0:00:00:5.0000000"
       - Name: Visible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -9414,7 +9418,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Duration
         ModellingRule: Optional
-        Value: "0:00:00:0.5000000"
+        Value: "0:00:00:5.0000000"
       - Name: Visible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -9523,7 +9527,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Duration
         ModellingRule: Optional
-        Value: "0:00:00:0.5000000"
+        Value: "0:00:00:5.0000000"
       - Name: Visible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -10025,7 +10029,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Duration
         ModellingRule: Optional
-        Value: "0:00:00:0.5000000"
+        Value: "0:00:00:5.0000000"
       - Name: Visible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -10134,7 +10138,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Duration
         ModellingRule: Optional
-        Value: "0:00:00:0.5000000"
+        Value: "0:00:00:5.0000000"
       - Name: Visible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -11169,7 +11173,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Forword"}
+        Value: {"LocaleId":"en-US","Text":"Forward"}
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size

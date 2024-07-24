@@ -1383,6 +1383,12 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM16_Rubber_Stopper_Hgt_UpDn.Wrk_PF525Object.SpdRef_Units"
+    - Name: Encoding
+      Type: BaseDataVariableType
+      DataType: Encoding
+    - Name: ArrayUpdateMode
+      Type: BaseDataVariableType
+      DataType: TagArrayUpdateMode
   - Name: SpdScaler60Hz
     Type: RAEtherNetIPTag
     DataType: Float

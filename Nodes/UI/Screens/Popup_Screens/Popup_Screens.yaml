@@ -5947,28 +5947,67 @@ Children:
         ModellingRule: Optional
         Value: 551.0
     - Name: ConfirmAllButton
-      Type: Button
+      Type: MomentaryButton
       Children:
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
+      - Name: Active
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_FaultAckClear"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 1
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"LocaleId":"en-US","Text":"Clear Alarm"}
+      - Name: WordWrap
+        Type: BaseDataVariableType
+        DataType: Boolean
         ModellingRule: Optional
-        Value: 112.0
-      - Name: VerticalAlignment
-        Type: BaseVariableType
-        DataType: VerticalAlignment
+        Value: true
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
         ModellingRule: Optional
-        Value: 1
+        Value: "#ffffff"
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#16498d"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 388.0
+        Value: 386.0
       - Name: BottomMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 10.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 112.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 1
       - Name: EventHandler1
         Type: EventHandler
         Children:
@@ -5979,67 +6018,6 @@ Children:
         - Name: MethodsToCall
           Type: BaseObjectType
           Children:
-          - Name: MethodContainer3
-            Type: BaseObjectType
-            Children:
-            - Name: ns=3;ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Value: "/Objects/Commands/VariableCommands"
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-            - Name: ns=3;Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "Set"
-            - Name: InputArguments
-              Type: BaseObjectType
-              Children:
-              - Name: VariableToModify
-                Type: BaseDataVariableType
-                DataType: VariablePointer
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_FaultAckClear"
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Boolean
-                Value: true
-              - Name: ArrayIndex
-                Type: BaseDataVariableType
-                DataType: UInt32
-                ValueRank: ScalarOrOneDimension
-          - Name: MethodContainer4
-            Type: BaseObjectType
-            Children:
-            - Name: ns=3;ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Value: "/Objects/Commands/VariableCommands"
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-            - Name: ns=3;Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "Set"
-            - Name: InputArguments
-              Type: BaseObjectType
-              Children:
-              - Name: VariableToModify
-                Type: BaseDataVariableType
-                DataType: VariablePointer
-                Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_I_FaultAckClear"
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Boolean
-              - Name: ArrayIndex
-                Type: BaseDataVariableType
-                DataType: UInt32
-                ValueRank: ScalarOrOneDimension
           - Name: MethodContainer2
             Type: BaseObjectType
             Children:
@@ -6104,32 +6082,13 @@ Children:
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 40.0
-      - Name: Text
+      - Name: MinHoldTime
         Type: BaseDataVariableType
-        DataType: LocalizedText
-        Value: {"LocaleId":"en-US","Text":"Clear Alarm"}
-      - Name: BackgroundColor
-        Type: BaseDataVariableType
-        DataType: Color
+        DataType: Duration
         ModellingRule: Optional
-        Value: "#16498d"
-      - Name: TextColor
+        Value: "0:00:00:0.0500000"
+      - Name: MaxHoldTime
         Type: BaseDataVariableType
-        DataType: Color
+        DataType: Duration
         ModellingRule: Optional
-        Value: "#ffffff"
-      - Name: Enabled
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ModellingRule: Optional
-        Value: true
-      - Name: WordWrap
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ModellingRule: Optional
-        Value: true
+        Value: "0:00:00:2.0000000"

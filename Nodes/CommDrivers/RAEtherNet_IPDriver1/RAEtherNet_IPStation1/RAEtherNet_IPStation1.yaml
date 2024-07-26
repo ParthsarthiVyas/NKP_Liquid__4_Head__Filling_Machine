@@ -124,7 +124,8 @@ Children:
 - Name: EnableExtendedProperties
   Type: BaseDataVariableType
   DataType: Boolean
+  Value: true
 - Name: Timeout
   Type: BaseDataVariableType
   DataType: Duration
-  Value: "0:00:00:15.0000000"
+  Value: "0:00:00:10.0000000"

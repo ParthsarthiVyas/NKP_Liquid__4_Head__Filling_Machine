@@ -780,12 +780,12 @@ Children:
           DataType: Boolean
           ReferenceType: HasParameter
           ModellingRule: Optional
-          Value: true
         - Name: FalseValue
           Type: BaseDataVariableType
           DataType: Boolean
           ReferenceType: HasParameter
           ModellingRule: Optional
+          Value: true
   - Name: Height Setup
     Type: Button
     Children:

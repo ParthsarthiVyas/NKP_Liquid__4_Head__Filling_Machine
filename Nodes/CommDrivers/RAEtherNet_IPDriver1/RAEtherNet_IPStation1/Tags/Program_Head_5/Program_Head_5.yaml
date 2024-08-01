@@ -21,6 +21,14 @@ Children:
   Type: raC_Opr_K5100_MAM
   DataType: raC_Opr_K5100_MAM
   Children:
+  - Name: _bSts
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_5.Filling_MAM_Head._bSts"
   - Name: EnableIn
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -209,6 +217,14 @@ Children:
   Type: raC_Opr_K5100_MAM
   DataType: raC_Opr_K5100_MAM
   Children:
+  - Name: _bSts
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_5.Suck_Back_MAM_Head._bSts"
   - Name: EnableIn
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -365,6 +381,14 @@ Children:
   Type: raC_Opr_K5100_MAM
   DataType: raC_Opr_K5100_MAM
   Children:
+  - Name: _bSts
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Head_5.Suck_MAM_Head._bSts"
   - Name: EnableIn
     Type: RAEtherNetIPTag
     DataType: Boolean

@@ -1516,7 +1516,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 350.0
+        Value: 540.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -1548,7 +1548,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 350.0
+        Value: 540.0
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
@@ -1600,7 +1600,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 350.0
+        Value: 540.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -1730,7 +1730,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 300.0
+        Value: 490.0
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
@@ -1781,7 +1781,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 300.0
+        Value: 490.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -1960,7 +1960,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 300.0
+        Value: 490.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -2041,7 +2041,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 350.0
+        Value: 540.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -2121,7 +2121,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 300.0
+        Value: 490.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -2628,7 +2628,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 300.0
+        Value: 490.0
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
@@ -2675,7 +2675,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 300.0
+        Value: 490.0
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
@@ -2722,7 +2722,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 300.0
+        Value: 490.0
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
@@ -2769,7 +2769,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 350.0
+        Value: 540.0
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
@@ -2816,7 +2816,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 350.0
+        Value: 540.0
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
@@ -2863,7 +2863,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 350.0
+        Value: 540.0
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size

@@ -37,6 +37,14 @@ Children:
   Type: raC_Opr_K5100_MAM
   DataType: raC_Opr_K5100_MAM
   Children:
+  - Name: _bSts
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Filling_MAM_Head5_Home._bSts"
   - Name: EnableIn
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -249,6 +257,38 @@ Children:
   Type: PackMLv3_StateModel
   DataType: PackMLv3_StateModel
   Children:
+  - Name: AbortedEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.AbortedEnabled"
+  - Name: AbortingEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.AbortingEnabled"
+  - Name: AbortRemoteCmd
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.AbortRemoteCmd"
+  - Name: Cfg_DisableStatesCopy
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.Cfg_DisableStatesCopy"
   - Name: Cfg_RemoteCmdEnable
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -257,6 +297,22 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM05_Head_5.Inp_MachineStateModel.Cfg_RemoteCmdEnable"
+  - Name: ClearingEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.ClearingEnabled"
+  - Name: ClearRemoteCmd
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.ClearRemoteCmd"
   - Name: Cmd_Abort
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -345,6 +401,22 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM05_Head_5.Inp_MachineStateModel.Cmd_UnSuspend"
+  - Name: CompleteEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.CompleteEnabled"
+  - Name: CompletingEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.CompletingEnabled"
   - Name: EnableIn
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -361,6 +433,46 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM05_Head_5.Inp_MachineStateModel.EnableOut"
+  - Name: ExecuteEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.ExecuteEnabled"
+  - Name: HeldEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.HeldEnabled"
+  - Name: HoldingEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.HoldingEnabled"
+  - Name: HoldRemoteCmd
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.HoldRemoteCmd"
+  - Name: IdleEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.IdleEnabled"
   - Name: Inp_RemoteModeCmd
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -393,6 +505,358 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM05_Head_5.Inp_MachineStateModel.Inp_RemoteStateCmdChangeRequest"
+  - Name: LocalAborted
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalAborted"
+  - Name: LocalAborting
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalAborting"
+  - Name: LocalClearing
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalClearing"
+  - Name: LocalComplete
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalComplete"
+  - Name: LocalCompleting
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalCompleting"
+  - Name: LocalExecute
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalExecute"
+  - Name: LocalHeld
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalHeld"
+  - Name: LocalHolding
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalHolding"
+  - Name: LocalIdle
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalIdle"
+  - Name: LocalResetting
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalResetting"
+  - Name: LocalStarting
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalStarting"
+  - Name: LocalStopped
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalStopped"
+  - Name: LocalStopping
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalStopping"
+  - Name: LocalSuspended
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalSuspended"
+  - Name: LocalSuspending
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalSuspending"
+  - Name: LocalUnHolding
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalUnHolding"
+  - Name: LocalUnSuspending
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.LocalUnSuspending"
+  - Name: PreviousMode
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.PreviousMode"
+  - Name: RemoteCmdChangeRequested
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.RemoteCmdChangeRequested"
+  - Name: ResetRemoteCmd
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.ResetRemoteCmd"
+  - Name: ResettingEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.ResettingEnabled"
+  - Name: StartingEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StartingEnabled"
+  - Name: StartRemoteCmd
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StartRemoteCmd"
+  - Name: StateComplete
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StateComplete"
+  - Name: StoppedEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StoppedEnabled"
+  - Name: StoppingEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StoppingEnabled"
+  - Name: StopRemoteCmd
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StopRemoteCmd"
+  - Name: StringAborted
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringAborted"
+  - Name: StringAborting
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringAborting"
+  - Name: StringClearing
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringClearing"
+  - Name: StringComplete
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringComplete"
+  - Name: StringCompleting
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringCompleting"
+  - Name: StringExecute
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringExecute"
+  - Name: StringHeld
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringHeld"
+  - Name: StringHolding
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringHolding"
+  - Name: StringIdle
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringIdle"
+  - Name: StringResetting
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringResetting"
+  - Name: StringStarting
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringStarting"
+  - Name: StringStopped
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringStopped"
+  - Name: StringStopping
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringStopping"
+  - Name: StringSuspended
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringSuspended"
+  - Name: StringSuspending
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringSuspending"
+  - Name: StringUnHolding
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringUnHolding"
+  - Name: StringUnSuspending
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.StringUnSuspending"
   - Name: Sts_Aborted
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -697,6 +1161,106 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM05_Head_5.Inp_MachineStateModel.Sts_UnSuspendingEnabled"
+  - Name: SuspendedEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.SuspendedEnabled"
+  - Name: SuspendingEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.SuspendingEnabled"
+  - Name: SuspendRemoteCmd
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.SuspendRemoteCmd"
+  - Name: TON_ModeChangeNotAllowed
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Inp_MachineStateModel.TON_ModeChangeNotAllowed.ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Inp_MachineStateModel.TON_ModeChangeNotAllowed.DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Inp_MachineStateModel.TON_ModeChangeNotAllowed.EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Inp_MachineStateModel.TON_ModeChangeNotAllowed.PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Inp_MachineStateModel.TON_ModeChangeNotAllowed.TT"
+  - Name: UnHoldingEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.UnHoldingEnabled"
+  - Name: UnHoldRemoteCmd
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.UnHoldRemoteCmd"
+  - Name: UnSuspendingEnabled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.UnSuspendingEnabled"
+  - Name: UnSuspendRemoteCmd
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Inp_MachineStateModel.UnSuspendRemoteCmd"
 - Name: Label_Indexer_SD_Homing_Done_IND
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -709,6 +1273,14 @@ Children:
   Type: raC_Opr_K5100_MAM
   DataType: raC_Opr_K5100_MAM
   Children:
+  - Name: _bSts
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.MI_MAM2StartPos._bSts"
   - Name: EnableIn
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -1463,6 +2035,14 @@ Children:
   Type: raC_Opr_K5100_MAJ
   DataType: raC_Opr_K5100_MAJ
   Children:
+  - Name: _bSts
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Wrk_MI_StartManualJog._bSts"
   - Name: EnableIn
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -1555,6 +2135,14 @@ Children:
   Type: raC_Opr_K5100_MAS
   DataType: raC_Opr_K5100_MAS
   Children:
+  - Name: _bSts
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Wrk_MI_StopManualJog._bSts"
   - Name: EnableIn
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -1639,6 +2227,14 @@ Children:
   Type: Axis_ObjectSD_K5100
   DataType: Axis_ObjectSD_K5100
   Children:
+  - Name: AverageVelocity
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Wrk_ServoObject.AverageVelocity"
   - Name: Cfg_AbortEnabled
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -1751,6 +2347,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM05_Head_5.Wrk_ServoObject.Cmd_Stop"
+  - Name: DecelRate
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Wrk_ServoObject.DecelRate"
   - Name: EnableIn
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -1791,6 +2395,66 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM05_Head_5.Wrk_ServoObject.Err_MSOFault"
+  - Name: FaultReset_delay
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.FaultReset_delay.ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.FaultReset_delay.DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.FaultReset_delay.EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.FaultReset_delay.PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.FaultReset_delay.TT"
+  - Name: HomeSequence
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Wrk_ServoObject.HomeSequence"
+  - Name: HomeStart
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Wrk_ServoObject.HomeStart"
   - Name: Inp_MasterNoMotion
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -1799,6 +2463,394 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM05_Head_5.Wrk_ServoObject.Inp_MasterNoMotion"
+  - Name: MI_Disable
+    Type: raC_Opr_K5100_MSF
+    DataType: raC_Opr_K5100_MSF
+    Children:
+    - Name: _bSts
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Disable._bSts"
+    - Name: EnableIn
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Disable.EnableIn"
+    - Name: EnableOut
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Disable.EnableOut"
+    - Name: Sts_DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Disable.Sts_DN"
+    - Name: Sts_EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Disable.Sts_EN"
+    - Name: Sts_ER
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Disable.Sts_ER"
+    - Name: Sts_ERR
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Disable.Sts_ERR"
+  - Name: MI_Enable
+    Type: raC_Opr_K5100_MSO
+    DataType: raC_Opr_K5100_MSO
+    Children:
+    - Name: _bSts
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Enable._bSts"
+    - Name: EnableIn
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Enable.EnableIn"
+    - Name: EnableOut
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Enable.EnableOut"
+    - Name: Sts_DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Enable.Sts_DN"
+    - Name: Sts_EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Enable.Sts_EN"
+    - Name: Sts_ER
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Enable.Sts_ER"
+    - Name: Sts_ERR
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Enable.Sts_ERR"
+  - Name: MI_Home
+    Type: raC_Opr_K5100_MAH
+    DataType: raC_Opr_K5100_MAH
+    Children:
+    - Name: _bSts
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Home._bSts"
+    - Name: EnableIn
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Home.EnableIn"
+    - Name: EnableOut
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Home.EnableOut"
+    - Name: Set_AccelReference
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Home.Set_AccelReference"
+    - Name: Set_DecelReference
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Home.Set_DecelReference"
+    - Name: Set_HomeReturnSpeed
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Home.Set_HomeReturnSpeed"
+    - Name: Set_HomingMethod
+      Type: RAEtherNetIPTag
+      DataType: SByte
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Home.Set_HomingMethod"
+    - Name: Set_PositionReference
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Home.Set_PositionReference"
+    - Name: Set_SpeedReference
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Home.Set_SpeedReference"
+    - Name: Sts_DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Home.Sts_DN"
+    - Name: Sts_EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Home.Sts_EN"
+    - Name: Sts_ER
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Home.Sts_ER"
+    - Name: Sts_ERR
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Home.Sts_ERR"
+    - Name: Sts_IP
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Home.Sts_IP"
+    - Name: Sts_PC
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Home.Sts_PC"
+  - Name: MI_ShutdownReset
+    Type: raC_Opr_K5100_MAFR
+    DataType: raC_Opr_K5100_MAFR
+    Children:
+    - Name: _bSts
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_ShutdownReset._bSts"
+    - Name: EnableIn
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_ShutdownReset.EnableIn"
+    - Name: EnableOut
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_ShutdownReset.EnableOut"
+    - Name: Sts_DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_ShutdownReset.Sts_DN"
+    - Name: Sts_EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_ShutdownReset.Sts_EN"
+    - Name: Sts_ER
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_ShutdownReset.Sts_ER"
+    - Name: Sts_ERR
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_ShutdownReset.Sts_ERR"
+  - Name: MI_Stop_Auto
+    Type: raC_Opr_K5100_MAS
+    DataType: raC_Opr_K5100_MAS
+    Children:
+    - Name: _bSts
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Stop_Auto._bSts"
+    - Name: EnableIn
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Stop_Auto.EnableIn"
+    - Name: EnableOut
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Stop_Auto.EnableOut"
+    - Name: Set_DecelReference
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Stop_Auto.Set_DecelReference"
+    - Name: Sts_DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Stop_Auto.Sts_DN"
+    - Name: Sts_EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Stop_Auto.Sts_EN"
+    - Name: Sts_ER
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Stop_Auto.Sts_ER"
+    - Name: Sts_ERR
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Stop_Auto.Sts_ERR"
+    - Name: Sts_IP
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Stop_Auto.Sts_IP"
+    - Name: Sts_PC
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:EM05_Head_5.Wrk_ServoObject.MI_Stop_Auto.Sts_PC"
   - Name: Sts_AbortDone
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -1839,6 +2891,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM05_Head_5.Wrk_ServoObject.Sts_ER"
+  - Name: Sts_ER_ONS
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.Wrk_ServoObject.Sts_ER_ONS"
   - Name: Sts_FaultResetDone
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -3255,6 +4315,94 @@ Children:
   Type: raC_Dvc_K5100
   DataType: raC_Dvc_K5100
   Children:
+  - Name: _bSts
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5._bSts"
+  - Name: Cfg_PositionEU
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Cfg_PositionEU"
+  - Name: Cfg_PositionTrendMax
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Cfg_PositionTrendMax"
+  - Name: Cfg_PositionTrendMin
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Cfg_PositionTrendMin"
+  - Name: Cfg_VelocityTrendMax
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Cfg_VelocityTrendMax"
+  - Name: Cfg_VelocityTrendMin
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Cfg_VelocityTrendMin"
+  - Name: Cmd_Activate
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Cmd_Activate"
+  - Name: Cmd_Deactivate
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Cmd_Deactivate"
+  - Name: Cmd_JogFwd
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Cmd_JogFwd"
+  - Name: Cmd_JogRev
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Cmd_JogRev"
+  - Name: Cmd_ResetFault
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Cmd_ResetFault"
   - Name: EnableIn
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -3271,6 +4419,38 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM05_Head_5.raC_Dvc_Head5.EnableOut"
+  - Name: HMI_Tab
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.HMI_Tab"
+  - Name: HMI_Version
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.HMI_Version"
+  - Name: Inf_Lib
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Inf_Lib"
+  - Name: Inf_Type
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Inf_Type"
   - Name: raC_Dvc_K5100
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -3279,6 +4459,30 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM05_Head_5.raC_Dvc_Head5.raC_Dvc_K5100"
+  - Name: Set_AccelRate
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Set_AccelRate"
+  - Name: Set_DecelRate
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Set_DecelRate"
+  - Name: Set_Velocity
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Set_Velocity"
   - Name: Sts_Active
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -3319,6 +4523,50 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_DriveUnits"
+  - Name: Sts_eDvcAction
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_eDvcAction"
+  - Name: Sts_eEventType
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_eEventType"
+  - Name: Sts_eEventValue
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_eEventValue"
+  - Name: Sts_eNotReady
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_eNotReady"
+  - Name: Sts_EventMessage
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_EventMessage"
   - Name: Sts_Faulted
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -3327,6 +4575,38 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_Faulted"
+  - Name: Sts_FltResetIP
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_FltResetIP"
+  - Name: Sts_Homed
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_Homed"
+  - Name: Sts_InhibitCmd
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_InhibitCmd"
+  - Name: Sts_InhibitSet
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_InhibitSet"
   - Name: Sts_Ready
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -3335,6 +4615,54 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_Ready"
+  - Name: Sts_Referenced
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_Referenced"
+  - Name: Sts_tEventTimeD0
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [7]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_tEventTimeD0"
+  - Name: Sts_tEventTimeD1
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [7]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_tEventTimeD1"
+  - Name: Sts_tEventTimeD2
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [7]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_tEventTimeD2"
+  - Name: Sts_tEventTimeD3
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [7]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM05_Head_5.raC_Dvc_Head5.Sts_tEventTimeD3"
   - Name: Sts_UserUnits
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -3375,6 +4703,19 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM05_Head_5.raC_Dvc_Head5.Val_ActualPosition"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      DisplayName: {"NamespaceIndex":1,"TextId":"EURangeDisplayName"}
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
   - Name: Val_ActualVelocity
     Type: RAEtherNetIPTag
     DataType: Float

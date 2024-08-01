@@ -1,0 +1,987 @@
+Name: 'Program:Metler_Toledo'
+Type: FolderType
+Children:
+- Name: boReadPar
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Metler_Toledo.boReadPar"
+- Name: boSvcAdjust
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Metler_Toledo.boSvcAdjust"
+- Name: boSvcStore
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Metler_Toledo.boSvcStore"
+- Name: boSvcTare
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Metler_Toledo.boSvcTare"
+- Name: boWritePar
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Metler_Toledo.boWritePar"
+- Name: HMI_I_Manifold_Weigh_AutoZero
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Metler_Toledo.HMI_I_Manifold_Weigh_AutoZero"
+- Name: LC_Calib_SeqStep
+  Type: RAEtherNetIPTag
+  DataType: Int16
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Metler_Toledo.LC_Calib_SeqStep"
+- Name: Permit_Svc
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Description: {"LocaleId":"en-US","Text":"Permisive_SvcTare"}
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Metler_Toledo.Permit_Svc"
+- Name: SAI_APW_ExtAdjust
+  Type: SAI_APW_ExtAdjust
+  DataType: SAI_APW_ExtAdjust
+  Children:
+  - Name: Cancel
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_ExtAdjust.Cancel"
+  - Name: Cancelled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_ExtAdjust.Cancelled"
+  - Name: CurrentPoint
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_ExtAdjust.CurrentPoint"
+  - Name: CurrentWeight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_ExtAdjust.CurrentWeight"
+  - Name: DataOK
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_ExtAdjust.DataOK"
+  - Name: Done
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_ExtAdjust.Done"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_ExtAdjust.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_ExtAdjust.EnableOut"
+  - Name: Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_ExtAdjust.Error"
+  - Name: External_Weight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_ExtAdjust.External_Weight"
+  - Name: In_Process
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_ExtAdjust.In_Process"
+  - Name: LoadWeight
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_ExtAdjust.LoadWeight"
+  - Name: Start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_ExtAdjust.Start"
+  - Name: Status
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_ExtAdjust.Status"
+  - Name: Unload_Weight
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_ExtAdjust.Unload_Weight"
+- Name: SAI_APW_IntAdjust
+  Type: SAI_APW_IntAdjust
+  DataType: SAI_APW_IntAdjust
+  Children:
+  - Name: Cancel
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_IntAdjust.Cancel"
+  - Name: Cancelled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_IntAdjust.Cancelled"
+  - Name: DataOK
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_IntAdjust.DataOK"
+  - Name: Done
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_IntAdjust.Done"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_IntAdjust.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_IntAdjust.EnableOut"
+  - Name: Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_IntAdjust.Error"
+  - Name: In_Process
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_IntAdjust.In_Process"
+  - Name: Start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_IntAdjust.Start"
+  - Name: Status
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_APW_IntAdjust.Status"
+- Name: SAI_CheckAlive
+  Type: SAI_CheckAlive
+  DataType: SAI_CheckAlive
+  Children:
+  - Name: Alive
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_CheckAlive.Alive"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_CheckAlive.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_CheckAlive.EnableOut"
+  - Name: HeartBeat
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_CheckAlive.HeartBeat"
+- Name: SAI_IND_CalFree
+  Type: SAI_IND_CalFree
+  DataType: SAI_IND_CalFree
+  Children:
+  - Name: Done
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_CalFree.Done"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_CalFree.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_CalFree.EnableOut"
+  - Name: Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_CalFree.Error"
+  - Name: RatedCapacity
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_CalFree.RatedCapacity"
+  - Name: ScaleUnit
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_CalFree.ScaleUnit"
+  - Name: Start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_CalFree.Start"
+  - Name: Status
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_CalFree.Status"
+- Name: SAI_IND_ReadAdjustSettings
+  Type: SAI_IND_ReadAdjustSettings
+  DataType: SAI_IND_ReadAdjustSettings
+  Children:
+  - Name: Done
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_ReadAdjustSettings.Done"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_ReadAdjustSettings.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_ReadAdjustSettings.EnableOut"
+  - Name: Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_ReadAdjustSettings.Error"
+  - Name: Increment
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_ReadAdjustSettings.Increment"
+  - Name: Read
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_ReadAdjustSettings.Read"
+  - Name: ScaleCapacity
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_ReadAdjustSettings.ScaleCapacity"
+- Name: SAI_IND_SpanAdjust
+  Type: SAI_IND_SpanAdjust
+  DataType: SAI_IND_SpanAdjust
+  Children:
+  - Name: Cancel
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.Cancel"
+  - Name: Cancelled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.Cancelled"
+  - Name: ConfirmWeight
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.ConfirmWeight"
+  - Name: CurrentPoint
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.CurrentPoint"
+  - Name: CurrentWeight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.CurrentWeight"
+  - Name: DataOK
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.DataOK"
+  - Name: Done
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.Done"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.EnableOut"
+  - Name: Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.Error"
+  - Name: Hi_Weight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.Hi_Weight"
+  - Name: LoadWeight
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.LoadWeight"
+  - Name: Low_Weight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.Low_Weight"
+  - Name: Mid_Weight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.Mid_Weight"
+  - Name: Start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.Start"
+  - Name: Status
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.Status"
+  - Name: xLow_Weight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_SpanAdjust.xLow_Weight"
+- Name: SAI_IND_WeightProc
+  Type: SAI_IND_WeightProc
+  DataType: SAI_IND_WeightProc
+  Children:
+  - Name: Alarm
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.Alarm"
+  - Name: ClearTare
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.ClearTare"
+  - Name: DataOK
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.DataOK"
+  - Name: Done
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.Done"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.EnableOut"
+  - Name: Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.Error"
+  - Name: MB_Command
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.MB_Command"
+  - Name: MB_Response
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.MB_Response"
+  - Name: MB_Value
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.MB_Value"
+  - Name: Motion
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.Motion"
+  - Name: NetMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.NetMode"
+  - Name: PreTare
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.PreTare"
+  - Name: PreTareValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.PreTareValue"
+  - Name: RealTimeWeight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.RealTimeWeight"
+  - Name: StableWeight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.StableWeight"
+  - Name: TareImmediate
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.TareImmediate"
+  - Name: TareStable
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.TareStable"
+  - Name: WeightCmd
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.WeightCmd"
+  - Name: ZeroImmediate
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.ZeroImmediate"
+  - Name: ZeroStable
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WeightProc.ZeroStable"
+- Name: SAI_IND_WriteAdjustSettings
+  Type: SAI_IND_WriteAdjustSettings
+  DataType: SAI_IND_WriteAdjustSettings
+  Children:
+  - Name: Done
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WriteAdjustSettings.Done"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WriteAdjustSettings.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WriteAdjustSettings.EnableOut"
+  - Name: Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WriteAdjustSettings.Error"
+  - Name: Increment
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WriteAdjustSettings.Increment"
+  - Name: ScaleCapacity
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WriteAdjustSettings.ScaleCapacity"
+  - Name: Write
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_WriteAdjustSettings.Write"
+- Name: SAI_IND_ZeroAdjust
+  Type: SAI_IND_ZeroAdjust
+  DataType: SAI_IND_ZeroAdjust
+  Children:
+  - Name: Done
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_ZeroAdjust.Done"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_ZeroAdjust.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_ZeroAdjust.EnableOut"
+  - Name: Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_ZeroAdjust.Error"
+  - Name: Start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_ZeroAdjust.Start"
+  - Name: Status
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.SAI_IND_ZeroAdjust.Status"
+- Name: T_CalibOverTime
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.T_CalibOverTime.ACC"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.T_CalibOverTime.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.T_CalibOverTime.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.T_CalibOverTime.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.T_CalibOverTime.TT"
+- Name: T_CalibStopedTime
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.T_CalibStopedTime.ACC"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.T_CalibStopedTime.DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.T_CalibStopedTime.EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.T_CalibStopedTime.PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Metler_Toledo.T_CalibStopedTime.TT"
+- Name: Wrk_HMI_Calib_Cmds
+  Id: g=2a79e0541ea898f081f617ca497da341
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Description: {"LocaleId":"en-US","Text":"CMD_Start Calibrat"}
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Metler_Toledo.Wrk_HMI_Calib_Cmds"
+- Name: Wrk_LC_Calib
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Description: {"LocaleId":"en-US","Text":"LC Ready 4 Calib"}
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Metler_Toledo.Wrk_LC_Calib"
+- Name: Wrk_Wwc_iErrorCode
+  Type: RAEtherNetIPTag
+  DataType: Int16
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Metler_Toledo.Wrk_Wwc_iErrorCode"
+- Name: Wrk_Wwc_Rst_Error
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Metler_Toledo.Wrk_Wwc_Rst_Error"

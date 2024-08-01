@@ -202,7 +202,7 @@ Children:
     Id: g=65b2df1369eefc2a752da5ee5bf7424e
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"Maximu Accumulation At Outfeed"}
+    Value: {"LocaleId":"en-US","Text":"Maximum Accumulation At Outfeed"}
   - Class: Reference
     Target: ns=25;i=130
     Direction: Forward
@@ -845,7 +845,7 @@ Children:
   - Class: Reference
     Target: ns=25;i=135
     Direction: Forward
-- Name: '  Transfer_Disc_Conveyor_Motor_Overload'
+- Name: Transfer_Disc_Conveyor_Motor_Overload
   Id: g=030e820deb4a95818d8c49b2b01d9d25
   Type: Alarm_new_type
   Children:
@@ -905,7 +905,7 @@ Children:
     Id: g=7aa032d6ed3617dec126a271dc0b7b93
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"  Transfer Disc Conveyor Motor Overload"}
+    Value: {"LocaleId":"en-US","Text":"Transfer Disc Conveyor Motor Overload"}
   - Class: Reference
     Target: ns=25;i=130
     Direction: Forward
@@ -1194,7 +1194,7 @@ Children:
   - Class: Reference
     Target: ns=25;i=135
     Direction: Forward
-- Name: '  Minimum Accumulation At Infeed Turn Table'
+- Name: Minimum Accumulation At Infeed Turn Table
   Id: g=bcd4cf1feae0abf48ab171786dcae566
   Type: Alarm_new_type
   Children:
@@ -1254,7 +1254,7 @@ Children:
     Id: g=7ede56ab27f7d1fd6b73edc282a8e309
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":"  Minimum Accumulation At Infeed Turn Table"}
+    Value: {"LocaleId":"en-US","Text":"Minimum Accumulation At Infeed Turn Table"}
   - Class: Reference
     Target: ns=25;i=130
     Direction: Forward
@@ -3299,7 +3299,7 @@ Children:
   - Class: Reference
     Target: ns=25;i=135
     Direction: Forward
-- Name: ' Infeed Turn Table Drive Faulted'
+- Name: Infeed Turn Table Drive Faulted
   Id: g=f4a5376587ddbb84baa935182fab0856
   Type: Alarm_new_type
   Children:
@@ -3359,7 +3359,7 @@ Children:
     Id: g=7c7a9bb5574e960e592ae2954697383f
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":" Infeed Turn Table Drive Faulted"}
+    Value: {"LocaleId":"en-US","Text":"Infeed Turn Table Drive Faulted"}
   - Class: Reference
     Target: ns=25;i=130
     Direction: Forward
@@ -7856,6 +7856,146 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"LocaleId":"en-US","Text":"60 Degree Servo-2 Not At Forward Position"}
+  - Class: Reference
+    Target: ns=25;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=135
+    Direction: Forward
+- Name: All_head_Sampling_done
+  Id: g=6bb0025f74bc71ccf78195d0b2009436
+  Type: Alarm_new_type
+  Children:
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=85ccd63a98bb9cc4bfb9d5bcdc845f49
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=86cd8c64331a3b9fffccf0e0bbf05f6d
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=0c51fafdc4395dcf0a822911280bcf65
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Alarms/All_head_Sampling_done"
+      Children:
+      - Name: Mode
+        Id: g=2ed0fca6dd7d184d99472eee7d62cdeb
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=72fd92e5802142160666fa4f7e0d314a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Date_Time
+    Id: g=9f9223fc6d83d19ceceed34059849bd8
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Id: g=97c4419c0e8f7298354543e3182c2827
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../NetLogic/mm_dd_yyyy_clock1/datetime"
+      Children:
+      - Name: Mode
+        Id: g=b38c0ae12dc1534ad812854cfbe4285a
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Message
+    Id: g=0576ad2a1886b191df2b188c2df5e7e4
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"All Head Sampling Done"}
+  - Class: Reference
+    Target: ns=25;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=135
+    Direction: Forward
+- Name: Sampling_mode_Aborted
+  Id: g=eec1fc8a25fc21044bce362e837a89e8
+  Type: Alarm_new_type
+  Children:
+  - Class: Reference
+    Target: ns=25;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=29f4edf09db83eae86490d002cc9b03b
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=14123d5ad4dd593d20c3e0777a104ca8
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=01e53d3e55708178ed54d044ce863662
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Alarms/Sampling_mode_Aborted"
+      Children:
+      - Name: Mode
+        Id: g=80c4117dc7356cfc1b6e4ab186d25a49
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=c15290521a643242f36664b00440ca14
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Date_Time
+    Id: g=e34b5afafb563e61fda055b2d734dbf6
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Id: g=e5765b16217d3f6cfdd20030f69deb01
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../NetLogic/mm_dd_yyyy_clock1/datetime"
+      Children:
+      - Name: Mode
+        Id: g=188317dd320d59ae684d085804473f17
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Message
+    Id: g=9167b51ece43c88241e4b3e43b3ed1f8
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Sampling Aborted"}
   - Class: Reference
     Target: ns=25;i=130
     Direction: Forward

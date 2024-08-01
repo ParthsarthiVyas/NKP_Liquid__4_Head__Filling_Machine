@@ -141,8 +141,17 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Recipe"
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/DataStores/Recipe_DB"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: EditModel
-    Id: g=5fc9ccb40d8bd9d9ca139f918a003746
+    Id: g=b5860cc0b8a162f782a62068bd4d97c3
     Type: BaseObjectType
     Children:
     - Name: Recipe_Name_T1
@@ -229,12 +238,3 @@ Children:
     - Name: Outfeed_Conveyor_Speed_In_Sampling_Mode
       Type: BaseDataVariableType
       DataType: Float
-  - Name: Store
-    Type: NodePointer
-    DataType: NodeId
-    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/DataStores/Recipe_DB"
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Types/ObjectTypes/BaseObjectType/Store"

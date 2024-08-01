@@ -13,3 +13,6 @@ Children:
   Type: BaseDataVariableType
   DataType: ResourceUri
   Value: "file:///storage/usb1/recipe_databackup.Bak"
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32

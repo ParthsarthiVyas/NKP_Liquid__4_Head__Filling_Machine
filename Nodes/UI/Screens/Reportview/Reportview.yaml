@@ -281,6 +281,11 @@ Children:
       Type: BaseVariableType
       DataType: ComboBoxModeEnum
       ModellingRule: Optional
+    - Name: SortOrder
+      Type: BaseDataVariableType
+      DataType: SortOrderEnum
+      ModellingRule: Optional
+      Value: 1
   - Name: GetBatchInfo
     Type: NetLogic
   - Name: Label1
@@ -774,7 +779,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 300.0
+      Value: 480.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -2769,12 +2774,12 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 980.0
+    Value: 600.0
   - Name: Height
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 570.0
+    Value: 400.0
   - Name: ComboBox1
     Type: ComboBox
     Children:

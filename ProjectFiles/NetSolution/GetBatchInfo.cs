@@ -134,16 +134,16 @@ public class GetBatchInfo : BaseNetLogic
             float.TryParse(resultSet[0, 35]?.ToString(), out Fill_servo_1_fill_position);
             float.TryParse(resultSet[0, 36]?.ToString(), out Fill_servo_2_fill_position);
             float.TryParse(resultSet[0, 37]?.ToString(), out Fill_servo_3_fill_position);
-            float.TryParse(resultSet[0, 39]?.ToString(), out Fill_servo_4_fill_position);
-            float.TryParse(resultSet[0, 40]?.ToString(), out Air_pressure_set_low_value);
-            float.TryParse(resultSet[0, 41]?.ToString(), out Air_pressure_set_high_value);
-            float.TryParse(resultSet[0, 42]?.ToString(), out rubber_stopper_vac_pre_set_low_value);
-            float.TryParse(resultSet[0, 43]?.ToString(), out N2_pressure_set_low_value);
-            float.TryParse(resultSet[0, 44]?.ToString(), out N2_pressure_set_high_value);
-            float.TryParse(resultSet[0, 45]?.ToString(), out Rejection_station_vac_pre_set_low_vallue);
-            float.TryParse(resultSet[0, 46]?.ToString(), out Buffer_tank_weight_cell_set_low_value);
-            float.TryParse(resultSet[0, 47]?.ToString(), out product_temp_set_low_value);
-            float.TryParse(resultSet[0, 48]?.ToString(), out product_temp_set_high_value);
+            float.TryParse(resultSet[0, 38]?.ToString(), out Fill_servo_4_fill_position);
+            float.TryParse(resultSet[0, 39]?.ToString(), out Air_pressure_set_low_value);
+            float.TryParse(resultSet[0, 40]?.ToString(), out Air_pressure_set_high_value);
+            float.TryParse(resultSet[0, 41]?.ToString(), out rubber_stopper_vac_pre_set_low_value);
+            float.TryParse(resultSet[0, 42]?.ToString(), out N2_pressure_set_low_value);
+            float.TryParse(resultSet[0, 43]?.ToString(), out N2_pressure_set_high_value);
+            float.TryParse(resultSet[0, 44]?.ToString(), out Rejection_station_vac_pre_set_low_vallue);
+            float.TryParse(resultSet[0, 45]?.ToString(), out Buffer_tank_weight_cell_set_low_value);
+            float.TryParse(resultSet[0, 46]?.ToString(), out product_temp_set_low_value);
+            float.TryParse(resultSet[0, 47]?.ToString(), out product_temp_set_high_value);
         }
 
          Project.Current.GetVariable("Model/Report/Batch_report/BatchNumber").Value = batchno;

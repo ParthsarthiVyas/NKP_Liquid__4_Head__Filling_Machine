@@ -363,8 +363,8 @@ public class FolderBarLogic : BaseNetLogic
 				"ComboBoxFileSelectorUSBDisplayName",
 				usbName));
 		}
-
-		currentlyConnectedUsbDevices = connectedUsbDevices;
+        Project.Current.GetVariable("Model/UsbDetect").Value = connectedUsbDevices;
+        currentlyConnectedUsbDevices = connectedUsbDevices;
 	}
 
 	private void UpdateDevices()

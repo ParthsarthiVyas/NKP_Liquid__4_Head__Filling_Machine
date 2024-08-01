@@ -1,156 +1,6 @@
 Name: VariableTypes
 Type: FolderType
 Children:
-- Name: 'AB:1734_232ASC:C:0'
-  Id: g=b266b1269e0204882418390d55c48523
-  Supertype: TagStructure
-  DataType: 'AB:1734_232ASC:C:0'
-  ValueRank: Any
-  Children:
-  - Name: ConsumeStringDataType
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "ConsumeStringDataType"
-  - Name: DeviceNetHandshakeMode
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "DeviceNetHandshakeMode"
-  - Name: DeviceNetRecordHeaderMode
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "DeviceNetRecordHeaderMode"
-  - Name: MaxReceiveCharacters
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "MaxReceiveCharacters"
-  - Name: MaxTransmitCharacters
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "MaxTransmitCharacters"
-  - Name: PadCharacter
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PadCharacter"
-  - Name: PadMode
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PadMode"
-  - Name: ReceiveEndDelimiter
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "ReceiveEndDelimiter"
-  - Name: ReceiveRecordEndMode
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "ReceiveRecordEndMode"
-  - Name: ReceiveStartDelimiterCharacter
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "ReceiveStartDelimiterCharacter"
-  - Name: ReceiveStartDelimiterMode
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "ReceiveStartDelimiterMode"
-  - Name: ReceiveStringDataType
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "ReceiveStringDataType"
-  - Name: ReceiveSwapMode
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "ReceiveSwapMode"
-  - Name: SerialCharacterFormat
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "SerialCharacterFormat"
-  - Name: SerialCommSpeed
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "SerialCommSpeed"
-  - Name: TransmitEndDelimiterCharacter
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "TransmitEndDelimiterCharacter"
-  - Name: TransmitEndDelimiterMode
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "TransmitEndDelimiterMode"
-  - Name: TransmitSwapMode
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "TransmitSwapMode"
 - Name: AOI_FillingStrokeCorr
   Id: g=0c56716d3f5781c41d9cf1d924036887
   Supertype: TagStructure
@@ -221,6 +71,148 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Out_NettVolume"
+- Name: SAI_IND_SpanAdjust
+  Id: g=714ec32c463c564e7242db5c4ec5a508
+  Supertype: TagStructure
+  DataType: SAI_IND_SpanAdjust
+  ValueRank: Any
+  Children:
+  - Name: Cancel
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Cancel"
+  - Name: Cancelled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Cancelled"
+  - Name: ConfirmWeight
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ConfirmWeight"
+  - Name: CurrentPoint
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CurrentPoint"
+  - Name: CurrentWeight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CurrentWeight"
+  - Name: DataOK
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "DataOK"
+  - Name: Done
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Done"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableOut"
+  - Name: Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Error"
+  - Name: Hi_Weight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Hi_Weight"
+  - Name: LoadWeight
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LoadWeight"
+  - Name: Low_Weight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Low_Weight"
+  - Name: Mid_Weight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Mid_Weight"
+  - Name: Start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Start"
+  - Name: Status
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Status"
+  - Name: xLow_Weight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "xLow_Weight"
 - Name: raC_UDT_Itf_K5100_Set
   Id: g=2b4d06ebda4e35026c8c4815e01e02ab
   Supertype: TagStructure
@@ -537,6 +529,460 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Virtual"
+- Name: 'ME:IND360_2BlockR:I:0'
+  Id: g=075a85b183d1402b7c1c08059f0982a6
+  Supertype: TagStructure
+  DataType: 'ME:IND360_2BlockR:I:0'
+  ValueRank: Any
+  Children:
+  - Name: MB1
+    Type: 'ME:IND360_MBlockIn:I:0'
+    DataType: 'ME:IND360_MBlockIn:I:0'
+    Children:
+    - Name: Alarm_Condition
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Alarm_Condition"
+    - Name: Alternate_Weight_Unit
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Alternate_Weight_Unit"
+    - Name: Center_of_Zero
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Center_of_Zero"
+    - Name: ChNumber0
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChNumber0"
+    - Name: ChNumber1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChNumber1"
+    - Name: ChNumber2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChNumber2"
+    - Name: ChNumber3
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChNumber3"
+    - Name: CmdFail
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdFail"
+    - Name: CmdStatus0
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus0"
+    - Name: CmdStatus1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus1"
+    - Name: CmdStatus10
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus10"
+    - Name: CmdStatus2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus2"
+    - Name: CmdStatus3
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus3"
+    - Name: CmdStatus4
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus4"
+    - Name: CmdStatus5
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus5"
+    - Name: CmdStatus6
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus6"
+    - Name: CmdStatus7
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus7"
+    - Name: CmdStatus8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus8"
+    - Name: CmdStatus9
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus9"
+    - Name: Data_Okay
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Data_Okay"
+    - Name: Device_Specific_Bit_1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Device_Specific_Bit_1"
+    - Name: Device_Specific_Bit_2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Device_Specific_Bit_2"
+    - Name: Device_Specific_Bit_3
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Device_Specific_Bit_3"
+    - Name: Device_Specific_Bit_4
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Device_Specific_Bit_4"
+    - Name: Device_Specific_Bit_5
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Device_Specific_Bit_5"
+    - Name: Device_Specific_Bit_6
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Device_Specific_Bit_6"
+    - Name: Device_Specific_Bit_7
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Device_Specific_Bit_7"
+    - Name: Device_Status
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Device_Status"
+    - Name: Heart_Beat
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Heart_Beat"
+    - Name: Measuring_Value
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Measuring_Value"
+    - Name: Motion
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motion"
+    - Name: Net_Mode
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Net_Mode"
+    - Name: Response
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Response"
+    - Name: Sequence_Bit_0
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sequence_Bit_0"
+    - Name: Sequence_Bit_1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sequence_Bit_1"
+  - Name: SB1
+    Type: 'ME:IND360_StatusIn:I:0'
+    DataType: 'ME:IND360_StatusIn:I:0'
+    Children:
+    - Name: ChNumber0
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChNumber0"
+    - Name: ChNumber1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChNumber1"
+    - Name: ChNumber2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChNumber2"
+    - Name: ChNumber3
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChNumber3"
+    - Name: CmdFail
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdFail"
+    - Name: CmdStatus0
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus0"
+    - Name: CmdStatus1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus1"
+    - Name: CmdStatus10
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus10"
+    - Name: CmdStatus2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus2"
+    - Name: CmdStatus3
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus3"
+    - Name: CmdStatus4
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus4"
+    - Name: CmdStatus5
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus5"
+    - Name: CmdStatus6
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus6"
+    - Name: CmdStatus7
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus7"
+    - Name: CmdStatus8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus8"
+    - Name: CmdStatus9
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdStatus9"
+    - Name: Response
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Response"
+    - Name: Status_Group_1
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Status_Group_1"
+    - Name: Status_Group_2
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Status_Group_2"
+    - Name: Status_Group_3
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Status_Group_3"
 - Name: raC_UDT_Event
   Id: g=5b0cd5278393da9ecd245982dcf79f64
   Supertype: TagStructure
@@ -609,228 +1055,234 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Value"
-- Name: 'AB:1734_IR2:C:0'
-  Id: g=060d119d7b9f9112c0be2061d1eef906
+- Name: 'ME:IND360_StatusOut:O:0'
+  Id: g=ff89a37c44e5075db8351ce3fce3df05
   Supertype: TagStructure
-  DataType: 'AB:1734_IR2:C:0'
+  DataType: 'ME:IND360_StatusOut:O:0'
   ValueRank: Any
   Children:
-  - Name: Ch0AlarmDisable
+  - Name: ChNumber0
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch0AlarmDisable"
-  - Name: Ch0DigitalFilter
+      Value: "ChNumber0"
+  - Name: ChNumber1
     Type: RAEtherNetIPTag
-    DataType: Int16
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch0DigitalFilter"
-  - Name: Ch0HAlarmLimit
+      Value: "ChNumber1"
+  - Name: ChNumber2
     Type: RAEtherNetIPTag
-    DataType: Int16
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch0HAlarmLimit"
-  - Name: Ch0HHAlarmLimit
+      Value: "ChNumber2"
+  - Name: ChNumber3
     Type: RAEtherNetIPTag
-    DataType: Int16
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch0HHAlarmLimit"
-  - Name: Ch0HighEngineering
+      Value: "ChNumber3"
+  - Name: CmdNumber0
     Type: RAEtherNetIPTag
-    DataType: Int16
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch0HighEngineering"
-  - Name: Ch0LAlarmLimit
+      Value: "CmdNumber0"
+  - Name: CmdNumber1
     Type: RAEtherNetIPTag
-    DataType: Int16
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch0LAlarmLimit"
-  - Name: Ch0LimitAlarmLatch
+      Value: "CmdNumber1"
+  - Name: CmdNumber10
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch0LimitAlarmLatch"
-  - Name: Ch0LLAlarmLimit
+      Value: "CmdNumber10"
+  - Name: CmdNumber2
     Type: RAEtherNetIPTag
-    DataType: Int16
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch0LLAlarmLimit"
-  - Name: Ch0LowEngineering
+      Value: "CmdNumber2"
+  - Name: CmdNumber3
     Type: RAEtherNetIPTag
-    DataType: Int16
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch0LowEngineering"
-  - Name: Ch0SensorType
+      Value: "CmdNumber3"
+  - Name: CmdNumber4
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch0SensorType"
-  - Name: Ch0TempMode
+      Value: "CmdNumber4"
+  - Name: CmdNumber5
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch0TempMode"
-  - Name: Ch1AlarmDisable
+      Value: "CmdNumber5"
+  - Name: CmdNumber6
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch1AlarmDisable"
-  - Name: Ch1DigitalFilter
+      Value: "CmdNumber6"
+  - Name: CmdNumber7
     Type: RAEtherNetIPTag
-    DataType: Int16
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch1DigitalFilter"
-  - Name: Ch1HAlarmLimit
+      Value: "CmdNumber7"
+  - Name: CmdNumber8
     Type: RAEtherNetIPTag
-    DataType: Int16
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch1HAlarmLimit"
-  - Name: Ch1HHAlarmLimit
+      Value: "CmdNumber8"
+  - Name: CmdNumber9
     Type: RAEtherNetIPTag
-    DataType: Int16
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch1HHAlarmLimit"
-  - Name: Ch1HighEngineering
-    Type: RAEtherNetIPTag
-    DataType: Int16
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Ch1HighEngineering"
-  - Name: Ch1LAlarmLimit
+      Value: "CmdNumber9"
+  - Name: Command
     Type: RAEtherNetIPTag
     DataType: Int16
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch1LAlarmLimit"
-  - Name: Ch1LimitAlarmLatch
+      Value: "Command"
+  - Name: Reserved
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch1LimitAlarmLatch"
-  - Name: Ch1LLAlarmLimit
-    Type: RAEtherNetIPTag
-    DataType: Int16
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Ch1LLAlarmLimit"
-  - Name: Ch1LowEngineering
+      Value: "Reserved"
+  - Name: Reserved_1
     Type: RAEtherNetIPTag
     DataType: Int16
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch1LowEngineering"
-  - Name: Ch1SensorType
+      Value: "Reserved_1"
+  - Name: Reserved_2
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: Int16
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch1SensorType"
-  - Name: Ch1TempMode
+      Value: "Reserved_2"
+  - Name: Reserved_3
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: Int16
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Ch1TempMode"
-  - Name: NotchFilter
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "NotchFilter"
-- Name: 'AB:1734_19SLOT:I:0'
-  Id: g=1dd342fac91f26b8f64074c9bce45600
+      Value: "Reserved_3"
+- Name: raC_Opr_K5100_MSO
+  Id: g=54fa518bc6a11bcee9fb055cfd4e8b14
   Supertype: TagStructure
-  DataType: 'AB:1734_19SLOT:I:0'
+  DataType: raC_Opr_K5100_MSO
   ValueRank: Any
   Children:
-  - Name: Data
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    ValueRank: OneDimension
-    ArrayDimensions: [19]
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Data"
-  - Name: SlotStatusBits0_31
+  - Name: _bSts
     Type: RAEtherNetIPTag
     DataType: Int32
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "SlotStatusBits0_31"
-  - Name: SlotStatusBits32_63
+      Value: "_bSts"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableOut"
+  - Name: Sts_DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_DN"
+  - Name: Sts_EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_EN"
+  - Name: Sts_ER
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_ER"
+  - Name: Sts_ERR
     Type: RAEtherNetIPTag
     DataType: Int32
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "SlotStatusBits32_63"
+      Value: "Sts_ERR"
 - Name: AOI_TimeTotalizer
   Id: g=6bb59eacb16f45a8b2e3b91a1342d34b
   Supertype: TagStructure
@@ -877,6 +1329,22 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Out_ValConv_Sec"
+- Name: 'AB:1734_15SLOT:O:0'
+  Id: g=9b24d6aea1249c89cc32107020986e42
+  Supertype: TagStructure
+  DataType: 'AB:1734_15SLOT:O:0'
+  ValueRank: Any
+  Children:
+  - Name: Data
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    ValueRank: OneDimension
+    ArrayDimensions: [15]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Data"
 - Name: 'AB:2198_K5100_CAM_ERS:O:0'
   Id: g=9bf016b3441b57e58c28f3cc165eeaed
   Supertype: TagStructure
@@ -1147,6 +1615,218 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "TravelMode"
+- Name: SAI_CheckAlive
+  Id: g=6c8d00f3e4837820412f5aa0f04c3bf8
+  Supertype: TagStructure
+  DataType: SAI_CheckAlive
+  ValueRank: Any
+  Children:
+  - Name: Alive
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Alive"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableOut"
+  - Name: HeartBeat
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HeartBeat"
+- Name: SAI_IND_WeightProc
+  Id: g=c4f091fbd25a46642d07fdc2ea42eb61
+  Supertype: TagStructure
+  DataType: SAI_IND_WeightProc
+  ValueRank: Any
+  Children:
+  - Name: Alarm
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Alarm"
+  - Name: ClearTare
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ClearTare"
+  - Name: DataOK
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "DataOK"
+  - Name: Done
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Done"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableOut"
+  - Name: Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Error"
+  - Name: MB_Command
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "MB_Command"
+  - Name: MB_Response
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "MB_Response"
+  - Name: MB_Value
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "MB_Value"
+  - Name: Motion
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Motion"
+  - Name: NetMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "NetMode"
+  - Name: PreTare
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PreTare"
+  - Name: PreTareValue
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PreTareValue"
+  - Name: RealTimeWeight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "RealTimeWeight"
+  - Name: StableWeight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "StableWeight"
+  - Name: TareImmediate
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "TareImmediate"
+  - Name: TareStable
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "TareStable"
+  - Name: WeightCmd
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "WeightCmd"
+  - Name: ZeroImmediate
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ZeroImmediate"
+  - Name: ZeroStable
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ZeroStable"
 - Name: SCP
   Id: g=9355d0e2140854178f0b6c87961e2291
   Supertype: TagStructure
@@ -2243,100 +2923,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "UnSuspendRemoteCmd"
-- Name: 'AB:1734_OE2:I:0'
-  Id: g=f971b7753fe2359fbfb96dcfdea12948
-  Supertype: TagStructure
-  DataType: 'AB:1734_OE2:I:0'
-  ValueRank: Any
-  Children:
-  - Name: Ch0Calibration
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Ch0Calibration"
-  - Name: Ch0Fault
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Ch0Fault"
-  - Name: Ch0HAlarm
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Ch0HAlarm"
-  - Name: Ch0LAlarm
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Ch0LAlarm"
-  - Name: Ch0Status
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Ch0Status"
-  - Name: Ch1Calibration
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Ch1Calibration"
-  - Name: Ch1Fault
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Ch1Fault"
-  - Name: Ch1HAlarm
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Ch1HAlarm"
-  - Name: Ch1LAlarm
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Ch1LAlarm"
-  - Name: Ch1Status
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Ch1Status"
-  - Name: Fault
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Fault"
 - Name: 'AB:1734_VHSC:C:0'
   Id: g=e122ee38393a29b1370381d04705448e
   Supertype: TagStructure
@@ -2783,304 +3369,40 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "ZInput"
-- Name: 'AB:1734_DO8_NoDiag:C:0'
-  Id: g=ef7ed7053a458fc3a3161c17cb2e68ba
+- Name: raC_UDT_Itf_K5100_Inf
+  Id: g=9407215ca0d512645626d9748d991ff0
   Supertype: TagStructure
-  DataType: 'AB:1734_DO8_NoDiag:C:0'
+  DataType: raC_UDT_Itf_K5100_Inf
   ValueRank: Any
   Children:
-  - Name: FaultMode
+  - Name: bExtensionAlert
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: Int32
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "FaultMode"
-  - Name: FaultValue
+      Value: "bExtensionAlert"
+  - Name: bExtensionEnabled
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: Int32
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "FaultValue"
-  - Name: ProgMode
+      Value: "bExtensionEnabled"
+  - Name: ModulePath
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: String
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "ProgMode"
-  - Name: ProgValue
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "ProgValue"
-  - Name: Pt0FaultMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt0FaultMode"
-  - Name: Pt0FaultValue
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt0FaultValue"
-  - Name: Pt0ProgMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt0ProgMode"
-  - Name: Pt0ProgValue
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt0ProgValue"
-  - Name: Pt1FaultMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt1FaultMode"
-  - Name: Pt1FaultValue
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt1FaultValue"
-  - Name: Pt1ProgMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt1ProgMode"
-  - Name: Pt1ProgValue
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt1ProgValue"
-  - Name: Pt2FaultMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt2FaultMode"
-  - Name: Pt2FaultValue
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt2FaultValue"
-  - Name: Pt2ProgMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt2ProgMode"
-  - Name: Pt2ProgValue
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt2ProgValue"
-  - Name: Pt3FaultMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt3FaultMode"
-  - Name: Pt3FaultValue
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt3FaultValue"
-  - Name: Pt3ProgMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt3ProgMode"
-  - Name: Pt3ProgValue
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt3ProgValue"
-  - Name: Pt4FaultMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt4FaultMode"
-  - Name: Pt4FaultValue
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt4FaultValue"
-  - Name: Pt4ProgMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt4ProgMode"
-  - Name: Pt4ProgValue
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt4ProgValue"
-  - Name: Pt5FaultMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt5FaultMode"
-  - Name: Pt5FaultValue
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt5FaultValue"
-  - Name: Pt5ProgMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt5ProgMode"
-  - Name: Pt5ProgValue
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt5ProgValue"
-  - Name: Pt6FaultMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt6FaultMode"
-  - Name: Pt6FaultValue
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt6FaultValue"
-  - Name: Pt6ProgMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt6ProgMode"
-  - Name: Pt6ProgValue
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt6ProgValue"
-  - Name: Pt7FaultMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt7FaultMode"
-  - Name: Pt7FaultValue
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt7FaultValue"
-  - Name: Pt7ProgMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt7ProgMode"
-  - Name: Pt7ProgValue
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Pt7ProgValue"
-- Name: raC_Opr_K5100_MAM
-  Id: g=25fa3b21a236e7b5db9c49dd9bf88d55
+      Value: "ModulePath"
+- Name: raC_Opr_K5100_MAJ
+  Id: g=07fd64fc4987f946c692e6f9a4c4deea
   Supertype: TagStructure
-  DataType: raC_Opr_K5100_MAM
+  DataType: raC_Opr_K5100_MAJ
   ValueRank: Any
   Children:
   - Name: _bSts
@@ -3115,14 +3437,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Set_AccelReference"
-  - Name: Set_CapturedPositionSelect
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Set_CapturedPositionSelect"
   - Name: Set_DecelReference
     Type: RAEtherNetIPTag
     DataType: Float
@@ -3131,38 +3445,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Set_DecelReference"
-  - Name: Set_MoveType
-    Type: RAEtherNetIPTag
-    DataType: Int16
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Set_MoveType"
-  - Name: Set_PositionCommandOverlap
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Set_PositionCommandOverlap"
-  - Name: Set_PositionCommandOverride
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Set_PositionCommandOverride"
-  - Name: Set_PositionReference
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Set_PositionReference"
   - Name: Set_SpeedReference
     Type: RAEtherNetIPTag
     DataType: Float
@@ -3171,6 +3453,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Set_SpeedReference"
+  - Name: Sts_AtSpeed
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_AtSpeed"
   - Name: Sts_DN
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -3211,220 +3501,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Sts_IP"
-  - Name: Sts_PC
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Sts_PC"
-- Name: raC_Opr_K5100_MSO
-  Id: g=54fa518bc6a11bcee9fb055cfd4e8b14
-  Supertype: TagStructure
-  DataType: raC_Opr_K5100_MSO
-  ValueRank: Any
-  Children:
-  - Name: _bSts
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "_bSts"
-  - Name: EnableIn
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "EnableIn"
-  - Name: EnableOut
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "EnableOut"
-  - Name: Sts_DN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Sts_DN"
-  - Name: Sts_EN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Sts_EN"
-  - Name: Sts_ER
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Sts_ER"
-  - Name: Sts_ERR
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Sts_ERR"
-- Name: raC_UDT_Itf_K5100_Inf
-  Id: g=9407215ca0d512645626d9748d991ff0
-  Supertype: TagStructure
-  DataType: raC_UDT_Itf_K5100_Inf
-  ValueRank: Any
-  Children:
-  - Name: bExtensionAlert
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "bExtensionAlert"
-  - Name: bExtensionEnabled
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "bExtensionEnabled"
-  - Name: ModulePath
-    Type: RAEtherNetIPTag
-    DataType: String
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "ModulePath"
-- Name: 'AB:1734_19SLOT:O:0'
-  Id: g=1564d0f19400fc31b816e2d51936e5cc
-  Supertype: TagStructure
-  DataType: 'AB:1734_19SLOT:O:0'
-  ValueRank: Any
-  Children:
-  - Name: Data
-    Type: RAEtherNetIPTag
-    DataType: SByte
-    ValueRank: OneDimension
-    ArrayDimensions: [19]
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Data"
-- Name: EM_Faults
-  Id: g=5a948a9172c9d1717f2fa2017d64ef62
-  Supertype: TagStructure
-  DataType: EM_Faults
-  ValueRank: Any
-  Children:
-  - Name: EM_Faulted
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "EM_Faulted"
-  - Name: EM_General_Faults
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "EM_General_Faults"
-  - Name: Object_AOI_Fault
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Object_AOI_Fault"
-  - Name: StartFaultCalculation
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "StartFaultCalculation"
-  - Name: StartFaultInstruction
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "StartFaultInstruction"
-  - Name: StartFaultWachtdog
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "StartFaultWachtdog"
-  - Name: WatchdogPrepareExecution
-    Type: TIMER
-    DataType: TIMER
-    Children:
-    - Name: ACC
-      Type: RAEtherNetIPTag
-      DataType: Int32
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "ACC"
-    - Name: DN
-      Type: RAEtherNetIPTag
-      DataType: Boolean
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "DN"
-    - Name: EN
-      Type: RAEtherNetIPTag
-      DataType: Boolean
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "EN"
-    - Name: PRE
-      Type: RAEtherNetIPTag
-      DataType: Int32
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "PRE"
-    - Name: TT
-      Type: RAEtherNetIPTag
-      DataType: Boolean
-      Children:
-      - Name: SymbolName
-        Type: BaseDataVariableType
-        DataType: String
-        Value: "TT"
 - Name: 'AB:PowerFlex525V_E_5483BAFD:O:0'
   Id: g=494be6b9a77b89de086e02f2fb2743e0
   Supertype: TagStructure
@@ -3591,6 +3667,746 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Stop"
+- Name: 'ME:IND360_MBlockOut:O:0'
+  Id: g=a3c3a1baff3945ebe70be20961366ad6
+  Supertype: TagStructure
+  DataType: 'ME:IND360_MBlockOut:O:0'
+  ValueRank: Any
+  Children:
+  - Name: Apply_command_to_Channel_1
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Apply_command_to_Channel_1"
+  - Name: Apply_command_to_Channel_10
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Apply_command_to_Channel_10"
+  - Name: Apply_command_to_Channel_11
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Apply_command_to_Channel_11"
+  - Name: Apply_command_to_Channel_12
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Apply_command_to_Channel_12"
+  - Name: Apply_command_to_Channel_13
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Apply_command_to_Channel_13"
+  - Name: Apply_command_to_Channel_14
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Apply_command_to_Channel_14"
+  - Name: Apply_command_to_Channel_15
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Apply_command_to_Channel_15"
+  - Name: Apply_command_to_Channel_16
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Apply_command_to_Channel_16"
+  - Name: Apply_command_to_Channel_2
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Apply_command_to_Channel_2"
+  - Name: Apply_command_to_Channel_3
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Apply_command_to_Channel_3"
+  - Name: Apply_command_to_Channel_4
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Apply_command_to_Channel_4"
+  - Name: Apply_command_to_Channel_5
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Apply_command_to_Channel_5"
+  - Name: Apply_command_to_Channel_6
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Apply_command_to_Channel_6"
+  - Name: Apply_command_to_Channel_7
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Apply_command_to_Channel_7"
+  - Name: Apply_command_to_Channel_8
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Apply_command_to_Channel_8"
+  - Name: Apply_command_to_Channel_9
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Apply_command_to_Channel_9"
+  - Name: Channel_Mask
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Channel_Mask"
+  - Name: ChNumber0
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ChNumber0"
+  - Name: ChNumber1
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ChNumber1"
+  - Name: ChNumber2
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ChNumber2"
+  - Name: ChNumber3
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ChNumber3"
+  - Name: CmdNumber0
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdNumber0"
+  - Name: CmdNumber1
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdNumber1"
+  - Name: CmdNumber10
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdNumber10"
+  - Name: CmdNumber2
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdNumber2"
+  - Name: CmdNumber3
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdNumber3"
+  - Name: CmdNumber4
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdNumber4"
+  - Name: CmdNumber5
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdNumber5"
+  - Name: CmdNumber6
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdNumber6"
+  - Name: CmdNumber7
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdNumber7"
+  - Name: CmdNumber8
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdNumber8"
+  - Name: CmdNumber9
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdNumber9"
+  - Name: Command
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Command"
+  - Name: Command_Value
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Command_Value"
+  - Name: Reserved
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Reserved"
+- Name: 'ME:IND360_2BlockW:O:0'
+  Id: g=76a7964d22c11b313ef6fa68381652aa
+  Supertype: TagStructure
+  DataType: 'ME:IND360_2BlockW:O:0'
+  ValueRank: Any
+  Children:
+  - Name: MB1
+    Type: 'ME:IND360_MBlockOut:O:0'
+    DataType: 'ME:IND360_MBlockOut:O:0'
+    Children:
+    - Name: Apply_command_to_Channel_1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Apply_command_to_Channel_1"
+    - Name: Apply_command_to_Channel_10
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Apply_command_to_Channel_10"
+    - Name: Apply_command_to_Channel_11
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Apply_command_to_Channel_11"
+    - Name: Apply_command_to_Channel_12
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Apply_command_to_Channel_12"
+    - Name: Apply_command_to_Channel_13
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Apply_command_to_Channel_13"
+    - Name: Apply_command_to_Channel_14
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Apply_command_to_Channel_14"
+    - Name: Apply_command_to_Channel_15
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Apply_command_to_Channel_15"
+    - Name: Apply_command_to_Channel_16
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Apply_command_to_Channel_16"
+    - Name: Apply_command_to_Channel_2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Apply_command_to_Channel_2"
+    - Name: Apply_command_to_Channel_3
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Apply_command_to_Channel_3"
+    - Name: Apply_command_to_Channel_4
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Apply_command_to_Channel_4"
+    - Name: Apply_command_to_Channel_5
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Apply_command_to_Channel_5"
+    - Name: Apply_command_to_Channel_6
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Apply_command_to_Channel_6"
+    - Name: Apply_command_to_Channel_7
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Apply_command_to_Channel_7"
+    - Name: Apply_command_to_Channel_8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Apply_command_to_Channel_8"
+    - Name: Apply_command_to_Channel_9
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Apply_command_to_Channel_9"
+    - Name: Channel_Mask
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Channel_Mask"
+    - Name: ChNumber0
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChNumber0"
+    - Name: ChNumber1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChNumber1"
+    - Name: ChNumber2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChNumber2"
+    - Name: ChNumber3
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChNumber3"
+    - Name: CmdNumber0
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber0"
+    - Name: CmdNumber1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber1"
+    - Name: CmdNumber10
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber10"
+    - Name: CmdNumber2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber2"
+    - Name: CmdNumber3
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber3"
+    - Name: CmdNumber4
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber4"
+    - Name: CmdNumber5
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber5"
+    - Name: CmdNumber6
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber6"
+    - Name: CmdNumber7
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber7"
+    - Name: CmdNumber8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber8"
+    - Name: CmdNumber9
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber9"
+    - Name: Command
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Command"
+    - Name: Command_Value
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Command_Value"
+    - Name: Reserved
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Reserved"
+  - Name: SB1
+    Type: 'ME:IND360_StatusOut:O:0'
+    DataType: 'ME:IND360_StatusOut:O:0'
+    Children:
+    - Name: ChNumber0
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChNumber0"
+    - Name: ChNumber1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChNumber1"
+    - Name: ChNumber2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChNumber2"
+    - Name: ChNumber3
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChNumber3"
+    - Name: CmdNumber0
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber0"
+    - Name: CmdNumber1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber1"
+    - Name: CmdNumber10
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber10"
+    - Name: CmdNumber2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber2"
+    - Name: CmdNumber3
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber3"
+    - Name: CmdNumber4
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber4"
+    - Name: CmdNumber5
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber5"
+    - Name: CmdNumber6
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber6"
+    - Name: CmdNumber7
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber7"
+    - Name: CmdNumber8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber8"
+    - Name: CmdNumber9
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CmdNumber9"
+    - Name: Command
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Command"
+    - Name: Reserved
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Reserved"
+    - Name: Reserved_1
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Reserved_1"
+    - Name: Reserved_2
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Reserved_2"
+    - Name: Reserved_3
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Reserved_3"
 - Name: 'AB:1734_IE4:I:0'
   Id: g=928aa545fff4ea783ff30e4cd0af12a5
   Supertype: TagStructure
@@ -3925,46 +4741,68 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Fault"
-- Name: 'AB:1734_232ASC_127Bytes:O:0'
-  Id: g=1ac71d617e3538671646cfd82444f436
+- Name: SAI_IND_WriteAdjustSettings
+  Id: g=e1f033244b075c02df4a431b4cc944b0
   Supertype: TagStructure
-  DataType: 'AB:1734_232ASC_127Bytes:O:0'
+  DataType: SAI_IND_WriteAdjustSettings
   ValueRank: Any
   Children:
-  - Name: Data
+  - Name: Done
     Type: RAEtherNetIPTag
-    DataType: SByte
-    ValueRank: OneDimension
-    ArrayDimensions: [127]
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Data"
-  - Name: Length
+      Value: "Done"
+  - Name: EnableIn
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Length"
-  - Name: NextTransmitRecordNumber
+      Value: "EnableIn"
+  - Name: EnableOut
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "NextTransmitRecordNumber"
-  - Name: TransmitRecordNumber
+      Value: "EnableOut"
+  - Name: Error
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "TransmitRecordNumber"
+      Value: "Error"
+  - Name: Increment
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Increment"
+  - Name: ScaleCapacity
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ScaleCapacity"
+  - Name: Write
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Write"
 - Name: raC_Opr_K5100_MSF
   Id: g=27305f4017b838c6205fda9a943cd30d
   Supertype: TagStructure
@@ -4027,6 +4865,362 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Sts_ERR"
+- Name: 'ME:IND360_MBlockIn:I:0'
+  Id: g=8fc9b6e8434cb64aa1a795bd82fb20d8
+  Supertype: TagStructure
+  DataType: 'ME:IND360_MBlockIn:I:0'
+  ValueRank: Any
+  Children:
+  - Name: Alarm_Condition
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Alarm_Condition"
+  - Name: Alternate_Weight_Unit
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Alternate_Weight_Unit"
+  - Name: Center_of_Zero
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Center_of_Zero"
+  - Name: ChNumber0
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ChNumber0"
+  - Name: ChNumber1
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ChNumber1"
+  - Name: ChNumber2
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ChNumber2"
+  - Name: ChNumber3
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ChNumber3"
+  - Name: CmdFail
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdFail"
+  - Name: CmdStatus0
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus0"
+  - Name: CmdStatus1
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus1"
+  - Name: CmdStatus10
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus10"
+  - Name: CmdStatus2
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus2"
+  - Name: CmdStatus3
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus3"
+  - Name: CmdStatus4
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus4"
+  - Name: CmdStatus5
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus5"
+  - Name: CmdStatus6
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus6"
+  - Name: CmdStatus7
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus7"
+  - Name: CmdStatus8
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus8"
+  - Name: CmdStatus9
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus9"
+  - Name: Data_Okay
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Data_Okay"
+  - Name: Device_Specific_Bit_1
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Device_Specific_Bit_1"
+  - Name: Device_Specific_Bit_2
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Device_Specific_Bit_2"
+  - Name: Device_Specific_Bit_3
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Device_Specific_Bit_3"
+  - Name: Device_Specific_Bit_4
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Device_Specific_Bit_4"
+  - Name: Device_Specific_Bit_5
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Device_Specific_Bit_5"
+  - Name: Device_Specific_Bit_6
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Device_Specific_Bit_6"
+  - Name: Device_Specific_Bit_7
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Device_Specific_Bit_7"
+  - Name: Device_Status
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Device_Status"
+  - Name: Heart_Beat
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Heart_Beat"
+  - Name: Measuring_Value
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Measuring_Value"
+  - Name: Motion
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Motion"
+  - Name: Net_Mode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Net_Mode"
+  - Name: Response
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Response"
+  - Name: Sequence_Bit_0
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sequence_Bit_0"
+  - Name: Sequence_Bit_1
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sequence_Bit_1"
+- Name: SAI_IND_CalFree
+  Id: g=e9d6d34e5f5f427874b8b9e7c20c2e5b
+  Supertype: TagStructure
+  DataType: SAI_IND_CalFree
+  ValueRank: Any
+  Children:
+  - Name: Done
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Done"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableOut"
+  - Name: Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Error"
+  - Name: RatedCapacity
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "RatedCapacity"
+  - Name: ScaleUnit
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ScaleUnit"
+  - Name: Start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Start"
+  - Name: Status
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Status"
 - Name: raC_Opr_K5100_MAFR
   Id: g=50172a9b2aea94b37b86dbd4c9446b9c
   Supertype: TagStructure
@@ -4089,6 +5283,68 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Sts_ERR"
+- Name: COUNTER
+  Id: g=0544d28b2ea085717f1b9cdad1f76b63
+  Supertype: TagStructure
+  DataType: COUNTER
+  ValueRank: Any
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ACC"
+  - Name: CD
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CD"
+  - Name: CU
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CU"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "DN"
+  - Name: OV
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "OV"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PRE"
+  - Name: UN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UN"
 - Name: PF525_Faceplate_AOI
   Id: g=86ea62463fae7bc83451e1848f669ec6
   Supertype: TagStructure
@@ -4975,68 +6231,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Val_TrendMin"
-- Name: COUNTER
-  Id: g=0544d28b2ea085717f1b9cdad1f76b63
-  Supertype: TagStructure
-  DataType: COUNTER
-  ValueRank: Any
-  Children:
-  - Name: ACC
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "ACC"
-  - Name: CD
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "CD"
-  - Name: CU
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "CU"
-  - Name: DN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "DN"
-  - Name: OV
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "OV"
-  - Name: PRE
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PRE"
-  - Name: UN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "UN"
 - Name: 'AB:1734_DI8:C:0'
   Id: g=ee1b08af8d61e8230cd7c27bc95c0778
   Supertype: TagStructure
@@ -5455,20 +6649,44 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Sts_InpValCounts_LL"
-- Name: raC_Opr_K5100_MAJ
-  Id: g=07fd64fc4987f946c692e6f9a4c4deea
+- Name: SAI_APW_IntAdjust
+  Id: g=64cf800d04a304e6ca43afc305e81f83
   Supertype: TagStructure
-  DataType: raC_Opr_K5100_MAJ
+  DataType: SAI_APW_IntAdjust
   ValueRank: Any
   Children:
-  - Name: _bSts
+  - Name: Cancel
     Type: RAEtherNetIPTag
-    DataType: Int32
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "_bSts"
+      Value: "Cancel"
+  - Name: Cancelled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Cancelled"
+  - Name: DataOK
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "DataOK"
+  - Name: Done
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Done"
   - Name: EnableIn
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -5485,78 +6703,38 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "EnableOut"
-  - Name: Set_AccelReference
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Set_AccelReference"
-  - Name: Set_DecelReference
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Set_DecelReference"
-  - Name: Set_SpeedReference
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Set_SpeedReference"
-  - Name: Sts_AtSpeed
+  - Name: Error
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Sts_AtSpeed"
-  - Name: Sts_DN
+      Value: "Error"
+  - Name: In_Process
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Sts_DN"
-  - Name: Sts_EN
+      Value: "In_Process"
+  - Name: Start
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Sts_EN"
-  - Name: Sts_ER
+      Value: "Start"
+  - Name: Status
     Type: RAEtherNetIPTag
-    DataType: Boolean
+    DataType: Int16
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Sts_ER"
-  - Name: Sts_ERR
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Sts_ERR"
-  - Name: Sts_IP
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Sts_IP"
+      Value: "Status"
 - Name: 'AB:1734_IE4:C:0'
   Id: g=093afd02da3e772a67670a5b46df22e5
   Supertype: TagStructure
@@ -5899,6 +7077,820 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "RealTimeSample"
+- Name: 'AB:1734_OE2:I:0'
+  Id: g=f971b7753fe2359fbfb96dcfdea12948
+  Supertype: TagStructure
+  DataType: 'AB:1734_OE2:I:0'
+  ValueRank: Any
+  Children:
+  - Name: Ch0Calibration
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch0Calibration"
+  - Name: Ch0Fault
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch0Fault"
+  - Name: Ch0HAlarm
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch0HAlarm"
+  - Name: Ch0LAlarm
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch0LAlarm"
+  - Name: Ch0Status
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch0Status"
+  - Name: Ch1Calibration
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch1Calibration"
+  - Name: Ch1Fault
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch1Fault"
+  - Name: Ch1HAlarm
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch1HAlarm"
+  - Name: Ch1LAlarm
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch1LAlarm"
+  - Name: Ch1Status
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch1Status"
+  - Name: Fault
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Fault"
+- Name: 'AB:1734_15SLOT:I:0'
+  Id: g=248b29f8ad5daacb5e4daefb36b21fbf
+  Supertype: TagStructure
+  DataType: 'AB:1734_15SLOT:I:0'
+  ValueRank: Any
+  Children:
+  - Name: Data
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    ValueRank: OneDimension
+    ArrayDimensions: [15]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Data"
+  - Name: SlotStatusBits0_31
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "SlotStatusBits0_31"
+  - Name: SlotStatusBits32_63
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "SlotStatusBits32_63"
+- Name: 'AB:1734_IR2:C:0'
+  Id: g=060d119d7b9f9112c0be2061d1eef906
+  Supertype: TagStructure
+  DataType: 'AB:1734_IR2:C:0'
+  ValueRank: Any
+  Children:
+  - Name: Ch0AlarmDisable
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch0AlarmDisable"
+  - Name: Ch0DigitalFilter
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch0DigitalFilter"
+  - Name: Ch0HAlarmLimit
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch0HAlarmLimit"
+  - Name: Ch0HHAlarmLimit
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch0HHAlarmLimit"
+  - Name: Ch0HighEngineering
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch0HighEngineering"
+  - Name: Ch0LAlarmLimit
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch0LAlarmLimit"
+  - Name: Ch0LimitAlarmLatch
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch0LimitAlarmLatch"
+  - Name: Ch0LLAlarmLimit
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch0LLAlarmLimit"
+  - Name: Ch0LowEngineering
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch0LowEngineering"
+  - Name: Ch0SensorType
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch0SensorType"
+  - Name: Ch0TempMode
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch0TempMode"
+  - Name: Ch1AlarmDisable
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch1AlarmDisable"
+  - Name: Ch1DigitalFilter
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch1DigitalFilter"
+  - Name: Ch1HAlarmLimit
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch1HAlarmLimit"
+  - Name: Ch1HHAlarmLimit
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch1HHAlarmLimit"
+  - Name: Ch1HighEngineering
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch1HighEngineering"
+  - Name: Ch1LAlarmLimit
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch1LAlarmLimit"
+  - Name: Ch1LimitAlarmLatch
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch1LimitAlarmLatch"
+  - Name: Ch1LLAlarmLimit
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch1LLAlarmLimit"
+  - Name: Ch1LowEngineering
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch1LowEngineering"
+  - Name: Ch1SensorType
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch1SensorType"
+  - Name: Ch1TempMode
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ch1TempMode"
+  - Name: NotchFilter
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "NotchFilter"
+- Name: SAI_IND_ReadAdjustSettings
+  Id: g=686b6649acc9054c4f1a702cd2946b0f
+  Supertype: TagStructure
+  DataType: SAI_IND_ReadAdjustSettings
+  ValueRank: Any
+  Children:
+  - Name: Done
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Done"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableOut"
+  - Name: Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Error"
+  - Name: Increment
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Increment"
+  - Name: Read
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Read"
+  - Name: ScaleCapacity
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ScaleCapacity"
+- Name: 'AB:1734_DO8_NoDiag:C:0'
+  Id: g=ef7ed7053a458fc3a3161c17cb2e68ba
+  Supertype: TagStructure
+  DataType: 'AB:1734_DO8_NoDiag:C:0'
+  ValueRank: Any
+  Children:
+  - Name: FaultMode
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "FaultMode"
+  - Name: FaultValue
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "FaultValue"
+  - Name: ProgMode
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ProgMode"
+  - Name: ProgValue
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ProgValue"
+  - Name: Pt0FaultMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt0FaultMode"
+  - Name: Pt0FaultValue
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt0FaultValue"
+  - Name: Pt0ProgMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt0ProgMode"
+  - Name: Pt0ProgValue
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt0ProgValue"
+  - Name: Pt1FaultMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt1FaultMode"
+  - Name: Pt1FaultValue
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt1FaultValue"
+  - Name: Pt1ProgMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt1ProgMode"
+  - Name: Pt1ProgValue
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt1ProgValue"
+  - Name: Pt2FaultMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt2FaultMode"
+  - Name: Pt2FaultValue
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt2FaultValue"
+  - Name: Pt2ProgMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt2ProgMode"
+  - Name: Pt2ProgValue
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt2ProgValue"
+  - Name: Pt3FaultMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt3FaultMode"
+  - Name: Pt3FaultValue
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt3FaultValue"
+  - Name: Pt3ProgMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt3ProgMode"
+  - Name: Pt3ProgValue
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt3ProgValue"
+  - Name: Pt4FaultMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt4FaultMode"
+  - Name: Pt4FaultValue
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt4FaultValue"
+  - Name: Pt4ProgMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt4ProgMode"
+  - Name: Pt4ProgValue
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt4ProgValue"
+  - Name: Pt5FaultMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt5FaultMode"
+  - Name: Pt5FaultValue
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt5FaultValue"
+  - Name: Pt5ProgMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt5ProgMode"
+  - Name: Pt5ProgValue
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt5ProgValue"
+  - Name: Pt6FaultMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt6FaultMode"
+  - Name: Pt6FaultValue
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt6FaultValue"
+  - Name: Pt6ProgMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt6ProgMode"
+  - Name: Pt6ProgValue
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt6ProgValue"
+  - Name: Pt7FaultMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt7FaultMode"
+  - Name: Pt7FaultValue
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt7FaultValue"
+  - Name: Pt7ProgMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt7ProgMode"
+  - Name: Pt7ProgValue
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pt7ProgValue"
+- Name: raC_Opr_K5100_MAM
+  Id: g=25fa3b21a236e7b5db9c49dd9bf88d55
+  Supertype: TagStructure
+  DataType: raC_Opr_K5100_MAM
+  ValueRank: Any
+  Children:
+  - Name: _bSts
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "_bSts"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableOut"
+  - Name: Set_AccelReference
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Set_AccelReference"
+  - Name: Set_CapturedPositionSelect
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Set_CapturedPositionSelect"
+  - Name: Set_DecelReference
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Set_DecelReference"
+  - Name: Set_MoveType
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Set_MoveType"
+  - Name: Set_PositionCommandOverlap
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Set_PositionCommandOverlap"
+  - Name: Set_PositionCommandOverride
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Set_PositionCommandOverride"
+  - Name: Set_PositionReference
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Set_PositionReference"
+  - Name: Set_SpeedReference
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Set_SpeedReference"
+  - Name: Sts_DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_DN"
+  - Name: Sts_EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_EN"
+  - Name: Sts_ER
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_ER"
+  - Name: Sts_ERR
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_ERR"
+  - Name: Sts_IP
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_IP"
+  - Name: Sts_PC
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_PC"
 - Name: 'AB:1734_VHSC:I:0'
   Id: g=00c9ca2b3934dcc78b60e94a5f1a6c71
   Supertype: TagStructure
@@ -6041,49 +8033,55 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "ZInputStatus"
-- Name: 'AB:1734_232ASC_127Bytes:I:0'
-  Id: g=a86771de91964fec71f64b857d4d353d
+- Name: SAI_IND_ZeroAdjust
+  Id: g=439f3e7fcc14b7223239a6e0a0699f02
   Supertype: TagStructure
-  DataType: 'AB:1734_232ASC_127Bytes:I:0'
+  DataType: SAI_IND_ZeroAdjust
   ValueRank: Any
   Children:
-  - Name: Data
+  - Name: Done
     Type: RAEtherNetIPTag
-    DataType: SByte
-    ValueRank: OneDimension
-    ArrayDimensions: [127]
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Data"
-  - Name: Fault
+      Value: "Done"
+  - Name: EnableIn
     Type: RAEtherNetIPTag
-    DataType: Int32
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Fault"
-  - Name: Length
+      Value: "EnableIn"
+  - Name: EnableOut
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Length"
-  - Name: ReceiveRecordNumber
+      Value: "EnableOut"
+  - Name: Error
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: Boolean
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "ReceiveRecordNumber"
+      Value: "Error"
+  - Name: Start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Start"
   - Name: Status
     Type: RAEtherNetIPTag
-    DataType: SByte
+    DataType: Int16
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -6807,6 +8805,104 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Sts_StopDone"
+- Name: EM_Faults
+  Id: g=5a948a9172c9d1717f2fa2017d64ef62
+  Supertype: TagStructure
+  DataType: EM_Faults
+  ValueRank: Any
+  Children:
+  - Name: EM_Faulted
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EM_Faulted"
+  - Name: EM_General_Faults
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EM_General_Faults"
+  - Name: Object_AOI_Fault
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Object_AOI_Fault"
+  - Name: StartFaultCalculation
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "StartFaultCalculation"
+  - Name: StartFaultInstruction
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "StartFaultInstruction"
+  - Name: StartFaultWachtdog
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "StartFaultWachtdog"
+  - Name: WatchdogPrepareExecution
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "TT"
 - Name: raC_Dvc_K5100
   Id: g=399acbfb522c043d7532f3c6b405cbc1
   Supertype: TagStructure
@@ -7445,6 +9541,172 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "WarningPresent"
+- Name: 'ME:IND360_StatusIn:I:0'
+  Id: g=5a7f0bc456408e8209092f4234f74d48
+  Supertype: TagStructure
+  DataType: 'ME:IND360_StatusIn:I:0'
+  ValueRank: Any
+  Children:
+  - Name: ChNumber0
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ChNumber0"
+  - Name: ChNumber1
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ChNumber1"
+  - Name: ChNumber2
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ChNumber2"
+  - Name: ChNumber3
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ChNumber3"
+  - Name: CmdFail
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdFail"
+  - Name: CmdStatus0
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus0"
+  - Name: CmdStatus1
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus1"
+  - Name: CmdStatus10
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus10"
+  - Name: CmdStatus2
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus2"
+  - Name: CmdStatus3
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus3"
+  - Name: CmdStatus4
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus4"
+  - Name: CmdStatus5
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus5"
+  - Name: CmdStatus6
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus6"
+  - Name: CmdStatus7
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus7"
+  - Name: CmdStatus8
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus8"
+  - Name: CmdStatus9
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdStatus9"
+  - Name: Response
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Response"
+  - Name: Status_Group_1
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Status_Group_1"
+  - Name: Status_Group_2
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Status_Group_2"
+  - Name: Status_Group_3
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Status_Group_3"
 - Name: 'AB:1734_OE2:C:0'
   Id: g=70c40db9200b750945da71b62ec9a422
   Supertype: TagStructure
@@ -8547,6 +10809,132 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Sts_PC"
+- Name: SAI_APW_ExtAdjust
+  Id: g=eb76b8f4ee695ebbf69d226193c4e701
+  Supertype: TagStructure
+  DataType: SAI_APW_ExtAdjust
+  ValueRank: Any
+  Children:
+  - Name: Cancel
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Cancel"
+  - Name: Cancelled
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Cancelled"
+  - Name: CurrentPoint
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CurrentPoint"
+  - Name: CurrentWeight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CurrentWeight"
+  - Name: DataOK
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "DataOK"
+  - Name: Done
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Done"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableOut"
+  - Name: Error
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Error"
+  - Name: External_Weight
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "External_Weight"
+  - Name: In_Process
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "In_Process"
+  - Name: LoadWeight
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LoadWeight"
+  - Name: Start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Start"
+  - Name: Status
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Status"
+  - Name: Unload_Weight
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Unload_Weight"
 - Name: raC_UDT_Itf_K5100_Cfg
   Id: g=dbcf7e047bcff32b7cd01eb4a2d241c8
   Supertype: TagStructure
@@ -9657,6 +12045,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "AxisInhibitStatus"
+  - Name: AxisTestModeStatus
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "AxisTestModeStatus"
   - Name: ClockSyncAlarm
     Type: RAEtherNetIPTag
     DataType: Boolean

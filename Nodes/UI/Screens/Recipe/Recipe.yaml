@@ -1208,7 +1208,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -1217,6 +1217,26 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
+                - Name: WordWrap
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  ModellingRule: Optional
+                  Value: true
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 40.0
+                - Name: TextVerticalAlignment
+                  Type: BaseVariableType
+                  DataType: TextVerticalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
               - Name: Textbox
                 Type: TextBox
                 Children:
@@ -1392,7 +1412,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
             - Name: Vial_Size
               Type: Panel
               Children:
@@ -1449,7 +1469,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -1484,7 +1504,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -1678,7 +1698,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -1713,7 +1733,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -1911,7 +1931,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -1950,7 +1970,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -2130,10 +2150,24 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Recipe/Recipe_tags/Required_Stroke"
+                  - Name: StringFormatter1
+                    Type: StringFormatter
+                    Children:
+                    - Name: Format
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: {"LocaleId":"","Text":"{0:n2}"}
+                    - Name: ns=3;Source0
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Recipe/Recipe_tags/Required_Stroke"
                 - Name: VerticalAlignment
                   Type: BaseVariableType
                   DataType: VerticalAlignment
@@ -2148,7 +2182,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -2183,7 +2217,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -2321,6 +2355,11 @@ Children:
                       DataType: Boolean
                       ReferenceType: HasParameter
                       ModellingRule: Optional
+                - Name: Format
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ModellingRule: Optional
+                  Value: "n2"
             - Name: Product_density
               Type: Panel
               Children:
@@ -2377,7 +2416,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -2412,7 +2451,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -2606,7 +2645,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -2641,7 +2680,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -2835,7 +2874,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -2870,7 +2909,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -3064,7 +3103,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -3099,236 +3138,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 8.0
-                - Name: MinValue
-                  Type: BaseDataVariableType
-                  DataType: Double
-                  ModellingRule: Optional
-                - Name: MaxValue
-                  Type: BaseDataVariableType
-                  DataType: Double
-                  ModellingRule: Optional
-                  Value: 200.0
-                - Name: Enabled
-                  Type: BaseDataVariableType
-                  DataType: Boolean
-                  Value: true
-                  Children:
-                  - Name: ConditionalConverter1
-                    Type: ConditionalConverter
-                    Children:
-                    - Name: Condition
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      ReferenceType: HasSource
-                      Children:
-                      - Name: ExpressionEvaluator1
-                        Type: ExpressionEvaluator
-                        Children:
-                        - Name: Expression
-                          Type: BaseDataVariableType
-                          DataType: String
-                          ReferenceType: HasParameter
-                          ModellingRule: Optional
-                          Value: "{0} && {1}==1 || {2} && {3}==1 || {4} && {5}==1 || {6} && {7}==1|| {8} && {9}==1"
-                        - Name: ns=3;Source0
-                          Type: BaseDataVariableType
-                          DataType: BaseDataType
-                          ReferenceType: HasSource
-                          Children:
-                          - Name: DynamicLink
-                            Type: DynamicLink
-                            DataType: NodePath
-                            Value: "{Session}/Groups/Operator"
-                        - Name: ns=3;Source1
-                          Type: BaseDataVariableType
-                          DataType: BaseDataType
-                          ReferenceType: HasSource
-                          Children:
-                          - Name: DynamicLink
-                            Type: DynamicLink
-                            DataType: NodePath
-                            Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Operator/Recipe"
-                        - Name: ns=3;Source2
-                          Type: BaseDataVariableType
-                          DataType: BaseDataType
-                          ReferenceType: HasSource
-                          Children:
-                          - Name: DynamicLink
-                            Type: DynamicLink
-                            DataType: NodePath
-                            Value: "{Session}/Groups/Supervisor"
-                        - Name: ns=3;Source3
-                          Type: BaseDataVariableType
-                          DataType: BaseDataType
-                          ReferenceType: HasSource
-                          Children:
-                          - Name: DynamicLink
-                            Type: DynamicLink
-                            DataType: NodePath
-                            Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Supervisor/Recipe"
-                        - Name: ns=3;Source4
-                          Type: BaseDataVariableType
-                          DataType: BaseDataType
-                          ReferenceType: HasSource
-                          Children:
-                          - Name: DynamicLink
-                            Type: DynamicLink
-                            DataType: NodePath
-                            Value: "{Session}/Groups/Manager"
-                        - Name: ns=3;Source5
-                          Type: BaseDataVariableType
-                          DataType: BaseDataType
-                          ReferenceType: HasSource
-                          Children:
-                          - Name: DynamicLink
-                            Type: DynamicLink
-                            DataType: NodePath
-                            Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Manager/Recipe"
-                        - Name: ns=3;Source6
-                          Type: BaseDataVariableType
-                          DataType: BaseDataType
-                          ReferenceType: HasSource
-                          Children:
-                          - Name: DynamicLink
-                            Type: DynamicLink
-                            DataType: NodePath
-                            Value: "{Session}/Groups/Maintenance"
-                        - Name: ns=3;Source7
-                          Type: BaseDataVariableType
-                          DataType: BaseDataType
-                          ReferenceType: HasSource
-                          Children:
-                          - Name: DynamicLink
-                            Type: DynamicLink
-                            DataType: NodePath
-                            Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Engineer/Recipe"
-                        - Name: ns=3;Source8
-                          Type: BaseDataVariableType
-                          DataType: BaseDataType
-                          ReferenceType: HasSource
-                          Children:
-                          - Name: DynamicLink
-                            Type: DynamicLink
-                            DataType: NodePath
-                            Value: "{Session}/Groups/Administrator"
-                        - Name: ns=3;Source9
-                          Type: BaseDataVariableType
-                          DataType: BaseDataType
-                          ReferenceType: HasSource
-                          Children:
-                          - Name: DynamicLink
-                            Type: DynamicLink
-                            DataType: NodePath
-                            Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Administrator/Recipe"
-                    - Name: TrueValue
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      ReferenceType: HasParameter
-                      ModellingRule: Optional
-                      Value: true
-                    - Name: FalseValue
-                      Type: BaseDataVariableType
-                      DataType: Boolean
-                      ReferenceType: HasParameter
-                      ModellingRule: Optional
-            - Name: Fix_Conveyor
-              Type: Panel
-              Children:
-              - Name: Height
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 40.0
-              - Name: HorizontalAlignment
-                Type: BaseVariableType
-                DataType: HorizontalAlignment
-                ModellingRule: Optional
-                Value: 3
-              - Name: Path
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Fix Conveyor (%)"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 20.0
-                - Name: VerticalAlignment
-                  Type: BaseVariableType
-                  DataType: VerticalAlignment
-                  ModellingRule: Optional
-                  Value: 2
-              - Name: CurrentValue
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Recipe/Recipe_tags/Fix_Conveyor"
-                - Name: VerticalAlignment
-                  Type: BaseVariableType
-                  DataType: VerticalAlignment
-                  ModellingRule: Optional
-                  Value: 2
-                - Name: HorizontalAlignment
-                  Type: BaseVariableType
-                  DataType: HorizontalAlignment
-                  ModellingRule: Optional
-                  Value: 1
-                - Name: RightMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 50.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                - Name: BottomMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-              - Name: SpinBox1
-                Type: SpinBox
-                Children:
-                - Name: Value
-                  Type: BaseDataVariableType
-                  DataType: Double
-                  Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "{RecipeSchema}/Fix_Conveyor"
-                    Children:
-                    - Name: Mode
-                      Type: BaseVariableType
-                      DataType: DynamicLinkMode
-                      ModellingRule: Optional
-                      Value: 2
-                - Name: Width
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 99.0
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -3522,7 +3332,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -3557,7 +3367,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -3755,7 +3565,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -3794,7 +3604,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -3992,7 +3802,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -4027,7 +3837,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -4221,7 +4031,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -4256,7 +4066,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -4450,7 +4260,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -4485,7 +4295,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -4679,7 +4489,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -4714,7 +4524,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -4908,7 +4718,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -4943,7 +4753,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -5119,10 +4929,24 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Recipe/Recipe_tags/Fill_Head_Servo_1"
+                  - Name: StringFormatter1
+                    Type: StringFormatter
+                    Children:
+                    - Name: Format
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: {"LocaleId":"","Text":"{0:n2}"}
+                    - Name: ns=3;Source0
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Recipe/Recipe_tags/Fill_Head_Servo_1"
                 - Name: VerticalAlignment
                   Type: BaseVariableType
                   DataType: VerticalAlignment
@@ -5137,7 +4961,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -5172,7 +4996,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -5310,6 +5134,11 @@ Children:
                       DataType: Boolean
                       ReferenceType: HasParameter
                       ModellingRule: Optional
+                - Name: Format
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ModellingRule: Optional
+                  Value: "n2"
             - Name: Fill_head_servo_2
               Type: Panel
               Children:
@@ -5348,10 +5177,24 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Recipe/Recipe_tags/Fill_Head_Servo_2"
+                  - Name: StringFormatter1
+                    Type: StringFormatter
+                    Children:
+                    - Name: Format
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: {"LocaleId":"","Text":"{0:n2}"}
+                    - Name: ns=3;Source0
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Recipe/Recipe_tags/Fill_Head_Servo_2"
                 - Name: VerticalAlignment
                   Type: BaseVariableType
                   DataType: VerticalAlignment
@@ -5366,7 +5209,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -5401,7 +5244,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -5539,6 +5382,11 @@ Children:
                       DataType: Boolean
                       ReferenceType: HasParameter
                       ModellingRule: Optional
+                - Name: Format
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ModellingRule: Optional
+                  Value: "n2"
             - Name: Fill_head_servo_3
               Type: Panel
               Children:
@@ -5577,10 +5425,24 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Recipe/Recipe_tags/Fill_Head_Servo_3"
+                  - Name: StringFormatter1
+                    Type: StringFormatter
+                    Children:
+                    - Name: Format
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: {"LocaleId":"","Text":"{0:n2}"}
+                    - Name: ns=3;Source0
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Recipe/Recipe_tags/Fill_Head_Servo_3"
                 - Name: VerticalAlignment
                   Type: BaseVariableType
                   DataType: VerticalAlignment
@@ -5595,7 +5457,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -5630,7 +5492,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -5768,6 +5630,11 @@ Children:
                       DataType: Boolean
                       ReferenceType: HasParameter
                       ModellingRule: Optional
+                - Name: Format
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ModellingRule: Optional
+                  Value: "n2"
             - Name: Fill_head_servo_4
               Type: Panel
               Children:
@@ -5806,10 +5673,24 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Recipe/Recipe_tags/Fill_Head_Servo_4"
+                  - Name: StringFormatter1
+                    Type: StringFormatter
+                    Children:
+                    - Name: Format
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: {"LocaleId":"","Text":"{0:n2}"}
+                    - Name: ns=3;Source0
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Recipe/Recipe_tags/Fill_Head_Servo_4"
                 - Name: VerticalAlignment
                   Type: BaseVariableType
                   DataType: VerticalAlignment
@@ -5824,7 +5705,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -5859,7 +5740,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -5997,6 +5878,11 @@ Children:
                       DataType: Boolean
                       ReferenceType: HasParameter
                       ModellingRule: Optional
+                - Name: Format
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ModellingRule: Optional
+                  Value: "n2"
             - Name: Fallen_Vial_Alarm_Delay
               Type: Panel
               Children:
@@ -6053,7 +5939,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -6088,7 +5974,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -6282,7 +6168,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -6317,7 +6203,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -6515,7 +6401,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -6554,7 +6440,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -6752,7 +6638,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -6787,7 +6673,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -6957,6 +6843,16 @@ Children:
                   DataType: VerticalAlignment
                   ModellingRule: Optional
                   Value: 2
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 230.0
+                - Name: WordWrap
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  ModellingRule: Optional
+                  Value: true
               - Name: CurrentValue
                 Type: Label
                 Children:
@@ -6982,7 +6878,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -7017,7 +6913,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -7211,7 +7107,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -7246,7 +7142,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -7441,7 +7337,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 50.0
+                  Value: 35.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -7476,7 +7372,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: 350.0
+                  Value: 270.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -7615,6 +7511,239 @@ Children:
                       DataType: Boolean
                       ReferenceType: HasParameter
                       ModellingRule: Optional
+            - Name: Fix_Conveyor
+              Type: Panel
+              Children:
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 40.0
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 3
+              - Name: Path
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"Fix Conveyor (%)"}
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 20.0
+                - Name: VerticalAlignment
+                  Type: BaseVariableType
+                  DataType: VerticalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+              - Name: CurrentValue
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Recipe/Recipe_tags/Fix_Conveyor"
+                - Name: VerticalAlignment
+                  Type: BaseVariableType
+                  DataType: VerticalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 35.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                - Name: BottomMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: SpinBox1
+                Type: SpinBox
+                Children:
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: Double
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{RecipeSchema}/Fix_Conveyor"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 99.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 270.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 8.0
+                - Name: MinValue
+                  Type: BaseDataVariableType
+                  DataType: Double
+                  ModellingRule: Optional
+                - Name: MaxValue
+                  Type: BaseDataVariableType
+                  DataType: Double
+                  ModellingRule: Optional
+                  Value: 200.0
+                - Name: Enabled
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                  Children:
+                  - Name: ConditionalConverter1
+                    Type: ConditionalConverter
+                    Children:
+                    - Name: Condition
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: ExpressionEvaluator1
+                        Type: ExpressionEvaluator
+                        Children:
+                        - Name: Expression
+                          Type: BaseDataVariableType
+                          DataType: String
+                          ReferenceType: HasParameter
+                          ModellingRule: Optional
+                          Value: "{0} && {1}==1 || {2} && {3}==1 || {4} && {5}==1 || {6} && {7}==1|| {8} && {9}==1"
+                        - Name: ns=3;Source0
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "{Session}/Groups/Operator"
+                        - Name: ns=3;Source1
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Operator/Recipe"
+                        - Name: ns=3;Source2
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "{Session}/Groups/Supervisor"
+                        - Name: ns=3;Source3
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Supervisor/Recipe"
+                        - Name: ns=3;Source4
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "{Session}/Groups/Manager"
+                        - Name: ns=3;Source5
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Manager/Recipe"
+                        - Name: ns=3;Source6
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "{Session}/Groups/Maintenance"
+                        - Name: ns=3;Source7
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Engineer/Recipe"
+                        - Name: ns=3;Source8
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "{Session}/Groups/Administrator"
+                        - Name: ns=3;Source9
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Screen_Access/Administrator/Recipe"
+                    - Name: TrueValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+                      Value: true
+                    - Name: FalseValue
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      ReferenceType: HasParameter
+                      ModellingRule: Optional
+              - Name: Visible
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size

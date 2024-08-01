@@ -4,6 +4,7 @@ Children:
 - Name: Cfg_EM_Number
   Type: RAEtherNetIPTag
   DataType: Int32
+  Description: {"LocaleId":"en-US","Text":"Equipment Module Number"}
   Children:
   - Name: SymbolName
     Type: BaseDataVariableType
@@ -137,24 +138,6 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Program:EM17_Vibrator_Hgt_UpDn.HMI_I_Over_Load"
-  - Name: ns=0;EURange
-    Type: RangeType
-    DataType: Range
-    Children:
-    - Name: Low
-      Type: BaseVariableType
-      DataType: Double
-      ReferenceType: HasProperty
-    - Name: High
-      Type: BaseVariableType
-      DataType: Double
-      ReferenceType: HasProperty
-      Value: 3.0
-    - Name: Constrain
-      Type: BaseVariableType
-      DataType: Boolean
-      ReferenceType: HasProperty
-      Value: true
 - Name: Homedelay
   Type: TIMER
   DataType: TIMER
@@ -1107,6 +1090,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.GearRatio"
+  - Name: Handshake_Initial_Status
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Handshake_Initial_Status"
   - Name: Inp_Display_Val_1
     Type: RAEtherNetIPTag
     DataType: Float
@@ -1227,24 +1218,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Set_AccelProg"
-    - Name: ns=0;EURange
-      Type: RangeType
-      DataType: Range
-      Children:
-      - Name: Low
-        Type: BaseVariableType
-        DataType: Double
-        ReferenceType: HasProperty
-      - Name: High
-        Type: BaseVariableType
-        DataType: Double
-        ReferenceType: HasProperty
-        Value: 100.0
-      - Name: Constrain
-        Type: BaseVariableType
-        DataType: Boolean
-        ReferenceType: HasProperty
-        Value: true
   - Name: Set_CommFaultTimerPresetOper
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -1277,24 +1250,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Set_DecelProg"
-    - Name: ns=0;EURange
-      Type: RangeType
-      DataType: Range
-      Children:
-      - Name: Low
-        Type: BaseVariableType
-        DataType: Double
-        ReferenceType: HasProperty
-      - Name: High
-        Type: BaseVariableType
-        DataType: Double
-        ReferenceType: HasProperty
-        Value: 100.0
-      - Name: Constrain
-        Type: BaseVariableType
-        DataType: Boolean
-        ReferenceType: HasProperty
-        Value: true
+  - Name: Set_DeviceNameOper
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Set_DeviceNameOper"
   - Name: Set_FaceplateAnimation
     Type: RAEtherNetIPTag
     DataType: Int16
@@ -1319,6 +1282,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Set_SpeedProg"
+  - Name: Set_SpeedUnitsOper
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Set_SpeedUnitsOper"
   - Name: Set_TrendNextPenOper
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -1343,6 +1314,22 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Set_Value1Min"
+  - Name: Set_Value1Name
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Set_Value1Name"
+  - Name: Set_Value1Units
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Set_Value1Units"
   - Name: Set_Value2Max
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -1359,6 +1346,22 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Set_Value2Min"
+  - Name: Set_Value2Name
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Set_Value2Name"
+  - Name: Set_Value2Units
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Set_Value2Units"
   - Name: Set_Value3Max
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -1375,6 +1378,38 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Set_Value3Min"
+  - Name: Set_Value3Name
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Set_Value3Name"
+  - Name: Set_Value3Units
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Set_Value3Units"
+  - Name: Set_Value4Name
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Set_Value4Name"
+  - Name: Set_Value4Units
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Set_Value4Units"
   - Name: SpdRef_Units
     Type: RAEtherNetIPTag
     DataType: Float
@@ -1383,30 +1418,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.SpdRef_Units"
-    - Name: ns=0;EURange
-      Type: RangeType
-      DataType: Range
-      Children:
-      - Name: Low
-        Type: BaseVariableType
-        DataType: Double
-        ReferenceType: HasProperty
-      - Name: High
-        Type: BaseVariableType
-        DataType: Double
-        ReferenceType: HasProperty
-        Value: 50.0
-      - Name: Constrain
-        Type: BaseVariableType
-        DataType: Boolean
-        ReferenceType: HasProperty
-        Value: true
-    - Name: Encoding
-      Type: BaseDataVariableType
-      DataType: Encoding
-    - Name: ArrayUpdateMode
-      Type: BaseDataVariableType
-      DataType: TagArrayUpdateMode
   - Name: SpdScaler60Hz
     Type: RAEtherNetIPTag
     DataType: Float
@@ -1543,6 +1554,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Sts_Value4"
+  - Name: Trigger_ONS
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:EM17_Vibrator_Hgt_UpDn.Wrk_PF525Object.Trigger_ONS"
   - Name: Val_Fault1Code
     Type: RAEtherNetIPTag
     DataType: Int32

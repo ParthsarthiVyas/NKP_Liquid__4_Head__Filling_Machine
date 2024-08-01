@@ -66,6 +66,7 @@ Children:
 - Name: HMI_I_MODE
   Type: RAEtherNetIPTag
   DataType: SByte
+  Description: {"LocaleId":"en-US","Text":"Printer + Print Inspection"}
   Children:
   - Name: SymbolName
     Type: BaseDataVariableType
@@ -1103,6 +1104,22 @@ Children:
   Type: PackML_QuickModeChange_AOI_1
   DataType: PackML_QuickModeChange_AOI_1
   Children:
+  - Name: Aborted_State
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.Aborted_State"
+  - Name: Active
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.Active"
   - Name: EnableIn
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -1119,6 +1136,70 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:UN01_ExampleMachine.SwitchMode_All.EnableOut"
+  - Name: Execute_State
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.Execute_State"
+  - Name: Machine_Was_Aborted
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.Machine_Was_Aborted"
+  - Name: Maintenance_Mode
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.Maintenance_Mode"
+  - Name: Manual_Mode
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.Manual_Mode"
+  - Name: ONS_Switch_1
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.ONS_Switch_1"
+  - Name: ONS_Switch_2
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.ONS_Switch_2"
+  - Name: ONS_Switch_3
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.ONS_Switch_3"
+  - Name: ons_Switch_4
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.ons_Switch_4"
   - Name: Out_ResetCmd
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -1143,6 +1224,22 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:UN01_ExampleMachine.SwitchMode_All.Out_StopCmd"
+  - Name: Production_Mode
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.Production_Mode"
+  - Name: Stopped_State
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.Stopped_State"
   - Name: Sts_DN
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -1159,6 +1256,58 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:UN01_ExampleMachine.SwitchMode_All.Sts_ER"
+  - Name: Switching_Sequence
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:UN01_ExampleMachine.SwitchMode_All.Switching_Sequence"
+  - Name: TON_Error
+    Type: TIMER
+    DataType: TIMER
+    Children:
+    - Name: ACC
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.SwitchMode_All.TON_Error.ACC"
+    - Name: DN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.SwitchMode_All.TON_Error.DN"
+    - Name: EN
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.SwitchMode_All.TON_Error.EN"
+    - Name: PRE
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.SwitchMode_All.TON_Error.PRE"
+    - Name: TT
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:UN01_ExampleMachine.SwitchMode_All.TON_Error.TT"
 - Name: T_Snsr_Off_DT
   Type: TIMER
   DataType: TIMER

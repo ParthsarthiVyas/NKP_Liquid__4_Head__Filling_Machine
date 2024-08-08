@@ -922,6 +922,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM14_Nozzle.Wrk_PF525Object.Set_AccelProg"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 10.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Set_CommFaultTimerPresetOper
     Type: RAEtherNetIPTag
     DataType: Int32
@@ -954,6 +972,24 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Program:EM14_Nozzle.Wrk_PF525Object.Set_DecelProg"
+    - Name: ns=0;EURange
+      Type: RangeType
+      DataType: Range
+      Children:
+      - Name: Low
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+      - Name: High
+        Type: BaseVariableType
+        DataType: Double
+        ReferenceType: HasProperty
+        Value: 10.0
+      - Name: Constrain
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        Value: true
   - Name: Set_DeviceNameOper
     Type: RAEtherNetIPTag
     DataType: String

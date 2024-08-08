@@ -557,7 +557,7 @@ Children:
         Type: BaseVariableType
         DataType: Double
         ReferenceType: HasProperty
-        Value: 800.0
+        Value: 3500.0
       - Name: Constrain
         Id: g=c4c7343c6643cbcaa5fd3161cd499d3e
         Type: BaseVariableType
@@ -595,7 +595,7 @@ Children:
         Type: BaseVariableType
         DataType: Double
         ReferenceType: HasProperty
-        Value: 800.0
+        Value: 3500.0
       - Name: Constrain
         Id: g=323cf1b54b8df300767cdb22939081a7
         Type: BaseVariableType

@@ -5989,7 +5989,7 @@ Children:
       - Name: ExtensionFilter
         Type: BaseDataVariableType
         DataType: String
-        Value: "*.pdf"
+        Value: "*.pdf;.bak"
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -18769,14 +18769,14 @@ Children:
               - Name: FolderPath
                 Type: BaseDataVariableType
                 DataType: ResourceUri
-                Value: "file:///D://"
+                Value: "%APPLICATIONDIR%\\"
               - Name: FullPath
                 Type: BaseDataVariableType
                 DataType: ResourceUri
               - Name: ExtensionFilter
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "*.bak"
+                Value: "*.pdf;.bak"
               - Name: Height
                 Type: BaseVariableType
                 DataType: Size
@@ -18835,6 +18835,21 @@ Children:
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
                 Value: 3
+              - Name: FilterText
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "0"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/NKP_Liquid__4_Head__Filling_Machine/Model/Variable1"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
             - Name: Label1
               Type: Label
               Children:

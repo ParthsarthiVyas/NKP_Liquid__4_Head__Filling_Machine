@@ -4538,7 +4538,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: Double
                   ModellingRule: Optional
-                  Value: 800.0
+                  Value: 3500.0
                 - Name: Enabled
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -4767,7 +4767,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: Double
                   ModellingRule: Optional
-                  Value: 800.0
+                  Value: 3500.0
                 - Name: Enabled
                   Type: BaseDataVariableType
                   DataType: Boolean

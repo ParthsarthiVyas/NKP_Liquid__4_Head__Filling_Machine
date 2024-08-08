@@ -161,6 +161,7 @@ Children:
   Type: BaseDataVariableType
   DataType: Int32
 - Name: Variable1
+  Id: g=1474fa12ebb0229a5d016f42377a1e1b
   Type: BaseDataVariableType
   DataType: String
 - Name: Previous_date
@@ -176,7 +177,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/Lock_bit"
+    Value: "../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/HMI_Remote_Display_Number"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -189,7 +190,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/Password_lock"
+    Value: "../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Machine_Lock_1_Password"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -202,7 +203,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../CommDrivers/Station_1_PLC/MicroControllerStation1/Tags/Hour_Lock"
+    Value: "../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Machine_Lock_hour"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -265,7 +266,7 @@ Children:
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
-      Value: 50.0
+      Value: 60.0
     - Name: Constrain
       Type: BaseVariableType
       DataType: Boolean
@@ -287,7 +288,7 @@ Children:
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
-      Value: 50.0
+      Value: 60.0
     - Name: Constrain
       Type: BaseVariableType
       DataType: Boolean

@@ -52,7 +52,7 @@ public class LogBatchData : BaseNetLogic
         int Duration_Hour = Project.Current.GetVariable("Model/BatchData_Station_1/Duration_Hour").Value;
         int Duration_Second = Project.Current.GetVariable("Model/BatchData_Station_1/Duration_Second").Value;
         int Duration_Minute = Project.Current.GetVariable("Model/BatchData_Station_1/Duration_Minute").Value;
-
+        int Sampled_product = Project.Current.GetVariable("Model/BatchData_Station_1/Sampled_product").Value;
         //string batchstop1 = batchstop.ToString("MMM d, yyyy, h:mm:ss g(en-US)");
 
 
@@ -73,7 +73,7 @@ public class LogBatchData : BaseNetLogic
          rawValues[0, 12] = EquipmentName;
          rawValues[0, 13] = EquipmentId;
         */
-        string Selectquery = "UPDATE BatchInfo SET BatchStopTime = '" + batchstop + "', TotalCounts =" + totalcount + ", RejectCounts = " + rejectcount + ", GoodCounts =" + goodcount + ", rejection =" + rejection + " , Duration_Hour =" + Duration_Hour + " , Duration_Minute =" + Duration_Minute + " , Duration_Second =" + Duration_Second + " WHERE BatchNumber = '" + batchno + "'";
+        string Selectquery = "UPDATE BatchInfo SET BatchStopTime = '" + batchstop + "', TotalCounts =" + totalcount + ", RejectCounts = " + rejectcount + ", GoodCounts =" + goodcount + ", rejection =" + rejection + " , Duration_Hour =" + Duration_Hour + " , Duration_Minute =" + Duration_Minute + " , Duration_Second =" + Duration_Second + ", Sampled_Product =" + Sampled_product + " WHERE BatchNumber = '" + batchno + "'";
         //Object[,] ResultSet;
         //String[] Header;
         myStore.Query(Selectquery, out String[] Header, out Object[,] ResultSet);

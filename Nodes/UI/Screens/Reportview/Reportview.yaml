@@ -286,6 +286,9 @@ Children:
       DataType: SortOrderEnum
       ModellingRule: Optional
       Value: 1
+    - Class: Reference
+      Target: ns=5;i=480
+      Direction: Forward
   - Name: GetBatchInfo
     Type: NetLogic
   - Name: Label1

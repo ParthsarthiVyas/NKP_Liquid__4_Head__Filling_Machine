@@ -760,6 +760,9 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: -230.0
+      - Class: Reference
+        Target: ns=5;i=481
+        Direction: Forward
     - Name: Rectangle2
       Type: Rectangle
       Children:

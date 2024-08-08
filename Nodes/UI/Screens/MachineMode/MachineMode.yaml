@@ -373,6 +373,9 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         ModellingRule: Optional
+      - Class: Reference
+        Target: ns=5;i=481
+        Direction: Forward
     - Name: PolyLine1
       Type: PolyLine
       Children:

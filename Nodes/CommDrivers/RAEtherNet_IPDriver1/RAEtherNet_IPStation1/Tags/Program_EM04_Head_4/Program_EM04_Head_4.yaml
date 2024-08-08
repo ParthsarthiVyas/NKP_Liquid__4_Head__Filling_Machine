@@ -3513,6 +3513,46 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Program:EM04_Head_4.Wrk_ChkON_Timer[9].TT"
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ACC"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "DN"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EN"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PRE"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "TT"
 - Name: Head_State
   Type: RAEtherNetIPTag
   DataType: Int32
@@ -3599,6 +3639,22 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Program:EM04_Head_4.Inf_Lookup[1].Desc"
+  - Name: Code
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Code"
+  - Name: Desc
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Desc"
 - Name: Ref_Ctrl_Sts
   Type: raC_UDT_Itf_K5100_Sts
   DataType: raC_UDT_Itf_K5100_Sts

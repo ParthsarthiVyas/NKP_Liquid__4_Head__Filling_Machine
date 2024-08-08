@@ -1909,6 +1909,9 @@ Children:
           DataType: Duration
           ModellingRule: Optional
           Value: "0:00:00:1.0000000"
+        - Class: Reference
+          Target: ns=5;i=504
+          Direction: Forward
       - Name: Label5
         Type: Label
         Children:
@@ -5469,6 +5472,9 @@ Children:
         DataType: Duration
         ModellingRule: Optional
         Value: "0:00:00:1.0000000"
+      - Class: Reference
+        Target: ns=5;i=504
+        Direction: Forward
     - Name: Label2
       Type: Label
       Children:

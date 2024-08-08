@@ -112,6 +112,12 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
+    - Class: Reference
+      Target: ns=5;i=1181
+      Direction: Forward
+    - Class: Reference
+      Target: ns=5;i=1183
+      Direction: Forward
   - Name: Back
     Type: Button
     Children:
@@ -1203,6 +1209,12 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
+    - Class: Reference
+      Target: ns=5;i=1181
+      Direction: Forward
+    - Class: Reference
+      Target: ns=5;i=1183
+      Direction: Forward
 - Name: System_setup_S1_1
   Id: g=0b6fff3a7b4c1052738102ea7e6048f1
   Supertype: Panel
@@ -5426,6 +5438,12 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
+    - Class: Reference
+      Target: ns=5;i=1181
+      Direction: Forward
+    - Class: Reference
+      Target: ns=5;i=1183
+      Direction: Forward
 - Name: System_setup_S2_1
   Id: g=1f4d0958a779f3270d054d7286117e20
   Supertype: Panel
@@ -9871,6 +9889,12 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
+    - Class: Reference
+      Target: ns=5;i=1181
+      Direction: Forward
+    - Class: Reference
+      Target: ns=5;i=1183
+      Direction: Forward
   - Name: TopMargin
     Type: BaseVariableType
     DataType: Size

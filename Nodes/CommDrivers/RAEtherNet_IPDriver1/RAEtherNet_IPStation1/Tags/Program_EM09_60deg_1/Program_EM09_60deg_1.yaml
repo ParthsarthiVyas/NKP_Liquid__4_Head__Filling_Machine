@@ -2957,6 +2957,22 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Program:EM09_60deg_1.Inf_Lookup[1].Desc"
+  - Name: Code
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Code"
+  - Name: Desc
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Desc"
 - Name: Ref_Ctrl_Sts
   Type: raC_UDT_Itf_K5100_Sts
   DataType: raC_UDT_Itf_K5100_Sts

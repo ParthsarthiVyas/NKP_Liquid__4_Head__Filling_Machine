@@ -88,9 +88,9 @@ Children:
 - Name: AlarmConfiguration
   Type: PropertyGroup
 - File: NetLogic/NetLogic.yaml
-- File: Model/Model.yaml
 - File: Alarms/Alarms.yaml
 - File: UI/UI.yaml
+- File: Model/Model.yaml
 - File: Converters/Converters.yaml
 - File: Recipes/Recipes.yaml
 - File: Loggers/Loggers.yaml

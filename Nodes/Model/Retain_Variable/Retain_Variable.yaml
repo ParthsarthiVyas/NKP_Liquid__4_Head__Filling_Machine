@@ -95,23 +95,166 @@ Children:
   Id: g=ace4c3aa3dce0bc8be42468a7e15e58d
   Type: BaseDataVariableType
   DataType: UInt16
+  Children:
+  - Name: ns=0;EURange
+    Id: g=c3e1765421b7cd4df6fc8b9f37620aec
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=6cd8ee8d0d315041e7d09e3b6c48cf8a
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+    - Name: High
+      Id: g=876483f0cdd4ea21f1c4c34ef3fbba20
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 365.0
+    - Name: Constrain
+      Id: g=2a2e8c52457a256c3702f7f9ae406671
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: MaxPasswordAge
   Id: g=d2dab3327d51a0c0c3996fdb033652f3
   Type: BaseDataVariableType
   DataType: UInt16
+  Children:
+  - Name: ns=0;EURange
+    Id: g=1b78c6643cf7b27935d181e77e0ed5b9
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=5e577cfe256d596ff2d9f62f28162daa
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 1.0
+    - Name: High
+      Id: g=06b17455e6781f2fed032d4ad3372e72
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 365.0
+    - Name: Constrain
+      Id: g=d1ce463a1d97701767edfcf601aa8bf4
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: InvalidLoginAttempt
   Id: g=424ebcb5527f6154de42deddf8e2f6c9
   Type: BaseDataVariableType
   DataType: UInt16
+  Children:
+  - Name: ns=0;EURange
+    Id: g=51bf09e3a01f6736c761123f2c59465d
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=b3184be23f2cec373a3bacbd10017b28
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 1.0
+    - Name: High
+      Id: g=c6608e72afd5a541cfd08fbe0b6d0ca9
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 5.0
+    - Name: Constrain
+      Id: g=669cbc23ccf48ba08bae15b50dde2319
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: PasswordExpiryDays
   Id: g=677535f9c1a1aa4ad1f6b58f72275b9f
   Type: BaseDataVariableType
   DataType: UInt16
+  Children:
+  - Name: ns=0;EURange
+    Id: g=cb212e7fefb5bfef544d170a837d0cb9
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=4ad1e7d9f98fd9a433b29696f4c9de22
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 1.0
+    - Name: High
+      Id: g=6bc850e84bb835b24ed4b9ca71d0ea89
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 90.0
+    - Name: Constrain
+      Id: g=5eaef15fb4693fb2738ed201e9f72f17
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: EnforcePasswordHistory
   Id: g=deb0ef98768c2a78577804fe52493942
   Type: BaseDataVariableType
   DataType: UInt16
+  Children:
+  - Name: ns=0;EURange
+    Id: g=f93c58f2d30826cb85588d12bb3e804d
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=13197fa771ce9d78f5ea295aeaa4f6db
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 1.0
+    - Name: High
+      Id: g=3e9a8391a8a58b243914299a7f4c6a37
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 5.0
+    - Name: Constrain
+      Id: g=ceb9d819ce01629ffc0cf152fa4bef6c
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
 - Name: MinPasswordLength
   Id: g=efa485d89dd47f8371ce250b1917ddc4
   Type: BaseDataVariableType
   DataType: UInt16
+  Children:
+  - Name: ns=0;EURange
+    Id: g=49d43f8d32982a047368cb63613a3145
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=02e8931a87c3747cc56331f7a4181d28
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 6.0
+    - Name: High
+      Id: g=039e31116c92116fcee078662759b981
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 12.0
+    - Name: Constrain
+      Id: g=ca3fd955179f1294c7e68560447f7750
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
